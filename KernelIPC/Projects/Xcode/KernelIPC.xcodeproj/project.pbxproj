@@ -1,0 +1,1336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4238E7B01247CB1900951270 /* VProcessIPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4238E7AA1247CB1900951270 /* VProcessIPC.cpp */; };
+		4238E7B11247CB1900951270 /* VProcessIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4238E7AB1247CB1900951270 /* VProcessIPC.h */; };
+		4279BE1A123E782C00B83C8C /* XMacFileSystemNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 4279BE18123E782C00B83C8C /* XMacFileSystemNotification.h */; };
+		6D101C1B18A281FD0098C564 /* VCommandLineParserHelp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D101C1A18A281FD0098C564 /* VCommandLineParserHelp.cpp */; };
+		6D17175218AE718E00305B81 /* VCommandLineParserExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D17175118AE718E00305B81 /* VCommandLineParserExtension.cpp */; };
+		6D9B6EEF183E46BA000691CB /* KernelIPC_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* KernelIPC_Prefix.pch */; };
+		6D9B6EF0183E46BA000691CB /* VKernelIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 02539E4206EEFC430039845E /* VKernelIPC.h */; };
+		6D9B6EF1183E46BA000691CB /* VKernelIPCFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 02416A4106F061BD00F0206C /* VKernelIPCFlags.h */; };
+		6D9B6EF2183E46BA000691CB /* VKernelIPCTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 02416A4206F061BD00F0206C /* VKernelIPCTypes.h */; };
+		6D9B6EF3183E46BA000691CB /* VKernelIPCPrecompiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 020C61B406F0C0B10096EBBD /* VKernelIPCPrecompiled.h */; };
+		6D9B6EF4183E46BA000691CB /* VKernelIPCErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 02BB65D206F9C91A0074C123 /* VKernelIPCErrors.h */; };
+		6D9B6EF5183E46BA000691CB /* XMacProcessMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832BD08963FA300D45133 /* XMacProcessMain.h */; };
+		6D9B6EF6183E46BA000691CB /* VSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C208963FA300D45133 /* VSignal.h */; };
+		6D9B6EF7183E46BA000691CB /* VProcessMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C408963FA300D45133 /* VProcessMain.h */; };
+		6D9B6EF8183E46BA000691CB /* VPluginImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C508963FA300D45133 /* VPluginImp.h */; };
+		6D9B6EF9183E46BA000691CB /* VDebugAttachments.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C808963FA400D45133 /* VDebugAttachments.h */; };
+		6D9B6EFA183E46BA000691CB /* VDaemon.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832CA08963FA400D45133 /* VDaemon.h */; };
+		6D9B6EFB183E46BA000691CB /* VComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832CC08963FA400D45133 /* VComponentManager.h */; };
+		6D9B6EFC183E46BA000691CB /* VComponentLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832CE08963FA400D45133 /* VComponentLibrary.h */; };
+		6D9B6EFD183E46BA000691CB /* VComponentImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D008963FA400D45133 /* VComponentImp.h */; };
+		6D9B6EFE183E46BA000691CB /* VCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D108963FA400D45133 /* VCommand.h */; };
+		6D9B6EFF183E46BA000691CB /* VAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D308963FA400D45133 /* VAttachment.h */; };
+		6D9B6F00183E46BA000691CB /* ICommandControler.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D508963FA400D45133 /* ICommandControler.h */; };
+		6D9B6F01183E46BA000691CB /* CPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D708963FA400D45133 /* CPlugin.h */; };
+		6D9B6F02183E46BA000691CB /* IStreamRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C0D4FF0ADA9C1E00B56805 /* IStreamRequest.h */; };
+		6D9B6F03183E46BA000691CB /* VProcessLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B546700BD758ED00AB38CB /* VProcessLauncher.h */; };
+		6D9B6F04183E46BA000691CB /* XWinProcessLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B5467F0BD7594800AB38CB /* XWinProcessLauncher.h */; };
+		6D9B6F05183E46BA000691CB /* XMacFileSystemNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 4279BE18123E782C00B83C8C /* XMacFileSystemNotification.h */; };
+		6D9B6F06183E46BA000691CB /* VProcessIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4238E7AB1247CB1900951270 /* VProcessIPC.h */; };
+		6D9B6F08183E46BA000691CB /* VSignal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832C308963FA300D45133 /* VSignal.cpp */; };
+		6D9B6F09183E46BA000691CB /* VDebugAttachments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832C908963FA400D45133 /* VDebugAttachments.cpp */; };
+		6D9B6F0A183E46BA000691CB /* VDaemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832CB08963FA400D45133 /* VDaemon.cpp */; };
+		6D9B6F0B183E46BA000691CB /* VComponentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832CD08963FA400D45133 /* VComponentManager.cpp */; };
+		6D9B6F0C183E46BA000691CB /* VCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832D208963FA400D45133 /* VCommand.cpp */; };
+		6D9B6F0D183E46BA000691CB /* VAttachment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832D408963FA400D45133 /* VAttachment.cpp */; };
+		6D9B6F0E183E46BA000691CB /* ICommandControler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832D608963FA400D45133 /* ICommandControler.cpp */; };
+		6D9B6F0F183E46BA000691CB /* VProcessLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82B546710BD758ED00AB38CB /* VProcessLauncher.cpp */; };
+		6D9B6F10183E46BA000691CB /* VProcessIPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4238E7AA1247CB1900951270 /* VProcessIPC.cpp */; };
+		6D9B6F11183E46BA000691CB /* XMacSleepNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90D2E7517D62DB8001D6189 /* XMacSleepNotifier.cpp */; };
+		6D9B6F12183E46BA000691CB /* VSleepNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90D2E8017D62E89001D6189 /* VSleepNotifier.cpp */; };
+		6D9B6F14183E46BA000691CB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D3A57317D8C60F00EC2A5B /* IOKit.framework */; };
+		6D9B6F15183E46BA000691CB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D3A57117D8C60800EC2A5B /* CoreFoundation.framework */; };
+		6D9B6F16183E46BA000691CB /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA19350F3F9D3600EF41C9 /* CoreServices.framework */; };
+		6DCA19370F3F9D3600EF41C9 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA19350F3F9D3600EF41C9 /* CoreServices.framework */; };
+		6DE1D30F18AE72AC00EE2D76 /* VCommandLineParserExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D17175118AE718E00305B81 /* VCommandLineParserExtension.cpp */; };
+		6DE1D31518AE72AC00EE2D76 /* VCommandLineParserExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D17175118AE718E00305B81 /* VCommandLineParserExtension.cpp */; };
+		6DF545E118A2852B0057947F /* VCommandLineParserHelp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D101C1A18A281FD0098C564 /* VCommandLineParserHelp.cpp */; };
+		6DF545E718A2852B0057947F /* VCommandLineParserHelp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D101C1A18A281FD0098C564 /* VCommandLineParserHelp.cpp */; };
+		6DF6AFCF1883E90600A96FD7 /* VCommandLineParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6AFC81883E90500A96FD7 /* VCommandLineParser.cpp */; };
+		6DF6AFD01883E90600A96FD7 /* VCommandLineParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6AFC81883E90500A96FD7 /* VCommandLineParser.cpp */; };
+		6DF6AFD11883E90600A96FD7 /* VCommandLineParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6AFC81883E90500A96FD7 /* VCommandLineParser.cpp */; };
+		6DF6AFD21883E90600A96FD7 /* VCommandLineParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6AFC91883E90500A96FD7 /* VCommandLineParser.h */; };
+		6DF6AFD31883E90600A96FD7 /* VCommandLineParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6AFC91883E90500A96FD7 /* VCommandLineParser.h */; };
+		6DF6AFD41883E90600A96FD7 /* VCommandLineParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6AFC91883E90500A96FD7 /* VCommandLineParser.h */; };
+		6DF6AFD81883E90600A96FD7 /* VCommandLineParserExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6AFCB1883E90600A96FD7 /* VCommandLineParserExtension.h */; };
+		6DF6AFD91883E90600A96FD7 /* VCommandLineParserExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6AFCB1883E90600A96FD7 /* VCommandLineParserExtension.h */; };
+		6DF6AFDA1883E90600A96FD7 /* VCommandLineParserExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6AFCB1883E90600A96FD7 /* VCommandLineParserExtension.h */; };
+		6DF6AFDB1883E90600A96FD7 /* VCommandLineParserOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6AFCC1883E90600A96FD7 /* VCommandLineParserOption.cpp */; };
+		6DF6AFDC1883E90600A96FD7 /* VCommandLineParserOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6AFCC1883E90600A96FD7 /* VCommandLineParserOption.cpp */; };
+		6DF6AFDD1883E90600A96FD7 /* VCommandLineParserOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6AFCC1883E90600A96FD7 /* VCommandLineParserOption.cpp */; };
+		6DF6AFDE1883E90600A96FD7 /* VCommandLineParserOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6AFCD1883E90600A96FD7 /* VCommandLineParserOption.h */; };
+		6DF6AFDF1883E90600A96FD7 /* VCommandLineParserOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6AFCD1883E90600A96FD7 /* VCommandLineParserOption.h */; };
+		6DF6AFE01883E90600A96FD7 /* VCommandLineParserOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6AFCD1883E90600A96FD7 /* VCommandLineParserOption.h */; };
+		B54AA75C0BEA4630005240A2 /* KernelIPC_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* KernelIPC_Prefix.pch */; };
+		B54AA75D0BEA4630005240A2 /* VKernelIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 02539E4206EEFC430039845E /* VKernelIPC.h */; };
+		B54AA75E0BEA4630005240A2 /* VKernelIPCFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 02416A4106F061BD00F0206C /* VKernelIPCFlags.h */; };
+		B54AA75F0BEA4630005240A2 /* VKernelIPCTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 02416A4206F061BD00F0206C /* VKernelIPCTypes.h */; };
+		B54AA7600BEA4630005240A2 /* VKernelIPCPrecompiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 020C61B406F0C0B10096EBBD /* VKernelIPCPrecompiled.h */; };
+		B54AA7610BEA4630005240A2 /* VKernelIPCErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 02BB65D206F9C91A0074C123 /* VKernelIPCErrors.h */; };
+		B54AA7620BEA4630005240A2 /* XMacProcessMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832BD08963FA300D45133 /* XMacProcessMain.h */; };
+		B54AA7650BEA4630005240A2 /* VSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C208963FA300D45133 /* VSignal.h */; };
+		B54AA7660BEA4630005240A2 /* VProcessMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C408963FA300D45133 /* VProcessMain.h */; };
+		B54AA7670BEA4630005240A2 /* VPluginImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C508963FA300D45133 /* VPluginImp.h */; };
+		B54AA7690BEA4630005240A2 /* VDebugAttachments.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C808963FA400D45133 /* VDebugAttachments.h */; };
+		B54AA76A0BEA4630005240A2 /* VDaemon.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832CA08963FA400D45133 /* VDaemon.h */; };
+		B54AA76B0BEA4630005240A2 /* VComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832CC08963FA400D45133 /* VComponentManager.h */; };
+		B54AA76C0BEA4630005240A2 /* VComponentLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832CE08963FA400D45133 /* VComponentLibrary.h */; };
+		B54AA76D0BEA4630005240A2 /* VComponentImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D008963FA400D45133 /* VComponentImp.h */; };
+		B54AA76E0BEA4630005240A2 /* VCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D108963FA400D45133 /* VCommand.h */; };
+		B54AA76F0BEA4630005240A2 /* VAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D308963FA400D45133 /* VAttachment.h */; };
+		B54AA7700BEA4630005240A2 /* ICommandControler.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D508963FA400D45133 /* ICommandControler.h */; };
+		B54AA7710BEA4630005240A2 /* CPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D708963FA400D45133 /* CPlugin.h */; };
+		B54AA7720BEA4630005240A2 /* IStreamRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C0D4FF0ADA9C1E00B56805 /* IStreamRequest.h */; };
+		B54AA7730BEA4630005240A2 /* VProcessLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B546700BD758ED00AB38CB /* VProcessLauncher.h */; };
+		B54AA7750BEA4630005240A2 /* XWinProcessLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B5467F0BD7594800AB38CB /* XWinProcessLauncher.h */; };
+		B54AA7780BEA4657005240A2 /* VSignal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832C308963FA300D45133 /* VSignal.cpp */; };
+		B54AA77A0BEA4657005240A2 /* VDebugAttachments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832C908963FA400D45133 /* VDebugAttachments.cpp */; };
+		B54AA77B0BEA4657005240A2 /* VDaemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832CB08963FA400D45133 /* VDaemon.cpp */; };
+		B54AA77C0BEA4657005240A2 /* VComponentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832CD08963FA400D45133 /* VComponentManager.cpp */; };
+		B54AA77D0BEA4657005240A2 /* VCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832D208963FA400D45133 /* VCommand.cpp */; };
+		B54AA77E0BEA4657005240A2 /* VAttachment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832D408963FA400D45133 /* VAttachment.cpp */; };
+		B54AA77F0BEA4657005240A2 /* ICommandControler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832D608963FA400D45133 /* ICommandControler.cpp */; };
+		B54AA7800BEA4657005240A2 /* VProcessLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82B546710BD758ED00AB38CB /* VProcessLauncher.cpp */; };
+		F42FBAB8185A02CD00EFC5CF /* KernelIPC_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* KernelIPC_Prefix.pch */; };
+		F42FBAB9185A02CD00EFC5CF /* VKernelIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 02539E4206EEFC430039845E /* VKernelIPC.h */; };
+		F42FBABA185A02CD00EFC5CF /* VKernelIPCFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 02416A4106F061BD00F0206C /* VKernelIPCFlags.h */; };
+		F42FBABB185A02CD00EFC5CF /* VKernelIPCTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 02416A4206F061BD00F0206C /* VKernelIPCTypes.h */; };
+		F42FBABC185A02CD00EFC5CF /* VKernelIPCPrecompiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 020C61B406F0C0B10096EBBD /* VKernelIPCPrecompiled.h */; };
+		F42FBABD185A02CD00EFC5CF /* VKernelIPCErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 02BB65D206F9C91A0074C123 /* VKernelIPCErrors.h */; };
+		F42FBABE185A02CD00EFC5CF /* XMacProcessMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832BD08963FA300D45133 /* XMacProcessMain.h */; };
+		F42FBABF185A02CD00EFC5CF /* VSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C208963FA300D45133 /* VSignal.h */; };
+		F42FBAC0185A02CD00EFC5CF /* VProcessMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C408963FA300D45133 /* VProcessMain.h */; };
+		F42FBAC1185A02CD00EFC5CF /* VPluginImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C508963FA300D45133 /* VPluginImp.h */; };
+		F42FBAC2185A02CD00EFC5CF /* VDebugAttachments.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832C808963FA400D45133 /* VDebugAttachments.h */; };
+		F42FBAC3185A02CD00EFC5CF /* VDaemon.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832CA08963FA400D45133 /* VDaemon.h */; };
+		F42FBAC4185A02CD00EFC5CF /* VComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832CC08963FA400D45133 /* VComponentManager.h */; };
+		F42FBAC5185A02CD00EFC5CF /* VComponentLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832CE08963FA400D45133 /* VComponentLibrary.h */; };
+		F42FBAC6185A02CD00EFC5CF /* VComponentImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D008963FA400D45133 /* VComponentImp.h */; };
+		F42FBAC7185A02CD00EFC5CF /* VCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D108963FA400D45133 /* VCommand.h */; };
+		F42FBAC8185A02CD00EFC5CF /* VAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D308963FA400D45133 /* VAttachment.h */; };
+		F42FBAC9185A02CD00EFC5CF /* ICommandControler.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D508963FA400D45133 /* ICommandControler.h */; };
+		F42FBACA185A02CD00EFC5CF /* CPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 021832D708963FA400D45133 /* CPlugin.h */; };
+		F42FBACB185A02CD00EFC5CF /* IStreamRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C0D4FF0ADA9C1E00B56805 /* IStreamRequest.h */; };
+		F42FBACC185A02CD00EFC5CF /* VProcessLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B546700BD758ED00AB38CB /* VProcessLauncher.h */; };
+		F42FBACD185A02CD00EFC5CF /* XWinProcessLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B5467F0BD7594800AB38CB /* XWinProcessLauncher.h */; };
+		F42FBACE185A02CD00EFC5CF /* VEnvironmentVariables.h in Headers */ = {isa = PBXBuildFile; fileRef = 15EE979B0EF27420006F4F1E /* VEnvironmentVariables.h */; };
+		F42FBACF185A02CD00EFC5CF /* VFileSystemNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 9383C31C115A572900E080E9 /* VFileSystemNotification.h */; };
+		F42FBAD0185A02CD00EFC5CF /* XMacFileSystemNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 4279BE18123E782C00B83C8C /* XMacFileSystemNotification.h */; };
+		F42FBAD1185A02CD00EFC5CF /* VProcessIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4238E7AB1247CB1900951270 /* VProcessIPC.h */; };
+		F42FBAD2185A02CD00EFC5CF /* XSysVIPC.h in Headers */ = {isa = PBXBuildFile; fileRef = F9807140124B87E80056791E /* XSysVIPC.h */; };
+		F42FBAD3185A02CD00EFC5CF /* VSharedMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = F980714A124B88080056791E /* VSharedMemory.h */; };
+		F42FBAD4185A02CD00EFC5CF /* VSharedSemaphore.h in Headers */ = {isa = PBXBuildFile; fileRef = F980714C124B88080056791E /* VSharedSemaphore.h */; };
+		F42FBAD5185A02CD00EFC5CF /* XPosixDaemon.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E517DE12685DE30088DAE9 /* XPosixDaemon.h */; };
+		F42FBAD6185A02CD00EFC5CF /* XPosixProcessLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E517E012685DE30088DAE9 /* XPosixProcessLauncher.h */; };
+		F42FBAD7185A02CD00EFC5CF /* CComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F44A5015DE7C57009D4CDB /* CComponent.h */; };
+		F42FBAD9185A02CD00EFC5CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		F42FBADB185A02CD00EFC5CF /* VSignal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832C308963FA300D45133 /* VSignal.cpp */; };
+		F42FBADC185A02CD00EFC5CF /* VDebugAttachments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832C908963FA400D45133 /* VDebugAttachments.cpp */; };
+		F42FBADD185A02CD00EFC5CF /* VDaemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832CB08963FA400D45133 /* VDaemon.cpp */; };
+		F42FBADE185A02CD00EFC5CF /* VComponentManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832CD08963FA400D45133 /* VComponentManager.cpp */; };
+		F42FBADF185A02CD00EFC5CF /* VCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832D208963FA400D45133 /* VCommand.cpp */; };
+		F42FBAE0185A02CD00EFC5CF /* VAttachment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832D408963FA400D45133 /* VAttachment.cpp */; };
+		F42FBAE1185A02CD00EFC5CF /* ICommandControler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021832D608963FA400D45133 /* ICommandControler.cpp */; };
+		F42FBAE2185A02CD00EFC5CF /* VProcessLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82B546710BD758ED00AB38CB /* VProcessLauncher.cpp */; };
+		F42FBAE3185A02CD00EFC5CF /* VEnvironmentVariables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15EE979A0EF27420006F4F1E /* VEnvironmentVariables.cpp */; };
+		F42FBAE4185A02CD00EFC5CF /* VFileSystemNotification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9383C31B115A572900E080E9 /* VFileSystemNotification.cpp */; };
+		F42FBAE5185A02CD00EFC5CF /* XMacFileSystemNotification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4279BE19123E782C00B83C8C /* XMacFileSystemNotification.cpp */; };
+		F42FBAE6185A02CD00EFC5CF /* VProcessIPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4238E7AA1247CB1900951270 /* VProcessIPC.cpp */; };
+		F42FBAE7185A02CD00EFC5CF /* XSysVIPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F980713F124B87E80056791E /* XSysVIPC.cpp */; };
+		F42FBAE8185A02CD00EFC5CF /* VSharedMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9807149124B88080056791E /* VSharedMemory.cpp */; };
+		F42FBAE9185A02CD00EFC5CF /* VSharedSemaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F980714B124B88080056791E /* VSharedSemaphore.cpp */; };
+		F42FBAEA185A02CD00EFC5CF /* XPosixDaemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9E517DD12685DE30088DAE9 /* XPosixDaemon.cpp */; };
+		F42FBAEB185A02CD00EFC5CF /* XPosixProcessLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9E517DF12685DE30088DAE9 /* XPosixProcessLauncher.cpp */; };
+		F42FBAEC185A02CD00EFC5CF /* XMacSleepNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90D2E7517D62DB8001D6189 /* XMacSleepNotifier.cpp */; };
+		F42FBAED185A02CD00EFC5CF /* VSleepNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90D2E8017D62E89001D6189 /* VSleepNotifier.cpp */; };
+		F42FBAEF185A02CD00EFC5CF /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D3A57317D8C60F00EC2A5B /* IOKit.framework */; };
+		F42FBAF0185A02CD00EFC5CF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D3A57117D8C60800EC2A5B /* CoreFoundation.framework */; };
+		F42FBAF2185A02CD00EFC5CF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA19350F3F9D3600EF41C9 /* CoreServices.framework */; };
+		F4CAFD49187DCF0100967A1B /* KernelDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DA1D0508C5D66D00932F12 /* KernelDebug.framework */; };
+		F90D2E7717D62DB8001D6189 /* XMacSleepNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90D2E7517D62DB8001D6189 /* XMacSleepNotifier.cpp */; };
+		F90D2E8217D62E89001D6189 /* VSleepNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90D2E8017D62E89001D6189 /* VSleepNotifier.cpp */; };
+		F9D3A57517D8C62300EC2A5B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D3A57117D8C60800EC2A5B /* CoreFoundation.framework */; };
+		F9D3A57617D8C62900EC2A5B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D3A57317D8C60F00EC2A5B /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12C145A209F624AA000F4880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9BBA8FD09BC8AC500F3DCFC;
+			remoteInfo = KernelLib;
+		};
+		39DA1D0408C5D66D00932F12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = Kernel;
+		};
+		39DA1D0608C5D66D00932F12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0235BC0C071EDC5200BEEE2E;
+			remoteInfo = M_APM;
+		};
+		6D9B7014183E4C05000691CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9B6FFC183E4714000691CB;
+			remoteInfo = "KernelLib x64";
+		};
+		F42FBAA3185A02A200EFC5CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4E1C3561859B83C005F1140;
+			remoteInfo = M_APM;
+		};
+		F42FBAFD185A02FC00EFC5CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E1C2481859B823005F1140;
+			remoteInfo = Kernel;
+		};
+		F46431BA113E7CA700639653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F46431A2113E7C4800639653;
+			remoteInfo = "M_APM x64";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		020C61B406F0C0B10096EBBD /* VKernelIPCPrecompiled.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VKernelIPCPrecompiled.h; sourceTree = "<group>"; };
+		021832B808963FA300D45133 /* XWinProcessMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = XWinProcessMain.h; sourceTree = "<group>"; };
+		021832BB08963FA300D45133 /* XWinDaemon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = XWinDaemon.h; sourceTree = "<group>"; };
+		021832BC08963FA300D45133 /* XWinDaemon.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = XWinDaemon.cpp; sourceTree = "<group>"; };
+		021832BD08963FA300D45133 /* XMacProcessMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = XMacProcessMain.h; sourceTree = "<group>"; };
+		021832C208963FA300D45133 /* VSignal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VSignal.h; sourceTree = "<group>"; };
+		021832C308963FA300D45133 /* VSignal.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VSignal.cpp; sourceTree = "<group>"; };
+		021832C408963FA300D45133 /* VProcessMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VProcessMain.h; sourceTree = "<group>"; };
+		021832C508963FA300D45133 /* VPluginImp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VPluginImp.h; sourceTree = "<group>"; };
+		021832C808963FA400D45133 /* VDebugAttachments.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VDebugAttachments.h; sourceTree = "<group>"; };
+		021832C908963FA400D45133 /* VDebugAttachments.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VDebugAttachments.cpp; sourceTree = "<group>"; };
+		021832CA08963FA400D45133 /* VDaemon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VDaemon.h; sourceTree = "<group>"; };
+		021832CB08963FA400D45133 /* VDaemon.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VDaemon.cpp; sourceTree = "<group>"; };
+		021832CC08963FA400D45133 /* VComponentManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VComponentManager.h; sourceTree = "<group>"; };
+		021832CD08963FA400D45133 /* VComponentManager.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VComponentManager.cpp; sourceTree = "<group>"; };
+		021832CE08963FA400D45133 /* VComponentLibrary.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VComponentLibrary.h; sourceTree = "<group>"; };
+		021832CF08963FA400D45133 /* VComponentLibrary.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VComponentLibrary.cpp; sourceTree = "<group>"; };
+		021832D008963FA400D45133 /* VComponentImp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VComponentImp.h; sourceTree = "<group>"; };
+		021832D108963FA400D45133 /* VCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VCommand.h; sourceTree = "<group>"; };
+		021832D208963FA400D45133 /* VCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VCommand.cpp; sourceTree = "<group>"; };
+		021832D308963FA400D45133 /* VAttachment.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VAttachment.h; sourceTree = "<group>"; };
+		021832D408963FA400D45133 /* VAttachment.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VAttachment.cpp; sourceTree = "<group>"; };
+		021832D508963FA400D45133 /* ICommandControler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ICommandControler.h; sourceTree = "<group>"; };
+		021832D608963FA400D45133 /* ICommandControler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ICommandControler.cpp; sourceTree = "<group>"; };
+		021832D708963FA400D45133 /* CPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CPlugin.h; sourceTree = "<group>"; };
+		02416A4106F061BD00F0206C /* VKernelIPCFlags.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VKernelIPCFlags.h; sourceTree = "<group>"; };
+		02416A4206F061BD00F0206C /* VKernelIPCTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VKernelIPCTypes.h; sourceTree = "<group>"; };
+		02539E4206EEFC430039845E /* VKernelIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKernelIPC.h; path = ../../VKernelIPC.h; sourceTree = SOURCE_ROOT; };
+		02BB65D206F9C91A0074C123 /* VKernelIPCErrors.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VKernelIPCErrors.h; sourceTree = "<group>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		15EE979A0EF27420006F4F1E /* VEnvironmentVariables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VEnvironmentVariables.cpp; sourceTree = "<group>"; };
+		15EE979B0EF27420006F4F1E /* VEnvironmentVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEnvironmentVariables.h; sourceTree = "<group>"; };
+		32BAE0B70371A74B00C91783 /* KernelIPC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KernelIPC_Prefix.pch; path = ../Projects/Xcode/KernelIPC_Prefix.pch; sourceTree = "<group>"; };
+		3957A57C0C29264E00794CD3 /* xtoolbox_performance.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_performance.xcconfig; path = ../../../xtoolbox_performance.xcconfig; sourceTree = SOURCE_ROOT; };
+		39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../../../Kernel/Projects/Xcode/Kernel.xcodeproj; sourceTree = SOURCE_ROOT; };
+		4238E7AA1247CB1900951270 /* VProcessIPC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VProcessIPC.cpp; sourceTree = "<group>"; };
+		4238E7AB1247CB1900951270 /* VProcessIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VProcessIPC.h; sourceTree = "<group>"; };
+		4279BE18123E782C00B83C8C /* XMacFileSystemNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMacFileSystemNotification.h; sourceTree = "<group>"; };
+		4279BE19123E782C00B83C8C /* XMacFileSystemNotification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMacFileSystemNotification.cpp; sourceTree = "<group>"; };
+		4279BE25123E78B800B83C8C /* XWinFileSystemNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWinFileSystemNotification.h; sourceTree = "<group>"; };
+		4279BE26123E78B800B83C8C /* XWinFileSystemNotification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XWinFileSystemNotification.cpp; sourceTree = "<group>"; };
+		42C0D4FF0ADA9C1E00B56805 /* IStreamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IStreamRequest.h; path = ../../Sources/IStreamRequest.h; sourceTree = SOURCE_ROOT; };
+		42F44A5015DE7C57009D4CDB /* CComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CComponent.h; sourceTree = "<group>"; };
+		6D101C1A18A281FD0098C564 /* VCommandLineParserHelp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VCommandLineParserHelp.cpp; sourceTree = "<group>"; };
+		6D17175118AE718E00305B81 /* VCommandLineParserExtension.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VCommandLineParserExtension.cpp; sourceTree = "<group>"; };
+		6D9B6F1D183E46BA000691CB /* libKernelIPCDebug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKernelIPCDebug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCA19350F3F9D3600EF41C9 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		6DF6AFC81883E90500A96FD7 /* VCommandLineParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VCommandLineParser.cpp; sourceTree = "<group>"; };
+		6DF6AFC91883E90500A96FD7 /* VCommandLineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCommandLineParser.h; sourceTree = "<group>"; };
+		6DF6AFCB1883E90600A96FD7 /* VCommandLineParserExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCommandLineParserExtension.h; sourceTree = "<group>"; };
+		6DF6AFCC1883E90600A96FD7 /* VCommandLineParserOption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VCommandLineParserOption.cpp; sourceTree = "<group>"; };
+		6DF6AFCD1883E90600A96FD7 /* VCommandLineParserOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCommandLineParserOption.h; sourceTree = "<group>"; };
+		82B546700BD758ED00AB38CB /* VProcessLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VProcessLauncher.h; sourceTree = "<group>"; };
+		82B546710BD758ED00AB38CB /* VProcessLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VProcessLauncher.cpp; sourceTree = "<group>"; };
+		82B5467F0BD7594800AB38CB /* XWinProcessLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWinProcessLauncher.h; sourceTree = "<group>"; };
+		82B546800BD7594800AB38CB /* XWinProcessLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XWinProcessLauncher.cpp; sourceTree = "<group>"; };
+		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9383C31B115A572900E080E9 /* VFileSystemNotification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VFileSystemNotification.cpp; sourceTree = "<group>"; };
+		9383C31C115A572900E080E9 /* VFileSystemNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFileSystemNotification.h; sourceTree = "<group>"; };
+		B54AA6920BEA453E005240A2 /* libKernelIPCDebug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKernelIPCDebug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24D19EE0B7BA911007D174C /* xtoolbox_base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_base.xcconfig; path = ../../../xtoolbox_base.xcconfig; sourceTree = SOURCE_ROOT; };
+		D24D19EF0B7BA911007D174C /* xtoolbox_beta.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_beta.xcconfig; path = ../../../xtoolbox_beta.xcconfig; sourceTree = SOURCE_ROOT; };
+		D24D19F00B7BA911007D174C /* xtoolbox_debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_debug.xcconfig; path = ../../../xtoolbox_debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		D24D19F10B7BA911007D174C /* xtoolbox_release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_release.xcconfig; path = ../../../xtoolbox_release.xcconfig; sourceTree = SOURCE_ROOT; };
+		D24D1CD80B7C8FF1007D174C /* xtoolbox_coverage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_coverage.xcconfig; path = ../../../xtoolbox_coverage.xcconfig; sourceTree = SOURCE_ROOT; };
+		F42FBAFA185A02CD00EFC5CF /* KernelIPCDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KernelIPCDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F46431FE113E7CE000639653 /* xtoolbox_x64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_x64.xcconfig; path = ../../../xtoolbox_x64.xcconfig; sourceTree = SOURCE_ROOT; };
+		F90D2E6417D62CCF001D6189 /* VSleepNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSleepNotifier.h; sourceTree = "<group>"; };
+		F90D2E6917D62D10001D6189 /* XMacSleepNotifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMacSleepNotifier.h; sourceTree = "<group>"; };
+		F90D2E7517D62DB8001D6189 /* XMacSleepNotifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMacSleepNotifier.cpp; sourceTree = "<group>"; };
+		F90D2E8017D62E89001D6189 /* VSleepNotifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VSleepNotifier.cpp; sourceTree = "<group>"; };
+		F9498D9D125E0259007FD333 /* XLinuxFileSystemNotification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XLinuxFileSystemNotification.cpp; sourceTree = "<group>"; };
+		F9498D9E125E0259007FD333 /* XLinuxFileSystemNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLinuxFileSystemNotification.h; sourceTree = "<group>"; };
+		F980713F124B87E80056791E /* XSysVIPC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XSysVIPC.cpp; sourceTree = "<group>"; };
+		F9807140124B87E80056791E /* XSysVIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSysVIPC.h; sourceTree = "<group>"; };
+		F9807147124B87F60056791E /* XWinIPC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XWinIPC.cpp; sourceTree = "<group>"; };
+		F9807148124B87F60056791E /* XWinIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWinIPC.h; sourceTree = "<group>"; };
+		F9807149124B88080056791E /* VSharedMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VSharedMemory.cpp; sourceTree = "<group>"; };
+		F980714A124B88080056791E /* VSharedMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSharedMemory.h; sourceTree = "<group>"; };
+		F980714B124B88080056791E /* VSharedSemaphore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VSharedSemaphore.cpp; sourceTree = "<group>"; };
+		F980714C124B88080056791E /* VSharedSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSharedSemaphore.h; sourceTree = "<group>"; };
+		F9D1B6C712436B9900E98EC6 /* xtoolbox_BSD.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_BSD.xcconfig; path = ../../../xtoolbox_BSD.xcconfig; sourceTree = SOURCE_ROOT; };
+		F9D3A57117D8C60800EC2A5B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F9D3A57317D8C60F00EC2A5B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F9D3A57717D8C63100EC2A5B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F9D3A57917D8C63700EC2A5B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		F9E517DD12685DE30088DAE9 /* XPosixDaemon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPosixDaemon.cpp; sourceTree = "<group>"; };
+		F9E517DE12685DE30088DAE9 /* XPosixDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPosixDaemon.h; sourceTree = "<group>"; };
+		F9E517DF12685DE30088DAE9 /* XPosixProcessLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPosixProcessLauncher.cpp; sourceTree = "<group>"; };
+		F9E517E012685DE30088DAE9 /* XPosixProcessLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPosixProcessLauncher.h; sourceTree = "<group>"; };
+		F9E5184B1268900E0088DAE9 /* XLinuxProcessMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLinuxProcessMain.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D9B6F13183E46BA000691CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9B6F14183E46BA000691CB /* IOKit.framework in Frameworks */,
+				6D9B6F15183E46BA000691CB /* CoreFoundation.framework in Frameworks */,
+				6D9B6F16183E46BA000691CB /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54AA6900BEA453E005240A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D3A57617D8C62900EC2A5B /* IOKit.framework in Frameworks */,
+				F9D3A57517D8C62300EC2A5B /* CoreFoundation.framework in Frameworks */,
+				6DCA19370F3F9D3600EF41C9 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42FBAEE185A02CD00EFC5CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CAFD49187DCF0100967A1B /* KernelDebug.framework in Frameworks */,
+				F42FBAEF185A02CD00EFC5CF /* IOKit.framework in Frameworks */,
+				F42FBAF0185A02CD00EFC5CF /* CoreFoundation.framework in Frameworks */,
+				F42FBAF2185A02CD00EFC5CF /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		021832F808963FCA00D45133 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				021832D408963FA400D45133 /* VAttachment.cpp */,
+				021832D308963FA400D45133 /* VAttachment.h */,
+				021832C908963FA400D45133 /* VDebugAttachments.cpp */,
+				021832C808963FA400D45133 /* VDebugAttachments.h */,
+				021832D608963FA400D45133 /* ICommandControler.cpp */,
+				021832D508963FA400D45133 /* ICommandControler.h */,
+				021832D208963FA400D45133 /* VCommand.cpp */,
+				021832D108963FA400D45133 /* VCommand.h */,
+				021832C308963FA300D45133 /* VSignal.cpp */,
+				021832C208963FA300D45133 /* VSignal.h */,
+			);
+			name = Communication;
+			sourceTree = "<group>";
+		};
+		021832F908963FD100D45133 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				42F44A5015DE7C57009D4CDB /* CComponent.h */,
+				021832CD08963FA400D45133 /* VComponentManager.cpp */,
+				021832CC08963FA400D45133 /* VComponentManager.h */,
+				021832CF08963FA400D45133 /* VComponentLibrary.cpp */,
+				021832CE08963FA400D45133 /* VComponentLibrary.h */,
+				021832D008963FA400D45133 /* VComponentImp.h */,
+				021832D708963FA400D45133 /* CPlugin.h */,
+				021832C508963FA300D45133 /* VPluginImp.h */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		021832FA08963FDD00D45133 /* Process */ = {
+			isa = PBXGroup;
+			children = (
+				F9E517C712685B560088DAE9 /* Posix (Mac & Linux) */,
+				F9E5175612684D380088DAE9 /* Linux */,
+				F9E5175712684D5C0088DAE9 /* Mac */,
+				F9E5175812684D640088DAE9 /* Windows */,
+				4238E7AA1247CB1900951270 /* VProcessIPC.cpp */,
+				4238E7AB1247CB1900951270 /* VProcessIPC.h */,
+				021832CB08963FA400D45133 /* VDaemon.cpp */,
+				021832CA08963FA400D45133 /* VDaemon.h */,
+				15EE979A0EF27420006F4F1E /* VEnvironmentVariables.cpp */,
+				15EE979B0EF27420006F4F1E /* VEnvironmentVariables.h */,
+				021832C408963FA300D45133 /* VProcessMain.h */,
+				82B546700BD758ED00AB38CB /* VProcessLauncher.h */,
+				82B546710BD758ED00AB38CB /* VProcessLauncher.cpp */,
+			);
+			name = Process;
+			sourceTree = "<group>";
+		};
+		02416A6D06F061C900F0206C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				02416A4106F061BD00F0206C /* VKernelIPCFlags.h */,
+				02416A4206F061BD00F0206C /* VKernelIPCTypes.h */,
+				02BB65D206F9C91A0074C123 /* VKernelIPCErrors.h */,
+				020C61B406F0C0B10096EBBD /* VKernelIPCPrecompiled.h */,
+				32BAE0B70371A74B00C91783 /* KernelIPC_Prefix.pch */,
+			);
+			name = Headers;
+			path = ../../Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B54AA6920BEA453E005240A2 /* libKernelIPCDebug.a */,
+				6D9B6F1D183E46BA000691CB /* libKernelIPCDebug.a */,
+				F42FBAFA185A02CD00EFC5CF /* KernelIPCDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Kernel */ = {
+			isa = PBXGroup;
+			children = (
+				F9D3A57917D8C63700EC2A5B /* IOKit.framework */,
+				F9D3A57717D8C63100EC2A5B /* CoreFoundation.framework */,
+				F9D3A57317D8C60F00EC2A5B /* IOKit.framework */,
+				F9D3A57117D8C60800EC2A5B /* CoreFoundation.framework */,
+				D24D19EA0B7BA8FC007D174C /* config */,
+				39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */,
+				02539E4206EEFC430039845E /* VKernelIPC.h */,
+				02416A6D06F061C900F0206C /* Headers */,
+				08FB77ACFE841707C02AAC07 /* Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+				42C0D4FF0ADA9C1E00B56805 /* IStreamRequest.h */,
+			);
+			name = Kernel;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DCA19350F3F9D3600EF41C9 /* CoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D07F2C70486CC7A007CD1D0 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6AFC71883E58000A96FD7 /* Command Line Parser */,
+				F980713C124B87B10056791E /* Semaphore and Shared Memory */,
+				9383C318115A571100E080E9 /* File System Notifications */,
+				F90D2E6017D62BF9001D6189 /* Sleep Notifications */,
+				021832F808963FCA00D45133 /* Communication */,
+				021832F908963FD100D45133 /* Components */,
+				021832FA08963FDD00D45133 /* Process */,
+			);
+			name = Sources;
+			path = ../../Sources;
+			sourceTree = SOURCE_ROOT;
+			usesTabs = 1;
+		};
+		39DA1CFF08C5D66D00932F12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12C145A309F624AA000F4880 /* libKernelDebug.a */,
+				39DA1D0708C5D66D00932F12 /* libM_APMDebug.a */,
+				F46431BB113E7CA700639653 /* libM_APMDebug.a */,
+				6D9B7015183E4C05000691CB /* libKernelDebug.a */,
+				F42FBAA4185A02A200EFC5CF /* libM_APMDebug.a */,
+				39DA1D0508C5D66D00932F12 /* KernelDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DF6AFC71883E58000A96FD7 /* Command Line Parser */ = {
+			isa = PBXGroup;
+			children = (
+				6D17175118AE718E00305B81 /* VCommandLineParserExtension.cpp */,
+				6D101C1A18A281FD0098C564 /* VCommandLineParserHelp.cpp */,
+				6DF6AFC81883E90500A96FD7 /* VCommandLineParser.cpp */,
+				6DF6AFC91883E90500A96FD7 /* VCommandLineParser.h */,
+				6DF6AFCB1883E90600A96FD7 /* VCommandLineParserExtension.h */,
+				6DF6AFCC1883E90600A96FD7 /* VCommandLineParserOption.cpp */,
+				6DF6AFCD1883E90600A96FD7 /* VCommandLineParserOption.h */,
+			);
+			name = "Command Line Parser";
+			sourceTree = "<group>";
+		};
+		9383C318115A571100E080E9 /* File System Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				F9498D9C125E0234007FD333 /* Linux */,
+				F9498D9B125E0224007FD333 /* Win */,
+				F9498D9A125E0212007FD333 /* Mac */,
+				9383C31B115A572900E080E9 /* VFileSystemNotification.cpp */,
+				9383C31C115A572900E080E9 /* VFileSystemNotification.h */,
+			);
+			name = "File System Notifications";
+			sourceTree = "<group>";
+		};
+		D24D19EA0B7BA8FC007D174C /* config */ = {
+			isa = PBXGroup;
+			children = (
+				F9D1B6C712436B9900E98EC6 /* xtoolbox_BSD.xcconfig */,
+				F46431FE113E7CE000639653 /* xtoolbox_x64.xcconfig */,
+				D24D19EE0B7BA911007D174C /* xtoolbox_base.xcconfig */,
+				D24D19EF0B7BA911007D174C /* xtoolbox_beta.xcconfig */,
+				D24D1CD80B7C8FF1007D174C /* xtoolbox_coverage.xcconfig */,
+				D24D19F00B7BA911007D174C /* xtoolbox_debug.xcconfig */,
+				D24D19F10B7BA911007D174C /* xtoolbox_release.xcconfig */,
+				3957A57C0C29264E00794CD3 /* xtoolbox_performance.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		F90D2E6017D62BF9001D6189 /* Sleep Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				F90D2E7417D62D9B001D6189 /* Mac */,
+				F90D2E6417D62CCF001D6189 /* VSleepNotifier.h */,
+				F90D2E8017D62E89001D6189 /* VSleepNotifier.cpp */,
+			);
+			name = "Sleep Notifications";
+			sourceTree = "<group>";
+		};
+		F90D2E7417D62D9B001D6189 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				F90D2E6917D62D10001D6189 /* XMacSleepNotifier.h */,
+				F90D2E7517D62DB8001D6189 /* XMacSleepNotifier.cpp */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		F9498D9A125E0212007FD333 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				4279BE18123E782C00B83C8C /* XMacFileSystemNotification.h */,
+				4279BE19123E782C00B83C8C /* XMacFileSystemNotification.cpp */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		F9498D9B125E0224007FD333 /* Win */ = {
+			isa = PBXGroup;
+			children = (
+				4279BE25123E78B800B83C8C /* XWinFileSystemNotification.h */,
+				4279BE26123E78B800B83C8C /* XWinFileSystemNotification.cpp */,
+			);
+			name = Win;
+			sourceTree = "<group>";
+		};
+		F9498D9C125E0234007FD333 /* Linux */ = {
+			isa = PBXGroup;
+			children = (
+				F9498D9D125E0259007FD333 /* XLinuxFileSystemNotification.cpp */,
+				F9498D9E125E0259007FD333 /* XLinuxFileSystemNotification.h */,
+			);
+			name = Linux;
+			sourceTree = "<group>";
+		};
+		F980713C124B87B10056791E /* Semaphore and Shared Memory */ = {
+			isa = PBXGroup;
+			children = (
+				F980713D124B87C50056791E /* System V (Mac & Linux) */,
+				F980713E124B87D00056791E /* Win */,
+				F980714C124B88080056791E /* VSharedSemaphore.h */,
+				F980714B124B88080056791E /* VSharedSemaphore.cpp */,
+				F980714A124B88080056791E /* VSharedMemory.h */,
+				F9807149124B88080056791E /* VSharedMemory.cpp */,
+			);
+			name = "Semaphore and Shared Memory";
+			sourceTree = "<group>";
+		};
+		F980713D124B87C50056791E /* System V (Mac & Linux) */ = {
+			isa = PBXGroup;
+			children = (
+				F980713F124B87E80056791E /* XSysVIPC.cpp */,
+				F9807140124B87E80056791E /* XSysVIPC.h */,
+			);
+			name = "System V (Mac & Linux)";
+			sourceTree = "<group>";
+		};
+		F980713E124B87D00056791E /* Win */ = {
+			isa = PBXGroup;
+			children = (
+				F9807147124B87F60056791E /* XWinIPC.cpp */,
+				F9807148124B87F60056791E /* XWinIPC.h */,
+			);
+			name = Win;
+			sourceTree = "<group>";
+		};
+		F9E5175612684D380088DAE9 /* Linux */ = {
+			isa = PBXGroup;
+			children = (
+				F9E5184B1268900E0088DAE9 /* XLinuxProcessMain.h */,
+			);
+			name = Linux;
+			sourceTree = "<group>";
+		};
+		F9E5175712684D5C0088DAE9 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				021832BD08963FA300D45133 /* XMacProcessMain.h */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		F9E5175812684D640088DAE9 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				021832BC08963FA300D45133 /* XWinDaemon.cpp */,
+				021832BB08963FA300D45133 /* XWinDaemon.h */,
+				82B546800BD7594800AB38CB /* XWinProcessLauncher.cpp */,
+				82B5467F0BD7594800AB38CB /* XWinProcessLauncher.h */,
+				021832B808963FA300D45133 /* XWinProcessMain.h */,
+			);
+			name = Windows;
+			sourceTree = "<group>";
+		};
+		F9E517C712685B560088DAE9 /* Posix (Mac & Linux) */ = {
+			isa = PBXGroup;
+			children = (
+				F9E517DD12685DE30088DAE9 /* XPosixDaemon.cpp */,
+				F9E517DE12685DE30088DAE9 /* XPosixDaemon.h */,
+				F9E517DF12685DE30088DAE9 /* XPosixProcessLauncher.cpp */,
+				F9E517E012685DE30088DAE9 /* XPosixProcessLauncher.h */,
+			);
+			name = "Posix (Mac & Linux)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6D9B6EEE183E46BA000691CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9B6EEF183E46BA000691CB /* KernelIPC_Prefix.pch in Headers */,
+				6D9B6EF0183E46BA000691CB /* VKernelIPC.h in Headers */,
+				6D9B6EF1183E46BA000691CB /* VKernelIPCFlags.h in Headers */,
+				6D9B6EF2183E46BA000691CB /* VKernelIPCTypes.h in Headers */,
+				6D9B6EF3183E46BA000691CB /* VKernelIPCPrecompiled.h in Headers */,
+				6D9B6EF4183E46BA000691CB /* VKernelIPCErrors.h in Headers */,
+				6D9B6EF5183E46BA000691CB /* XMacProcessMain.h in Headers */,
+				6D9B6EF6183E46BA000691CB /* VSignal.h in Headers */,
+				6D9B6EF7183E46BA000691CB /* VProcessMain.h in Headers */,
+				6D9B6EF8183E46BA000691CB /* VPluginImp.h in Headers */,
+				6D9B6EF9183E46BA000691CB /* VDebugAttachments.h in Headers */,
+				6D9B6EFA183E46BA000691CB /* VDaemon.h in Headers */,
+				6D9B6EFB183E46BA000691CB /* VComponentManager.h in Headers */,
+				6D9B6EFC183E46BA000691CB /* VComponentLibrary.h in Headers */,
+				6D9B6EFD183E46BA000691CB /* VComponentImp.h in Headers */,
+				6D9B6EFE183E46BA000691CB /* VCommand.h in Headers */,
+				6DF6AFD31883E90600A96FD7 /* VCommandLineParser.h in Headers */,
+				6D9B6EFF183E46BA000691CB /* VAttachment.h in Headers */,
+				6DF6AFDF1883E90600A96FD7 /* VCommandLineParserOption.h in Headers */,
+				6D9B6F00183E46BA000691CB /* ICommandControler.h in Headers */,
+				6D9B6F01183E46BA000691CB /* CPlugin.h in Headers */,
+				6D9B6F02183E46BA000691CB /* IStreamRequest.h in Headers */,
+				6DF6AFD91883E90600A96FD7 /* VCommandLineParserExtension.h in Headers */,
+				6D9B6F03183E46BA000691CB /* VProcessLauncher.h in Headers */,
+				6D9B6F04183E46BA000691CB /* XWinProcessLauncher.h in Headers */,
+				6D9B6F05183E46BA000691CB /* XMacFileSystemNotification.h in Headers */,
+				6D9B6F06183E46BA000691CB /* VProcessIPC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54AA68E0BEA453E005240A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54AA75C0BEA4630005240A2 /* KernelIPC_Prefix.pch in Headers */,
+				B54AA75D0BEA4630005240A2 /* VKernelIPC.h in Headers */,
+				B54AA75E0BEA4630005240A2 /* VKernelIPCFlags.h in Headers */,
+				B54AA75F0BEA4630005240A2 /* VKernelIPCTypes.h in Headers */,
+				B54AA7600BEA4630005240A2 /* VKernelIPCPrecompiled.h in Headers */,
+				B54AA7610BEA4630005240A2 /* VKernelIPCErrors.h in Headers */,
+				B54AA7620BEA4630005240A2 /* XMacProcessMain.h in Headers */,
+				B54AA7650BEA4630005240A2 /* VSignal.h in Headers */,
+				B54AA7660BEA4630005240A2 /* VProcessMain.h in Headers */,
+				B54AA7670BEA4630005240A2 /* VPluginImp.h in Headers */,
+				B54AA7690BEA4630005240A2 /* VDebugAttachments.h in Headers */,
+				B54AA76A0BEA4630005240A2 /* VDaemon.h in Headers */,
+				B54AA76B0BEA4630005240A2 /* VComponentManager.h in Headers */,
+				B54AA76C0BEA4630005240A2 /* VComponentLibrary.h in Headers */,
+				B54AA76D0BEA4630005240A2 /* VComponentImp.h in Headers */,
+				B54AA76E0BEA4630005240A2 /* VCommand.h in Headers */,
+				6DF6AFD21883E90600A96FD7 /* VCommandLineParser.h in Headers */,
+				B54AA76F0BEA4630005240A2 /* VAttachment.h in Headers */,
+				6DF6AFDE1883E90600A96FD7 /* VCommandLineParserOption.h in Headers */,
+				B54AA7700BEA4630005240A2 /* ICommandControler.h in Headers */,
+				B54AA7710BEA4630005240A2 /* CPlugin.h in Headers */,
+				B54AA7720BEA4630005240A2 /* IStreamRequest.h in Headers */,
+				6DF6AFD81883E90600A96FD7 /* VCommandLineParserExtension.h in Headers */,
+				B54AA7730BEA4630005240A2 /* VProcessLauncher.h in Headers */,
+				B54AA7750BEA4630005240A2 /* XWinProcessLauncher.h in Headers */,
+				4279BE1A123E782C00B83C8C /* XMacFileSystemNotification.h in Headers */,
+				4238E7B11247CB1900951270 /* VProcessIPC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42FBAB7185A02CD00EFC5CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42FBAB8185A02CD00EFC5CF /* KernelIPC_Prefix.pch in Headers */,
+				F42FBAB9185A02CD00EFC5CF /* VKernelIPC.h in Headers */,
+				F42FBABA185A02CD00EFC5CF /* VKernelIPCFlags.h in Headers */,
+				F42FBABB185A02CD00EFC5CF /* VKernelIPCTypes.h in Headers */,
+				F42FBABC185A02CD00EFC5CF /* VKernelIPCPrecompiled.h in Headers */,
+				F42FBABD185A02CD00EFC5CF /* VKernelIPCErrors.h in Headers */,
+				F42FBABE185A02CD00EFC5CF /* XMacProcessMain.h in Headers */,
+				F42FBABF185A02CD00EFC5CF /* VSignal.h in Headers */,
+				F42FBAC0185A02CD00EFC5CF /* VProcessMain.h in Headers */,
+				F42FBAC1185A02CD00EFC5CF /* VPluginImp.h in Headers */,
+				F42FBAC2185A02CD00EFC5CF /* VDebugAttachments.h in Headers */,
+				F42FBAC3185A02CD00EFC5CF /* VDaemon.h in Headers */,
+				F42FBAC4185A02CD00EFC5CF /* VComponentManager.h in Headers */,
+				F42FBAC5185A02CD00EFC5CF /* VComponentLibrary.h in Headers */,
+				F42FBAC6185A02CD00EFC5CF /* VComponentImp.h in Headers */,
+				6DF6AFE01883E90600A96FD7 /* VCommandLineParserOption.h in Headers */,
+				F42FBAC7185A02CD00EFC5CF /* VCommand.h in Headers */,
+				F42FBAC8185A02CD00EFC5CF /* VAttachment.h in Headers */,
+				F42FBAC9185A02CD00EFC5CF /* ICommandControler.h in Headers */,
+				F42FBACA185A02CD00EFC5CF /* CPlugin.h in Headers */,
+				F42FBACB185A02CD00EFC5CF /* IStreamRequest.h in Headers */,
+				F42FBACC185A02CD00EFC5CF /* VProcessLauncher.h in Headers */,
+				F42FBACD185A02CD00EFC5CF /* XWinProcessLauncher.h in Headers */,
+				F42FBACE185A02CD00EFC5CF /* VEnvironmentVariables.h in Headers */,
+				6DF6AFDA1883E90600A96FD7 /* VCommandLineParserExtension.h in Headers */,
+				F42FBACF185A02CD00EFC5CF /* VFileSystemNotification.h in Headers */,
+				F42FBAD0185A02CD00EFC5CF /* XMacFileSystemNotification.h in Headers */,
+				F42FBAD1185A02CD00EFC5CF /* VProcessIPC.h in Headers */,
+				F42FBAD2185A02CD00EFC5CF /* XSysVIPC.h in Headers */,
+				F42FBAD3185A02CD00EFC5CF /* VSharedMemory.h in Headers */,
+				F42FBAD4185A02CD00EFC5CF /* VSharedSemaphore.h in Headers */,
+				F42FBAD5185A02CD00EFC5CF /* XPosixDaemon.h in Headers */,
+				6DF6AFD41883E90600A96FD7 /* VCommandLineParser.h in Headers */,
+				F42FBAD6185A02CD00EFC5CF /* XPosixProcessLauncher.h in Headers */,
+				F42FBAD7185A02CD00EFC5CF /* CComponent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D9B6EED183E46BA000691CB /* KernelIPCLib x64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D9B6F17183E46BA000691CB /* Build configuration list for PBXNativeTarget "KernelIPCLib x64" */;
+			buildPhases = (
+				6D9B6EEE183E46BA000691CB /* Headers */,
+				6D9B6F07183E46BA000691CB /* Sources */,
+				6D9B6F13183E46BA000691CB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KernelIPCLib x64";
+			productName = KernelIPCLib;
+			productReference = 6D9B6F1D183E46BA000691CB /* libKernelIPCDebug.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B54AA6910BEA453E005240A2 /* KernelIPCLib i386 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B54AA6930BEA455D005240A2 /* Build configuration list for PBXNativeTarget "KernelIPCLib i386" */;
+			buildPhases = (
+				B54AA68E0BEA453E005240A2 /* Headers */,
+				B54AA68F0BEA453E005240A2 /* Sources */,
+				B54AA6900BEA453E005240A2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KernelIPCLib i386";
+			productName = KernelIPCLib;
+			productReference = B54AA6920BEA453E005240A2 /* libKernelIPCDebug.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F42FBAB4185A02CD00EFC5CF /* KernelIPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42FBAF4185A02CD00EFC5CF /* Build configuration list for PBXNativeTarget "KernelIPC" */;
+			buildPhases = (
+				F42FBAB7185A02CD00EFC5CF /* Headers */,
+				F42FBAD8185A02CD00EFC5CF /* Resources */,
+				F42FBADA185A02CD00EFC5CF /* Sources */,
+				F42FBAEE185A02CD00EFC5CF /* Frameworks */,
+				F42FBAF3185A02CD00EFC5CF /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42FBAFE185A02FC00EFC5CF /* PBXTargetDependency */,
+			);
+			name = KernelIPC;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = Kernel;
+			productReference = F42FBAFA185A02CD00EFC5CF /* KernelIPCDebug.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 02FC128F088FC55F00C1F8D4 /* Build configuration list for PBXProject "KernelIPC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Kernel */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 39DA1CFF08C5D66D00932F12 /* Products */;
+					ProjectRef = 39DA1CFE08C5D66D00932F12 /* Kernel.xcodeproj */;
+				},
+			);
+			projectRoot = ../..;
+			targets = (
+				B54AA6910BEA453E005240A2 /* KernelIPCLib i386 */,
+				6D9B6EED183E46BA000691CB /* KernelIPCLib x64 */,
+				F42FBAB4185A02CD00EFC5CF /* KernelIPC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		12C145A309F624AA000F4880 /* libKernelDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelDebug.a;
+			remoteRef = 12C145A209F624AA000F4880 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39DA1D0508C5D66D00932F12 /* KernelDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KernelDebug.framework;
+			remoteRef = 39DA1D0408C5D66D00932F12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39DA1D0708C5D66D00932F12 /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = 39DA1D0608C5D66D00932F12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9B7015183E4C05000691CB /* libKernelDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelDebug.a;
+			remoteRef = 6D9B7014183E4C05000691CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F42FBAA4185A02A200EFC5CF /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = F42FBAA3185A02A200EFC5CF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F46431BB113E7CA700639653 /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = F46431BA113E7CA700639653 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F42FBAD8185A02CD00EFC5CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42FBAD9185A02CD00EFC5CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F42FBAF3185A02CD00EFC5CF /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D9B6F07183E46BA000691CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF545E118A2852B0057947F /* VCommandLineParserHelp.cpp in Sources */,
+				6D9B6F08183E46BA000691CB /* VSignal.cpp in Sources */,
+				6DF6AFDC1883E90600A96FD7 /* VCommandLineParserOption.cpp in Sources */,
+				6DF6AFD01883E90600A96FD7 /* VCommandLineParser.cpp in Sources */,
+				6D9B6F09183E46BA000691CB /* VDebugAttachments.cpp in Sources */,
+				6D9B6F0A183E46BA000691CB /* VDaemon.cpp in Sources */,
+				6D9B6F0B183E46BA000691CB /* VComponentManager.cpp in Sources */,
+				6D9B6F0C183E46BA000691CB /* VCommand.cpp in Sources */,
+				6D9B6F0D183E46BA000691CB /* VAttachment.cpp in Sources */,
+				6D9B6F0E183E46BA000691CB /* ICommandControler.cpp in Sources */,
+				6D9B6F0F183E46BA000691CB /* VProcessLauncher.cpp in Sources */,
+				6D9B6F10183E46BA000691CB /* VProcessIPC.cpp in Sources */,
+				6DE1D30F18AE72AC00EE2D76 /* VCommandLineParserExtension.cpp in Sources */,
+				6D9B6F11183E46BA000691CB /* XMacSleepNotifier.cpp in Sources */,
+				6D9B6F12183E46BA000691CB /* VSleepNotifier.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54AA68F0BEA453E005240A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D101C1B18A281FD0098C564 /* VCommandLineParserHelp.cpp in Sources */,
+				B54AA7780BEA4657005240A2 /* VSignal.cpp in Sources */,
+				6DF6AFDB1883E90600A96FD7 /* VCommandLineParserOption.cpp in Sources */,
+				6DF6AFCF1883E90600A96FD7 /* VCommandLineParser.cpp in Sources */,
+				B54AA77A0BEA4657005240A2 /* VDebugAttachments.cpp in Sources */,
+				B54AA77B0BEA4657005240A2 /* VDaemon.cpp in Sources */,
+				B54AA77C0BEA4657005240A2 /* VComponentManager.cpp in Sources */,
+				B54AA77D0BEA4657005240A2 /* VCommand.cpp in Sources */,
+				B54AA77E0BEA4657005240A2 /* VAttachment.cpp in Sources */,
+				B54AA77F0BEA4657005240A2 /* ICommandControler.cpp in Sources */,
+				B54AA7800BEA4657005240A2 /* VProcessLauncher.cpp in Sources */,
+				4238E7B01247CB1900951270 /* VProcessIPC.cpp in Sources */,
+				6D17175218AE718E00305B81 /* VCommandLineParserExtension.cpp in Sources */,
+				F90D2E7717D62DB8001D6189 /* XMacSleepNotifier.cpp in Sources */,
+				F90D2E8217D62E89001D6189 /* VSleepNotifier.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42FBADA185A02CD00EFC5CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42FBADB185A02CD00EFC5CF /* VSignal.cpp in Sources */,
+				F42FBADC185A02CD00EFC5CF /* VDebugAttachments.cpp in Sources */,
+				F42FBADD185A02CD00EFC5CF /* VDaemon.cpp in Sources */,
+				F42FBADE185A02CD00EFC5CF /* VComponentManager.cpp in Sources */,
+				F42FBADF185A02CD00EFC5CF /* VCommand.cpp in Sources */,
+				F42FBAE0185A02CD00EFC5CF /* VAttachment.cpp in Sources */,
+				F42FBAE1185A02CD00EFC5CF /* ICommandControler.cpp in Sources */,
+				F42FBAE2185A02CD00EFC5CF /* VProcessLauncher.cpp in Sources */,
+				F42FBAE3185A02CD00EFC5CF /* VEnvironmentVariables.cpp in Sources */,
+				F42FBAE4185A02CD00EFC5CF /* VFileSystemNotification.cpp in Sources */,
+				F42FBAE5185A02CD00EFC5CF /* XMacFileSystemNotification.cpp in Sources */,
+				6DF6AFDD1883E90600A96FD7 /* VCommandLineParserOption.cpp in Sources */,
+				F42FBAE6185A02CD00EFC5CF /* VProcessIPC.cpp in Sources */,
+				F42FBAE7185A02CD00EFC5CF /* XSysVIPC.cpp in Sources */,
+				6DF545E718A2852B0057947F /* VCommandLineParserHelp.cpp in Sources */,
+				6DF6AFD11883E90600A96FD7 /* VCommandLineParser.cpp in Sources */,
+				F42FBAE8185A02CD00EFC5CF /* VSharedMemory.cpp in Sources */,
+				F42FBAE9185A02CD00EFC5CF /* VSharedSemaphore.cpp in Sources */,
+				F42FBAEA185A02CD00EFC5CF /* XPosixDaemon.cpp in Sources */,
+				F42FBAEB185A02CD00EFC5CF /* XPosixProcessLauncher.cpp in Sources */,
+				F42FBAEC185A02CD00EFC5CF /* XMacSleepNotifier.cpp in Sources */,
+				F42FBAED185A02CD00EFC5CF /* VSleepNotifier.cpp in Sources */,
+				6DE1D31518AE72AC00EE2D76 /* VCommandLineParserExtension.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F42FBAFE185A02FC00EFC5CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kernel;
+			targetProxy = F42FBAFD185A02FC00EFC5CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		020DFAB508AE3ADB005EBBB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24D19F00B7BA911007D174C /* xtoolbox_debug.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = KernelIPC_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "VERSIONDEBUG=1";
+				SEPARATE_STRIP = YES;
+			};
+			name = Debug;
+		};
+		02FC1291088FC55F00C1F8D4 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24D19EF0B7BA911007D174C /* xtoolbox_beta.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PREFIX_HEADER = KernelIPC_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"WITH_DEBUGMSG=1",
+					"WITH_ASSERT=1",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Beta;
+		};
+		126DA0CA0A4AC5B100D639DA /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24D1CD80B7C8FF1007D174C /* xtoolbox_coverage.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = KernelIPC_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "VERSIONDEBUG=1";
+				OTHER_LDFLAGS = "-lgcov";
+				SEPARATE_STRIP = YES;
+			};
+			name = Coverage;
+		};
+		3938483B08C5AA3E000520EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24D19F10B7BA911007D174C /* xtoolbox_release.xcconfig */;
+			buildSettings = {
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREFIX_HEADER = KernelIPC_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "VERSIONDEBUG=0";
+				SEPARATE_STRIP = YES;
+			};
+			name = Release;
+		};
+		39C38FB10C27FA910073EDA8 /* Performance */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+			};
+			name = Performance;
+		};
+		39C38FB20C27FA910073EDA8 /* Performance */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3957A57C0C29264E00794CD3 /* xtoolbox_performance.xcconfig */;
+			buildSettings = {
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREFIX_HEADER = KernelIPC_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "VERSIONDEBUG=0";
+				SEPARATE_STRIP = YES;
+			};
+			name = Performance;
+		};
+		6D9B6F18183E46BA000691CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46431FE113E7CE000639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Debug;
+		};
+		6D9B6F19183E46BA000691CB /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46431FE113E7CE000639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Coverage;
+		};
+		6D9B6F1A183E46BA000691CB /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46431FE113E7CE000639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"WITH_DEBUGMSG=1",
+					"WITH_ASSERT=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Beta;
+		};
+		6D9B6F1B183E46BA000691CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46431FE113E7CE000639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Release;
+		};
+		6D9B6F1C183E46BA000691CB /* Performance */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46431FE113E7CE000639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Performance;
+		};
+		B54AA6940BEA455D005240A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+			};
+			name = Debug;
+		};
+		B54AA6950BEA455D005240A2 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+			};
+			name = Coverage;
+		};
+		B54AA6960BEA455D005240A2 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"WITH_DEBUGMSG=1",
+					"WITH_ASSERT=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+			};
+			name = Beta;
+		};
+		B54AA6970BEA455D005240A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+			};
+			name = Release;
+		};
+		F42FBAF5185A02CD00EFC5CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debug;
+		};
+		F42FBAF6185A02CD00EFC5CF /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Coverage;
+		};
+		F42FBAF7185A02CD00EFC5CF /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Beta;
+		};
+		F42FBAF8185A02CD00EFC5CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Release;
+		};
+		F42FBAF9185A02CD00EFC5CF /* Performance */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+			};
+			name = Performance;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02FC128F088FC55F00C1F8D4 /* Build configuration list for PBXProject "KernelIPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020DFAB508AE3ADB005EBBB5 /* Debug */,
+				126DA0CA0A4AC5B100D639DA /* Coverage */,
+				02FC1291088FC55F00C1F8D4 /* Beta */,
+				3938483B08C5AA3E000520EB /* Release */,
+				39C38FB20C27FA910073EDA8 /* Performance */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6D9B6F17183E46BA000691CB /* Build configuration list for PBXNativeTarget "KernelIPCLib x64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9B6F18183E46BA000691CB /* Debug */,
+				6D9B6F19183E46BA000691CB /* Coverage */,
+				6D9B6F1A183E46BA000691CB /* Beta */,
+				6D9B6F1B183E46BA000691CB /* Release */,
+				6D9B6F1C183E46BA000691CB /* Performance */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B54AA6930BEA455D005240A2 /* Build configuration list for PBXNativeTarget "KernelIPCLib i386" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54AA6940BEA455D005240A2 /* Debug */,
+				B54AA6950BEA455D005240A2 /* Coverage */,
+				B54AA6960BEA455D005240A2 /* Beta */,
+				B54AA6970BEA455D005240A2 /* Release */,
+				39C38FB10C27FA910073EDA8 /* Performance */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F42FBAF4185A02CD00EFC5CF /* Build configuration list for PBXNativeTarget "KernelIPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42FBAF5185A02CD00EFC5CF /* Debug */,
+				F42FBAF6185A02CD00EFC5CF /* Coverage */,
+				F42FBAF7185A02CD00EFC5CF /* Beta */,
+				F42FBAF8185A02CD00EFC5CF /* Release */,
+				F42FBAF9185A02CD00EFC5CF /* Performance */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

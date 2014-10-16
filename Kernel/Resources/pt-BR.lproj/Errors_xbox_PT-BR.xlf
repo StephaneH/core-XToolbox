@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+	Translation file for 4D products.
+	Copyright (C) 2007-2013 4D SAS.
+	This file is distributed under the same license as the 4D product package.
+-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="pt-BR">
+		  <header>
+			  <note>The character "%" (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+			  <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable's name and must not be localised</note>
+			  <note>\r, \t and \n are meta-characters.</note>
+		</header>
+		  <body>
+		    <group resname="xbox kernel errors">
+			    <trans-unit id="28" resname="ERR_xbox_100">
+			       <source>Memory allocation failed</source>
+			       <target>Erro na alocação de memória</target>
+			</trans-unit>
+			    <trans-unit id="33" resname="ERR_xbox_107">
+			       <source>String allocation failed</source>
+			       <target>Falha na alocação de texto</target>
+			</trans-unit>
+			    <trans-unit id="32" resname="ERR_xbox_200">
+			       <source>Attempt to read beyond end of stream</source>
+			       <target>Tentativa de leitura além do fim do fluxo</target>
+			</trans-unit>
+			    <trans-unit id="39" resname="ERR_xbox_208">
+				      <source>No text converter to read the stream</source>
+				      <target>Nenhum conversor de texto para ler o fluxo de dados</target>
+			</trans-unit>
+			    <trans-unit id="29" resname="ERR_xbox_300">
+			       <source>Text conversion failed</source>
+			       <target>Erro na conversão de texto</target>
+			</trans-unit>
+			    <trans-unit id="30" resname="ERR_xbox_303">
+			       <source>Failed to initialize ICU library</source>
+			       <target>Erro ao iniciar a biblioteca ICU</target>
+			</trans-unit>
+			    <trans-unit id="31" resname="ERR_xbox_304">
+			       <source>Regex error {message} while parsing pattern "{pattern}"</source>
+			       <target>Erro regex {message} ao analizar o padrão "{pattern}"</target>
+			       <note>regex pattern matching error. Error message is provided by ICU</note>
+			</trans-unit>
+			    <trans-unit id="56" resname="ERR_xbox_550">
+			       <source>JSON malformed in {source}line {line}, position {position}.</source>
+			       <target>JSON deformado {source}, linha {line}, posição {position}.</target>
+          <note>{source} can be empty or a file path or url.</note>
+      </trans-unit>
+        <trans-unit id="57" resname="ERR_xbox_551">
+          <source>JSON malformed. Found '{found}', was expecting: {expected}.</source>
+          <target>JSON deformado. Encontrado '{found}', esperado: {expected}.</target>
+      </trans-unit>
+        <trans-unit id="58" resname="ERR_xbox_552">
+          <source>JSON malformed. Unterminated {token}.</source>
+          <target>JSON deformado. {token} inacabado.</target>
+      </trans-unit>
+        <trans-unit id="59" resname="ERR_xbox_553">
+          <source>JSON malformed. Extra comma before {token}.</source>
+          <target>JSON deformado. Vírgula extra antes {token}.</target>
+      </trans-unit>
+        <trans-unit id="60" resname="ERR_xbox_554">
+          <source>JSON malformed. Was expecting: {expected}.</source>
+          <target>JSON deformado. Esperado: {expected}.</target>
+      </trans-unit>
+        <trans-unit id="1" resname="ERR_xbox_600">
+			       <source>File "{name}" not found ({path})</source>
+			       <target>Arquivo "{name}"  não encontrado ({path})</target>
+			</trans-unit>
+			    <trans-unit id="2" resname="ERR_xbox_601">
+			       <source>Cannot rename file "{name}" to "{newname}" ({path})</source>
+			       <target>Não é possível renomear o arquivo "{name}" por "{newname}" ({path})</target>
+			</trans-unit>
+			    <trans-unit id="3" resname="ERR_xbox_602">
+			       <source>Cannot open file "{name}" ({path})</source>
+			       <target>Não é possível abrir o arquivo "{name}" ({path})</target>
+			</trans-unit>
+			    <trans-unit id="4" resname="ERR_xbox_603">
+			       <source>Cannot close file "{name}" ({path})</source>
+			       <target>Não é possível fechar o arquivo "{name}" ({path})</target>
+			</trans-unit>
+			    <trans-unit id="5" resname="ERR_xbox_604">
+			       <source>Cannot delete "{name}" ({path})</source>
+			       <target>Não é possível apagar "{name}" ({path})</target>
+			</trans-unit>
+			    <trans-unit id="6" resname="ERR_xbox_605">
+			       <source>Cannot copy file {path} to {destination}.</source>
+			       <target>Não é possível copiar o arquivo {path} em {destination}.</target>
+			</trans-unit>
+			    <trans-unit id="7" resname="ERR_xbox_606">
+			       <source>Cannot move file {path} to {destination}.</source>
+			       <target>Não é possível mover o arquivo {path} a {destination}.</target>
+			</trans-unit>
+			    <trans-unit id="8" resname="ERR_xbox_607">
+			       <source>Cannot create file {path}.</source>
+			       <target>Não é possível criar arquivo {path}.</target>
+			</trans-unit>
+			    <trans-unit id="9" resname="ERR_xbox_608">
+			       <source>Cannot get attributes on file {path}.</source>
+			       <target>Não é possível obter os atributos no arquivo {path}.</target>
+			</trans-unit>
+			    <trans-unit id="10" resname="ERR_xbox_609">
+			       <source>Cannot set attributes on file {path}.</source>
+			       <target>Não é possível designar atributos no arquivo {path}.</target>
+			</trans-unit>
+			    <trans-unit id="11" resname="ERR_xbox_610">
+			       <source>Cannot create alias on file {path}.</source>
+			       <target>Não é possível criar um alias no arquivo {path}.</target>
+			</trans-unit>
+			    <trans-unit id="12" resname="ERR_xbox_611">
+			       <source>Cannot resolve alias file {path}.</source>
+			       <target>Não é possível resolver o alias no arquivo {path}.</target>
+			</trans-unit>
+			    <trans-unit id="13" resname="ERR_xbox_612">
+			       <source>Cannot reveal file {path}.</source>
+			       <target>Não é possível revelar o arquivo {path}.</target>
+			</trans-unit>
+			    <trans-unit id="14" resname="ERR_xbox_613">
+			       <source>Invalid file kind for file {path}.</source>
+			       <target>Classe de arquivo inválido para o arquivo {path}.</target>
+			</trans-unit>
+			    <trans-unit id="15" resname="ERR_xbox_614">
+			       <source>"{newname}" is an invalid name for file {path}.</source>
+			       <target>"{newname}" é um nome inválido para o arquivo {path}.</target>
+			</trans-unit>
+        <trans-unit id="41" resname="ERR_xbox_616">
+          <source>File {path} already exists.</source>
+          <target>Arquivo {path} já existe.</target>
+      </trans-unit>
+        <trans-unit id="34" resname="ERR_xbox_617">
+			       <source>Cannot resolve alias file "{path}" to a file.</source>
+			       <target>Não é possível resolver o alias "{path}" para um arquivo.</target>
+			</trans-unit>
+			    <trans-unit id="35" resname="ERR_xbox_618">
+			       <source>Cannot resolve alias file "{path}" to a folder.</source>
+			       <target>Não é possível resolver o alias "{path}" para uma pasta.</target>
+			</trans-unit>
+			    <trans-unit id="16" resname="ERR_xbox_650">
+			   	  <source>Folder "{name}" not found ({path}).</source>
+				      <target>A pasta "{name}" não foi encontrada ({path}).</target>
+			</trans-unit>
+			    <trans-unit id="17" resname="ERR_xbox_651">
+			       <source>Folder {path} not empty.</source>
+			       <target>A pasta {path} não está vazia.</target>
+			</trans-unit>
+			    <trans-unit id="18" resname="ERR_xbox_652">
+			       <source>Cannot create folder {path}.</source>
+			       <target>Não é possível criar a pasta {path}.</target>
+			</trans-unit>
+			    <trans-unit id="19" resname="ERR_xbox_653">
+			       <source>Cannot delete folder {path}.</source>
+			       <target>Não é possível apagar a pasta {path}.</target>
+			</trans-unit>
+			    <trans-unit id="20" resname="ERR_xbox_654">
+			       <source>Cannot get attributes on folder {path}.</source>
+			       <target>Não é possível obter os atributos na pasta {path}.</target>
+			</trans-unit>
+			    <trans-unit id="21" resname="ERR_xbox_655">
+			       <source>Cannot set attributes on folder {path}.</source>
+			       <target>Não é possível definir atributos na pasta {path}.</target>
+			</trans-unit>
+			    <trans-unit id="22" resname="ERR_xbox_656">
+			       <source>Cannot reveal folder {path}.</source>
+			       <target>Não é possível revelar a pasta {path}.</target>
+			</trans-unit>
+			    <trans-unit id="23" resname="ERR_xbox_657">
+			       <source>Cannot rename folder "{name}" to "{newname}" ({path})</source>
+			       <target>Não é possível renomear a pasta "{name}" por "{newname}" ({path})</target>
+			</trans-unit>
+			    <trans-unit id="24" resname="ERR_xbox_658">
+			       <source>Disk full ({path})</source>
+			       <target>Disco cheio ({path})</target>
+			</trans-unit>
+			    <trans-unit id="36" resname="ERR_xbox_659">
+				      <source>Folder {path} already exists.</source>
+				      <target>A pasta {path} já existe.</target>
+			</trans-unit>
+			    <trans-unit id="37" resname="ERR_xbox_660">
+				      <source>Can't copy {path} into child folder {destination}.</source>
+				      <target>Não é possível copiar {path} na pasta de destino {destination}.</target>
+			</trans-unit>
+			    <trans-unit id="40" resname="ERR_xbox_661">
+				      <source>Can't move {path} into trash.</source>
+				      <target>NNão pode passar {path} para o lixo.</target>
+			</trans-unit>
+			    <trans-unit id="50" resname="ERR_xbox_680">
+				      <source>Path to file system is not correctly encoded.</source>
+				      <target>O caminho para o sistema de arquivos não está codificado corretamente</target>
+			</trans-unit>
+			    <trans-unit id="51" resname="ERR_xbox_681">
+				      <source>Operation is not authorized on this file system.</source>
+				      <target>A operação não é permitido neste sistema de arquivos</target>
+			</trans-unit>
+			    <trans-unit id="52" resname="ERR_xbox_682">
+				      <source>File or folder not found.</source>
+				      <target>Arquivo ou pasta não encontrado</target>
+			</trans-unit>
+			    <trans-unit id="53" resname="ERR_xbox_683">
+				      <source>File system is not in valid state.</source>
+				      <target>O sistema de arquivo não está em um estado válido</target>
+			</trans-unit>
+			    <trans-unit id="54" resname="ERR_xbox_684">
+				      <source>Attempting to write or modify a non-writable file system.</source>
+				      <target>Tentando escrever em um arquivo somente leitura.</target>
+			</trans-unit>
+			    <trans-unit id="55" resname="ERR_xbox_685">
+				      <source>File system is full.</source>
+				      <target>O sistema de arquivos está cheio</target>
+			</trans-unit>
+        <trans-unit id="61" resname="ERR_xbox_686">
+          <source>Invalid name '{name}' for a file system.</source>
+          <target>Nome inválido '{name}' para um arquivo do sistema.</target>
+      </trans-unit>
+        <trans-unit id="62" resname="ERR_xbox_687">
+          <source>Can't load file system definition file {path}.</source>
+          <target>Não é possível carregar o arquivo de definição do sistema de arquivos {path}.</target>
+      </trans-unit>
+        <trans-unit id="38" resname="ERR_xbox_900">
+			       <source>JSON cannot stringify cyclic structures.</source>
+			       <target>JSON não pode passar estruturas cíclicas para string.</target>
+			</trans-unit>
+			    <trans-unit id="25" resname="ERR_xmlc_1">
+			       <source>{systemID}, line:{line}, column:{column}</source>
+			       <target>{systemID}, linha:{line}, coluna:{column}</target>
+				      <note>Location of error during xerces parsing.</note>
+			</trans-unit>
+			    <trans-unit id="26" resname="ERR_xmlc_2">
+        		<source>{message}</source>
+        		<target>{message}</target>
+				      <note>xerces parsing error.</note>
+      		</trans-unit>
+			    <trans-unit id="27" resname="ERR_xmlc_3">
+        		<source>{message}</source>
+        		<target>{message}</target>
+				      <note>xerces parsing fatal error.</note>
+			</trans-unit>
+		</group>
+      
+    </body>
+   </file>
+</xliff>

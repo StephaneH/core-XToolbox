@@ -1,0 +1,5 @@
+#include "xtoolbox_base.xcconfig"
+
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+PRODUCT_NAME = $(PROJECT_NAME)Beta;

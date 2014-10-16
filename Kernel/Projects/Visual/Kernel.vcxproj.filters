@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{faeced7b-3333-43de-bc46-ca85542ca399}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Files &amp; Streams">
+      <UniqueIdentifier>{81caf85a-a558-4178-ae17-56b213452fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Memory">
+      <UniqueIdentifier>{bf44f3d2-2c83-4319-832f-123e2f1c2f1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Text &amp; i18n">
+      <UniqueIdentifier>{463f5158-e72e-4620-95e9-2322581abb03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Values">
+      <UniqueIdentifier>{0af57473-c0f5-4673-a6db-6e0ff26446fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CrashDump">
+      <UniqueIdentifier>{3a640d73-a566-4081-8e47-487a1a8143e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Thread Synchronization">
+      <UniqueIdentifier>{6b931168-0095-43fe-a7b4-1c080704d331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel Headers">
+      <UniqueIdentifier>{2f56bf6d-ba8f-4c1c-a2ce-8b6f5bd21215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Errors">
+      <UniqueIdentifier>{9ae6a11f-c4e1-4dc8-8be8-509f9d43f1aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Profiling">
+      <UniqueIdentifier>{bb446c1a-df6e-4f59-966b-1af1d8ef00a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{063ab794-2137-4d16-88a2-cd42eeaf0c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{c71fbb8f-91ee-495a-bf63-6a908ae0ddfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logging">
+      <UniqueIdentifier>{e588ef8a-511f-42f0-8899-d919da5c1e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Threads &amp; Messages">
+      <UniqueIdentifier>{cd231a80-a411-454a-a547-8dc31491ce0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\M_APM">
+      <UniqueIdentifier>{caeac851-8772-4748-84fd-15ba27a69d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Library">
+      <UniqueIdentifier>{b815f74d-a6e5-496a-ac38-9f49ed8de488}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\IStreamable.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFile.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFilePath.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFileStream.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFileSystem.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFileSystemObject.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFileTranslator.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFolder.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFullURL.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VResource.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VStream.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VURL.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacFile.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacFolder.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacResource.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinFile.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinFolder.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinResource.cpp">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VDebugBlockInfo.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VLeaks.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMacStackCrawl.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMemory.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMemoryCpp.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMemoryImpl.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMemorySlot.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMemoryWalker.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VWinStackCrawl.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacMemoryMgr.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinMemoryMgr.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\ILocalizer.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VCollator.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VIntlMgr.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VRegexMatcher.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VTextConverter.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VUnicodeResources.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacIntlMgr.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacStringCompare.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacTextConverter.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinIntlMgr.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinStringCompare.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinTextConverter.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\ISortable.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VArrayValue.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VBlob.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFloat.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VPackedDictionary.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VString.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VTime.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VUUID.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VValue.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VValueBag.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VValueMultiple.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VValueSingle.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacUUID.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinUUID.cpp">
+      <Filter>Source Files\Values</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinCrashDump.cpp">
+      <Filter>Source Files\CrashDump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VInterlocked.cpp">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSmallCriticalSection.cpp">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSyncObject.cpp">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacSyncObject.cpp">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinSyncObject.cpp">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="KernelPCH.cpp">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacDLLmain.cpp">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinDLLmain.cpp">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VError.cpp">
+      <Filter>Source Files\Errors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VErrorContext.cpp">
+      <Filter>Source Files\Errors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacProfiler.cpp">
+      <Filter>Source Files\Profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinProfiler.cpp">
+      <Filter>Source Files\Profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Base64Coder.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\ILexer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\ILexerInput.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\IRefCountable.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\IWatchable.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\MurmurHash.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VAssert.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VByteSwap.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VChecksumMD5.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VJSONTools.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VJSONValue.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VObject.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VPictureHelper.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VProgressIndicator.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VRefCountDebug.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSystem.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacSystem.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinSystem.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\ILogger.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VLog4jMsgFile.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VLogger.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSplitableLogFile.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\IIdleable.cpp">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMessage.cpp">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VProcess.cpp">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VTask.cpp">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacTask.cpp">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinTask.cpp">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM5SIN.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_ADD.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_CPI.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_DIV.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_EXP.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_FFT.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_FLR.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_LOG.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_MUL.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_POW.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_RCP.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_RND.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_SET.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPM_SIN.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMASIN.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMASN0.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMCBRT.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMCNST.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMFACT.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMFMUL.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMGUES.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMHASN.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMHSIN.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMIPWR.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMISTR.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMRSIN.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMSQRT.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMSTCK.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\M_APM\MAPMUTIL.C">
+      <Filter>Source Files\M_APM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VLibrary.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XLinuxLibrary.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacLibrary.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinLibrary.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VTextStyle.cpp">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VScrapKind.cpp">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sources\IStreamable.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFile.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFilePath.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFileStream.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFileSystem.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFileSystemObject.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFileTranslator.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFolder.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFullURL.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VResource.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VStream.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VURL.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XMacResource.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinFile.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinFolder.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinResource.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VDebugBlockInfo.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VLeaks.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMemory.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMemoryBuffer.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMemoryCpp.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMemoryImpl.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMemorySlot.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMemoryWalker.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VStackCrawl.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VWinStackCrawl.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinMemoryMgr.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ILocalizer.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VCharSetNames.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VCollator.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VIntlMgr.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VRegexMatcher.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VTextConverter.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VUnicodeRanges.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VUnicodeResources.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VUnicodeTableFull.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VUnicodeTableLow.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinCharSets.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinIntlMgr.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinStringCompare.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinTextConverter.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ISortable.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VArray.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VArrayValue.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VBlob.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VChain.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFloat.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VIterator.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VList.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VPackedDictionary.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VString.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VString_ExtendedSTL.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VTime.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VUUID.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VValue.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VValueBag.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VValueMultiple.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VValueSingle.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XMacUUID.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinUUID.h">
+      <Filter>Source Files\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinCrashDump.h">
+      <Filter>Source Files\CrashDump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\IOpenSslLocker.h">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VInterlocked.h">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSmallCriticalSection.h">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSyncObject.h">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinSyncObject.h">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VKernel.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VKernelExport.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VKernelFlags.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VKernelPrecompiled.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VKernelTypes.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VPlatform.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VScrapKind.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VTextTypes.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VTypes.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinPlatform.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VError.h">
+      <Filter>Source Files\Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VErrorContext.h">
+      <Filter>Source Files\Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VKernelErrors.h">
+      <Filter>Source Files\Errors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VProfiler.h">
+      <Filter>Source Files\Profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Base64Coder.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ILexer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ILexerInput.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\IRefCountable.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\IWatchable.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\MurmurHash.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VAssert.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VByteSwap.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VChecksumMD5.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VJSONTools.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VJSONValue.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VObject.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VPictureHelper.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VProgressIndicator.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VRefCountDebug.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSystem.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinSystem.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ILogger.h">
+      <Filter>Source Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VLog4jMsgFile.h">
+      <Filter>Source Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VLogger.h">
+      <Filter>Source Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSplitableLogFile.h">
+      <Filter>Source Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\IIdleable.h">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMessage.h">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VProcess.h">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VTask.h">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinTask.h">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\M_APM\M_APM.H">
+      <Filter>Source Files\M_APM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\M_APM\M_APM_LC.H">
+      <Filter>Source Files\M_APM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VLibrary.h">
+      <Filter>Source Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinLibrary.h">
+      <Filter>Source Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\MainEntryPoint.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VTextStyle.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Sources\XMacFile.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacFolder.h">
+      <Filter>Source Files\Files &amp; Streams</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\VMacStackCrawl.h">
+      <Filter>Source Files\Memory</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacMemoryMgr.h">
+      <Filter>Source Files\Memory</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacCharSets.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacIntlMgr.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacStringCompare.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacTextConverter.h">
+      <Filter>Source Files\Text &amp; i18n</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacSyncObject.h">
+      <Filter>Source Files\Thread Synchronization</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XOS9Platform.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XOSXPlatform.h">
+      <Filter>Source Files\Kernel Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacSystem.h">
+      <Filter>Source Files\System</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacTask.h">
+      <Filter>Source Files\Threads &amp; Messages</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XLinuxLibrary.h">
+      <Filter>Source Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacLibrary.h">
+      <Filter>Source Files\Library</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

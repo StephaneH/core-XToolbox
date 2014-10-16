@@ -1,0 +1,26 @@
+//Architecture
+ARCHS = x86_64
+//Build Locations
+
+//Build Option
+
+//Compiler Version
+
+//Deployement
+
+//Linking
+
+//Packaging
+
+//Search Path
+
+//GCC 4.2 Code Generation
+
+//GCC Language
+
+//GCC 4.2 Preprocessing
+
+//GCC 4.2 Warning
+
+//User Defined
+

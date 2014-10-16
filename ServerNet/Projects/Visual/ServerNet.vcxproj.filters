@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{3a3fccbb-e153-4b7a-a76b-4a43384c6622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Examples">
+      <UniqueIdentifier>{cb3841f4-67a2-4e97-9fab-a66a1fd8310b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SharedWorkers">
+      <UniqueIdentifier>{c44d5a60-4f51-49e5-8e9e-63ee4039d713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MIMEMessages">
+      <UniqueIdentifier>{6c70dc74-b0b0-48c9-b37b-391c29762d75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proxy">
+      <UniqueIdentifier>{971f5fab-1f8c-445e-b369-c69a53212db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTPClient">
+      <UniqueIdentifier>{8d8af054-2b1c-4711-8707-0a3f7ed3e46c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\IRequestLogger.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\SelectIO.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\ServiceDiscovery.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Session.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\SslStub.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Tools.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VConnectionHandlerFactory.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VEndPointStream.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VNetAddr.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VOpenSslLocker.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VServer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VServerNetPCH.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSockListener.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSslDelegate.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VTCPEndPoint.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VUDPEndPoint.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VWebSocket.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VWorkerPool.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XBsdNetAddr.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XBsdSocket.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinNetAddr.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinSocket.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VEcho.cpp">
+      <Filter>Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SharedWorkers\VSharedWorkers.cpp">
+      <Filter>SharedWorkers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\HTTPTools.cpp">
+      <Filter>MIMEMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VHTTPCookie.cpp">
+      <Filter>MIMEMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VHTTPHeader.cpp">
+      <Filter>MIMEMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VHTTPMessage.cpp">
+      <Filter>MIMEMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMIMEMessage.cpp">
+      <Filter>MIMEMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMIMEMessagePart.cpp">
+      <Filter>MIMEMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMIMEReader.cpp">
+      <Filter>MIMEMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VMIMEWriter.cpp">
+      <Filter>MIMEMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VNameValueCollection.cpp">
+      <Filter>MIMEMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VProxyManager.cpp">
+      <Filter>Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VHTTPClient.cpp">
+      <Filter>HTTPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\CryptoTools.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sources\IConnectionListener.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ICriticalError.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\IOpenSslLocker.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\IRequestLogger.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\SelectIO.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ServerNetArchTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ServerNetSystemTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ServerNetTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ServiceDiscovery.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Session.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\SslStub.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Tools.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VConnectionHandlerFactory.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VEndPoint.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VEndPointStream.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VNetAddr.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VOpenSslLocker.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VServer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VServerErrors.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VServerNet.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VServerNetPrecompiled.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSockListener.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSslDelegate.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VTCPEndPoint.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VUDPEndPoint.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VWebSocket.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VWorkerPool.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinNetAddr.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinSocket.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\HTTPTools.h">
+      <Filter>MIMEMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VHTTPCookie.h">
+      <Filter>MIMEMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VHTTPHeader.h">
+      <Filter>MIMEMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VHTTPMessage.h">
+      <Filter>MIMEMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMIMEMessage.h">
+      <Filter>MIMEMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMIMEMessagePart.h">
+      <Filter>MIMEMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMIMEReader.h">
+      <Filter>MIMEMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMIMEWriter.h">
+      <Filter>MIMEMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VNameValueCollection.h">
+      <Filter>MIMEMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VProxyManager.h">
+      <Filter>Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VHTTPClient.h">
+      <Filter>HTTPClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\CryptoTools.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Sources\XBsdNetAddr.h">
+      <Filter>Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XBsdSocket.h">
+      <Filter>Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Headers\VEcho.h">
+      <Filter>Examples</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\SharedWorkers\VSharedWorkers.h">
+      <Filter>SharedWorkers</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

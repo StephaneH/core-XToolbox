@@ -1,0 +1,13 @@
+/*
+ * VKernelIPC_Prefix.pch
+ *
+ * This file is part of the Sources of 4D. The Source is the exclusive property of 4D.
+ * Except the rights that might be expressly granted, no other rights are granted
+ * by 4D to anyone, including 4D's employees acting beyond their functions' scope.
+ * Any partial or complete reproduction of the Source, is authorized provided
+ * that such reproduction contains the present text. The Source must be considered
+ * as confidential information, and must be maintained as such.
+ */
+
+
+#include "VKernelIPCPrecompiled.h"

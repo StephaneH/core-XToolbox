@@ -1,0 +1,9 @@
+#include "xtoolbox_base.xcconfig"
+
+PRODUCT_NAME = $(PROJECT_NAME)Debug;
+
+
+
+
+
+

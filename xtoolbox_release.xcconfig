@@ -1,0 +1,12 @@
+#include "xtoolbox_base.xcconfig"
+
+GCC_MODEL_TUNING = G5
+
+// ask ld to do the strip symbols
+DEPLOYMENT_POSTPROCESSING = YES
+STRIP_INSTALLED_PRODUCT = NO
+STRIP_STYLE = non-global
+SEPARATE_STRIP = NO
+COPY_PHASE_STRIP = NO
+
+PRODUCT_NAME = $(PROJECT_NAME);

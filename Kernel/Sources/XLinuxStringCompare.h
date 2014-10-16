@@ -1,0 +1,50 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+#ifndef __XLinuxStringCompare__
+#define __XLinuxStringCompare__
+
+#include "Kernel/Sources/VKernelTypes.h"
+
+BEGIN_TOOLBOX_NAMESPACE
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Legacy stuff : Used by VCollator_system, superseded by ICU
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// class XLinuxStringCompare
+// {
+// public:
+//     XLinuxStringCompare(DialectCode inDialect);
+// 	virtual	~XLinuxStringCompare();
+	
+// 	CompareResult   CompareString(const UniChar *inText1, sLONG inSize1, const UniChar *inText2, sLONG inSize2, Boolean inWithDiacritics, Boolean inForLookup);
+// 	bool            EqualString(const UniChar *inText1, sLONG inSize1, const UniChar *inText2, sLONG inSize2, Boolean inWithDiacritics);
+// 	Boolean         ToUpperLowerCase(const UniChar *inSrc, sLONG inSrcLen, UniPtr outDst, sLONG& ioDstLen, Boolean inIsUpper);
+
+// 	private:
+// };
+
+// typedef XLinuxStringCompare XStringCompareImpl;
+
+
+
+END_TOOLBOX_NAMESPACE
+
+#endif

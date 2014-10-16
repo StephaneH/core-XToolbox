@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+	Translation file for 4D products.
+	Copyright (C) 2007-2013 4D SAS.
+	This file is distributed under the same license as the 4D product package.
+-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+	<file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="de">
+		<header>
+			<note>The character "%" (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+			<note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable's name and must not be localised</note>
+			<note>\r, \t and \n are meta-characters.</note>
+		</header>
+		<body>
+			<group resname="xbox kernel errors">
+				<trans-unit id="28" resname="ERR_xbox_100">
+					<source>Memory allocation failed</source>
+					<target>Speicherzuordnung fehlgeschlagen</target>
+				</trans-unit>
+				<trans-unit id="33" resname="ERR_xbox_107">
+					<source>String allocation failed</source>
+					<target>Speicheranforderung für Text fehlgeschlagen</target>
+				</trans-unit>	
+				<trans-unit id="32" resname="ERR_xbox_200">
+					<source>Attempt to read beyond end of stream</source>
+					<target>Versuch nach Ende des Streams zu lesen</target>
+				</trans-unit>
+				<trans-unit id="29" resname="ERR_xbox_300">
+					<source>Text conversion failed</source>
+					<target>Textkonvertierung fehlgeschlagen</target>
+				</trans-unit>
+				<trans-unit id="30" resname="ERR_xbox_303">
+					<source>Failed to initialize ICU library</source>
+					<target>Initialisierung der ICU Bibliothek fehlgeschlagen</target>
+				</trans-unit>
+				<trans-unit id="31" resname="ERR_xbox_304">
+					<source>Regex error {message} while parsing pattern "{pattern}"</source>
+					<target>Regex Fehler {message} beim Analysieren des Musters "{pattern}"</target>
+					<note>regex pattern matching error. Error message is provided by ICU</note>
+				</trans-unit>
+				<trans-unit id="1" resname="ERR_xbox_600">
+					<source>File "{name}" not found ({path})</source>
+					<target>Datei "{name}" nicht gefunden ({path})</target>
+				</trans-unit>
+				<trans-unit id="2" resname="ERR_xbox_601">
+					<source>Cannot rename file "{name}" to "{newname}" ({path})</source>
+					<target>Datei "{name}" kann nicht in "{newname}" umbenannt werden ({path})</target>
+				</trans-unit>
+				<trans-unit id="3" resname="ERR_xbox_602">
+					<source>Cannot open file "{name}" ({path})</source>
+					<target>Datei "{name}" kann nicht geöffnet werden ({path})</target>
+				</trans-unit>
+				<trans-unit id="4" resname="ERR_xbox_603">
+					<source>Cannot close file "{name}" ({path})</source>
+					<target>Datei "{name}" kann nicht geschlossen werden ({path})</target>
+				</trans-unit>
+				<trans-unit id="5" resname="ERR_xbox_604">
+					<source>Cannot delete "{name}" ({path})</source>
+					<target>Datei "{name}" kann nicht geschlossen/gelöscht werden  ({path})</target>
+				</trans-unit>
+				<trans-unit id="6" resname="ERR_xbox_605">
+					<source>Cannot copy file {path} to {destination}.</source>
+					<target>Datei {path} kann nicht in Ziel {destination} kopiert werden.</target>
+				</trans-unit>
+				<trans-unit id="7" resname="ERR_xbox_606">
+					<source>Cannot move file {path} to {destination}.</source>
+					<target>Datei {path} kann nicht in Ziel {destination} verschoben werden.</target>
+				</trans-unit>
+				<trans-unit id="8" resname="ERR_xbox_607">
+					<source>Cannot create file {path}.</source>
+					<target>Datei {path} kann nicht erzeugt werden.</target>
+				</trans-unit>
+				<trans-unit id="9" resname="ERR_xbox_608">
+					<source>Cannot get attributes on file {path}.</source>
+					<target>Attribute für Datei {path} können nicht abgefragt werden.</target>
+				</trans-unit>
+				<trans-unit id="10" resname="ERR_xbox_609">
+					<source>Cannot set attributes on file {path}.</source>
+					<target>Attribute für Datei {path} können nicht gesetzt werden.</target>
+				</trans-unit>
+				<trans-unit id="11" resname="ERR_xbox_610">
+					<source>Cannot create alias on file {path}.</source>
+					<target>Für Datei {path} kann kein Alias/Verknüpfung erzeugt werden.</target>
+				</trans-unit>
+				<trans-unit id="12" resname="ERR_xbox_611">
+					<source>Cannot resolve alias file {path}.</source>
+					<target>Alias/Verknüpfung für {path} kann nicht aufgelöst werden.</target>
+				</trans-unit>
+				<trans-unit id="13" resname="ERR_xbox_612">
+					<source>Cannot reveal file {path}.</source>
+					<target>Datei  {path} kann nicht angezeigt werden.</target>
+				</trans-unit>
+				<trans-unit id="14" resname="ERR_xbox_613">
+					<source>Invalid file kind for file {path}.</source>
+					<target>Ungültiger Typ für Datei {path}.</target>
+				</trans-unit>
+				<trans-unit id="15" resname="ERR_xbox_614">
+					<source>"{newname}" is an invalid name for file {path}.</source>
+					<target>"{newname}" ist ein ungültiger Name für Datei {path}.</target>
+				</trans-unit>				
+				<trans-unit id="41" resname="ERR_xbox_616">
+        			<source>File {path} already exists.</source>
+        			<target>Datei {path} existiert bereits</target>
+      			</trans-unit>
+      		<trans-unit id="34" resname="ERR_xbox_617">
+			   <source>Cannot resolve alias file &quot;{path}&quot; to a file.</source>
+			   <target>Alias &quot;{path}&quot; kann nicht in Datei aufgelöst werden.</target>
+			</trans-unit>
+			<trans-unit id="35" resname="ERR_xbox_618">
+			   <source>Cannot resolve alias file &quot;{path}&quot; to a folder.</source>
+			   <target>Alias &quot;{path}&quot; kann nicht in Ordner aufgelöst werden.</target>
+			</trans-unit>
+				<trans-unit id="16" resname="ERR_xbox_650">
+					<source>Folder "{name}" not found ({path}).</source>
+					<target>Ordner "{name}" nicht gefunden ({path}).</target>
+				</trans-unit>
+				<trans-unit id="17" resname="ERR_xbox_651">
+					<source>Folder {path} not empty.</source>
+					<target>Ordner {path} ist leer.</target>
+				</trans-unit>
+				<trans-unit id="18" resname="ERR_xbox_652">
+					<source>Cannot create folder {path}.</source>
+					<target>Ordner kann nicht erzeugt werden {path}.</target>
+				</trans-unit>
+				<trans-unit id="19" resname="ERR_xbox_653">
+					<source>Cannot delete folder {path}.</source>
+					<target>Ordner kann nicht gelöscht werden {path}.</target>
+				</trans-unit>
+				<trans-unit id="20" resname="ERR_xbox_654">
+					<source>Cannot get attributes on folder {path}.</source>
+					<target>Attribute für Ordner {path} können nicht abgefragt werden.</target>
+				</trans-unit>
+				<trans-unit id="21" resname="ERR_xbox_655">
+					<source>Cannot set attributes on folder {path}.</source>
+					<target>Attribute für Ordner {path} können nicht gesetzt werden.</target>
+				</trans-unit>
+				<trans-unit id="22" resname="ERR_xbox_656">
+					<source>Cannot reveal folder {path}.</source>
+					<target>Ordner kann nicht angezeigt werden {path}.</target>
+				</trans-unit>
+				<trans-unit id="23" resname="ERR_xbox_657">
+					<source>Cannot rename folder "{name}" to "{newname}" ({path})</source>
+					<target>Der Ordner "{name}" kann nicht in "{newname}" umbenannt werden ({path})</target>
+				</trans-unit>
+				<trans-unit id="24" resname="ERR_xbox_658">
+					<source>Disk full ({path})</source>
+					<target>Festplatte ist voll ({path})</target>
+				</trans-unit>
+				<trans-unit id="25" resname="ERR_xmlc_1">
+					<source>{systemID}, line:{line}, column:{column}</source>
+					<target>{systemID}, Zeile:{line}, Spalte:{column}</target>
+					<note>Location of error during xerces parsing.</note>
+				</trans-unit>
+				<trans-unit id="26" resname="ERR_xmlc_2">
+					<source>{message}</source>
+					<target>{message}</target>
+					<note>xerces parsing error.</note>
+				</trans-unit>
+				<trans-unit id="27" resname="ERR_xmlc_3">
+					<source>{message}</source>
+					<target>{message}</target>
+					<note>xerces parsing fatal error.</note>
+				</trans-unit>
+			</group>
+			
+		</body>
+	</file>
+</xliff>

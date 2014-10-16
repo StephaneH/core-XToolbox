@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{480cc1e3-1f42-4f3d-a5c6-e22696d8e6e6}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Localisation">
+      <UniqueIdentifier>{30462ce5-a9c1-4c6c-833b-bb25184633f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UTIs">
+      <UniqueIdentifier>{d9a9d00a-fbbd-4141-96a7-1f144fb37990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{31b12c3a-ecb9-4293-abd4-cf9b63927f92}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\IXMLDomWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\IXMLHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VInfoPlistTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VPreferences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMLForBag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMLGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMLJsonUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMLSaxHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMLSaxParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMLSaxWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VLocalizationManager.cpp">
+      <Filter>Source Files\Localisation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VLocalizationXMLHandler.cpp">
+      <Filter>Source Files\Localisation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VUTI.cpp">
+      <Filter>Source Files\UTIs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VUTIManager.cpp">
+      <Filter>Source Files\UTIs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VUTIManagerXMLHandler.cpp">
+      <Filter>Source Files\UTIs</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLPCH.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VCSSParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sources\IXMLDomWrapper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\IXMLHandler.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VInfoPlistTools.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VPreferences.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VXMLErrors.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XMLForBag.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XMLGenerator.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XMLJsonUtility.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XMLSaxHandler.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XMLSaxParser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XMLSaxWriter.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VLocalizationManager.h">
+      <Filter>Source Files\Localisation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VLocalizationXMLHandler.h">
+      <Filter>Source Files\Localisation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\4DUTType.h">
+      <Filter>Source Files\UTIs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VUTI.h">
+      <Filter>Source Files\UTIs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VUTIManager.h">
+      <Filter>Source Files\UTIs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VUTIManagerXMLHandler.h">
+      <Filter>Source Files\UTIs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\VXML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VXMLPrecompiled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VCSSParser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

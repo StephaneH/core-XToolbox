@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{80b2543b-c072-40a9-9fc8-712c9037277f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{67bcf746-566a-4ecc-a1c3-9023e049095e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Drawing Contexts">
+      <UniqueIdentifier>{bfb0f679-48c5-49dc-8896-f35bb990705b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Drawing Contexts\Filter">
+      <UniqueIdentifier>{4d9c3e81-7a63-4dfa-8a08-494b57d76d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Imaging">
+      <UniqueIdentifier>{d1ce870a-0a50-4537-a7a8-6ea93ca5c7c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shapes">
+      <UniqueIdentifier>{f70542a4-8f87-410e-89db-de73cf6a6f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Text">
+      <UniqueIdentifier>{af5e0f0f-b836-4c79-bfb1-d91377014949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{ed37b737-53d9-47db-b426-9063228d0ff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Text\Text Document Layout">
+      <UniqueIdentifier>{4899ffd0-a99c-433f-915c-ed2d4e12e3fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\VGraphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VGraphicsErrors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VGraphicsFlags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VGraphicsPrecompiled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VGraphicsTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VColor.h">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VGraphicContext.h">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VGraphicSettings.h">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinD2DGraphicContext.h">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinGDIDebug.h">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinGDIGraphicContext.h">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinGDIPlusGraphicContext.h">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VGraphicFilter.h">
+      <Filter>Source Files\Drawing Contexts\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VGraphicImage.h">
+      <Filter>Source Files\Drawing Contexts\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ImageMeta.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\V4DPicture.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\V4DPictureData.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\V4DPictureDataSource.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\V4DPictureDecoder.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\V4DPictureIncludeBase.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\V4DPictureProxyCache.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\V4DPictureTools.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VGifEncoder.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VIcon.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VWICCodec.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinPictureData.h">
+      <Filter>Source Files\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\IBoundedShape.h">
+      <Filter>Source Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VAffineTransform.h">
+      <Filter>Source Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VBezier.h">
+      <Filter>Source Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VMatrix.h">
+      <Filter>Source Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VPattern.h">
+      <Filter>Source Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VPoint.h">
+      <Filter>Source Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VPolygon.h">
+      <Filter>Source Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VRect.h">
+      <Filter>Source Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VRegion.h">
+      <Filter>Source Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFont.h">
+      <Filter>Source Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFontMgr.h">
+      <Filter>Source Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VStyledTextBox.h">
+      <Filter>Source Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinFont.h">
+      <Filter>Source Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinFontMgr.h">
+      <Filter>Source Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinStyledTextBox.h">
+      <Filter>Source Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VTextLayout.h">
+      <Filter>Source Files\Text\Text Document Layout</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GraphicsPCH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VColor.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VGraphicContext.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VGraphicSettings.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacColor.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacQDGraphicContext.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacQuartzGraphicContext.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinColor.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinD2DGraphicContext.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinGDIDebug.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinGDIGraphicContext.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinGDIPlusGraphicContext.cpp">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VGraphicFilter.cpp">
+      <Filter>Source Files\Drawing Contexts\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinGDIPlusGraphicFilter.cpp">
+      <Filter>Source Files\Drawing Contexts\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinGDIplusGraphicImage.cpp">
+      <Filter>Source Files\Drawing Contexts\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\ImageMeta.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\V4DPicture.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\V4DPictureData.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\V4DPictureDataSource.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\V4DPictureDecoder.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\V4DPictureProxyCache.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\V4DPictureTools.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VGifEncoder.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VWICCodec.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacIcon.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacPictureData.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinIcon.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinPictureData.cpp">
+      <Filter>Source Files\Imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\IBoundedShape.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VAffineTransform.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VPattern.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VPolygon.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VRect.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VRegion.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacBezier.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacPattern.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacRegion.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinBezier.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinPattern.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinRegion.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFont.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFontMgr.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VStyledTextBox.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacFont.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacFontMgr.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinFont.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinFontMgr.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinStyledTextBox.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VTextLayout.cpp">
+      <Filter>Source Files\Text\Text Document Layout</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Sources\XMacQDGraphicContext.h">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacQuartzGraphicContext.h">
+      <Filter>Source Files\Drawing Contexts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacQuartzGraphicFilter.mm">
+      <Filter>Source Files\Drawing Contexts\Filter</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacQuartzGraphicImage.mm">
+      <Filter>Source Files\Drawing Contexts\Filter</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacPictureData.h">
+      <Filter>Source Files\Imaging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacFont.h">
+      <Filter>Source Files\Text</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacFontMgr.h">
+      <Filter>Source Files\Text</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
