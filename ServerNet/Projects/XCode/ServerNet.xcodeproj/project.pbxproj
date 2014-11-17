@@ -1,0 +1,1653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		542123EF16A0CE090081A61D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542123ED16A0CE090081A61D /* SystemConfiguration.framework */; };
+		6D9B6E90183E430A000691CB /* ServerNet_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* ServerNet_Prefix.pch */; };
+		6D9B6E91183E430A000691CB /* VEndPointStream.h in Headers */ = {isa = PBXBuildFile; fileRef = CD647271157F8BE000D9710D /* VEndPointStream.h */; };
+		6D9B6E92183E430A000691CB /* VHTTPHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E42CBC8A15AAE11800D10481 /* VHTTPHeader.h */; };
+		6D9B6E93183E430A000691CB /* VHTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E42CBC8C15AAE11800D10481 /* VHTTPMessage.h */; };
+		6D9B6E94183E430A000691CB /* VMIMEMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E42CBC8E15AAE11800D10481 /* VMIMEMessage.h */; };
+		6D9B6E95183E430A000691CB /* HTTPTools.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79715ADE54100CC2ECD /* HTTPTools.h */; };
+		6D9B6E96183E430A000691CB /* VHTTPCookie.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79915ADE54100CC2ECD /* VHTTPCookie.h */; };
+		6D9B6E97183E430A000691CB /* VMIMEMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79B15ADE54100CC2ECD /* VMIMEMessagePart.h */; };
+		6D9B6E98183E430A000691CB /* VMIMEReader.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79D15ADE54100CC2ECD /* VMIMEReader.h */; };
+		6D9B6E99183E430A000691CB /* VMIMEWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79F15ADE54100CC2ECD /* VMIMEWriter.h */; };
+		6D9B6E9A183E430A000691CB /* VNameValueCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C7A115ADE54100CC2ECD /* VNameValueCollection.h */; };
+		6D9B6E9B183E430A000691CB /* VProxyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E1DBF816A078E200C080BD /* VProxyManager.h */; };
+		6D9B6E9C183E430A000691CB /* VHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E42453AE176203CB0068C17C /* VHTTPClient.h */; };
+		6D9B6E9D183E430A000691CB /* VWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8D7476179D7F42003A22F5 /* VWebSocket.h */; };
+		6D9B6E9E183E430A000691CB /* CryptoTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F9387DE91815757800BF67F2 /* CryptoTools.h */; };
+		6D9B6EA0183E430A000691CB /* VServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41A9D2E209DBFAD900BD8FEC /* VServer.cpp */; };
+		6D9B6EA1183E430A000691CB /* VWorkerPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41A9D2E509DBFAD900BD8FEC /* VWorkerPool.cpp */; };
+		6D9B6EA2183E430A000691CB /* XBsdSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9FCEA1613BDB4CA00E15CBE /* XBsdSocket.cpp */; };
+		6D9B6EA3183E430A000691CB /* VOpenSslLocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F93EB551133B3EC5006EDE6D /* VOpenSslLocker.cpp */; };
+		6D9B6EA4183E430A000691CB /* IRequestLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA1B26670D3D0AC600FA4152 /* IRequestLogger.cpp */; };
+		6D9B6EA5183E430A000691CB /* VSslDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90168AE1403DD6A0052EF5D /* VSslDelegate.cpp */; };
+		6D9B6EA6183E430A000691CB /* SelectIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B704147AAAF400B72F6F /* SelectIO.cpp */; };
+		6D9B6EA7183E430A000691CB /* ServiceDiscovery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B705147AAAF400B72F6F /* ServiceDiscovery.cpp */; };
+		6D9B6EA8183E430A000691CB /* VTCPEndPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B706147AAAF400B72F6F /* VTCPEndPoint.cpp */; };
+		6D9B6EA9183E430A000691CB /* VUDPEndPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B707147AAAF400B72F6F /* VUDPEndPoint.cpp */; };
+		6D9B6EAA183E430A000691CB /* Session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B714147AB79400B72F6F /* Session.cpp */; };
+		6D9B6EAB183E430A000691CB /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B718147AB9B400B72F6F /* Tools.cpp */; };
+		6D9B6EAC183E430A000691CB /* VConnectionHandlerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B71C147ABB6500B72F6F /* VConnectionHandlerFactory.cpp */; };
+		6D9B6EAD183E430A000691CB /* VSockListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B721147BA4D300B72F6F /* VSockListener.cpp */; };
+		6D9B6EAE183E430A000691CB /* XBsdNetAddr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C071A014E2D19F00BA9C4C /* XBsdNetAddr.cpp */; };
+		6D9B6EAF183E430A000691CB /* VNetAddr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9193EF014E956700075E46B /* VNetAddr.cpp */; };
+		6D9B6EB0183E430A000691CB /* VEndPointStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD647275157F8BF500D9710D /* VEndPointStream.cpp */; };
+		6D9B6EB1183E430A000691CB /* VHTTPHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42CBC8915AAE11800D10481 /* VHTTPHeader.cpp */; };
+		6D9B6EB2183E430A000691CB /* VHTTPMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42CBC8B15AAE11800D10481 /* VHTTPMessage.cpp */; };
+		6D9B6EB3183E430A000691CB /* VMIMEMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42CBC8D15AAE11800D10481 /* VMIMEMessage.cpp */; };
+		6D9B6EB4183E430A000691CB /* HTTPTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79615ADE54100CC2ECD /* HTTPTools.cpp */; };
+		6D9B6EB5183E430A000691CB /* VHTTPCookie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79815ADE54100CC2ECD /* VHTTPCookie.cpp */; };
+		6D9B6EB6183E430A000691CB /* VMIMEMessagePart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79A15ADE54100CC2ECD /* VMIMEMessagePart.cpp */; };
+		6D9B6EB7183E430A000691CB /* VMIMEReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79C15ADE54100CC2ECD /* VMIMEReader.cpp */; };
+		6D9B6EB8183E430A000691CB /* VMIMEWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79E15ADE54100CC2ECD /* VMIMEWriter.cpp */; };
+		6D9B6EB9183E430A000691CB /* VNameValueCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C7A015ADE54100CC2ECD /* VNameValueCollection.cpp */; };
+		6D9B6EBA183E430A000691CB /* VProxyManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4E1DBF716A078E200C080BD /* VProxyManager.cpp */; };
+		6D9B6EBB183E430A000691CB /* VHTTPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42453AD176203CB0068C17C /* VHTTPClient.cpp */; };
+		6D9B6EBC183E430A000691CB /* VWebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8D7475179D7F42003A22F5 /* VWebSocket.cpp */; };
+		6D9B6EBD183E430A000691CB /* CryptoTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9387DE81815757800BF67F2 /* CryptoTools.cpp */; };
+		6D9B6EBF183E430A000691CB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA1F620F3FA13C00EF41C9 /* CoreFoundation.framework */; };
+		6D9B6EC0183E430A000691CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542123ED16A0CE090081A61D /* SystemConfiguration.framework */; };
+		6DCA1F640F3FA13C00EF41C9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA1F620F3FA13C00EF41C9 /* CoreFoundation.framework */; };
+		B1C69A7B1962DCCB0064F54D /* IKeyCertChainSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C69A7A1962DCCB0064F54D /* IKeyCertChainSource.h */; };
+		B54DA0E90BEA4CB8006FB990 /* ServerNet_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* ServerNet_Prefix.pch */; };
+		B54DA0F60BEA4CCF006FB990 /* VServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41A9D2E209DBFAD900BD8FEC /* VServer.cpp */; };
+		B54DA0F90BEA4CCF006FB990 /* VWorkerPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41A9D2E509DBFAD900BD8FEC /* VWorkerPool.cpp */; };
+		CD647274157F8BE000D9710D /* VEndPointStream.h in Headers */ = {isa = PBXBuildFile; fileRef = CD647271157F8BE000D9710D /* VEndPointStream.h */; };
+		CD647278157F8BF500D9710D /* VEndPointStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD647275157F8BF500D9710D /* VEndPointStream.cpp */; };
+		CD8D7478179D7F42003A22F5 /* VWebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8D7475179D7F42003A22F5 /* VWebSocket.cpp */; };
+		CD8D747B179D7F42003A22F5 /* VWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8D7476179D7F42003A22F5 /* VWebSocket.h */; };
+		E418C7BA15ADE54100CC2ECD /* HTTPTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79615ADE54100CC2ECD /* HTTPTools.cpp */; };
+		E418C7BB15ADE54100CC2ECD /* HTTPTools.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79715ADE54100CC2ECD /* HTTPTools.h */; };
+		E418C7BC15ADE54100CC2ECD /* VHTTPCookie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79815ADE54100CC2ECD /* VHTTPCookie.cpp */; };
+		E418C7BD15ADE54100CC2ECD /* VHTTPCookie.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79915ADE54100CC2ECD /* VHTTPCookie.h */; };
+		E418C7BE15ADE54100CC2ECD /* VMIMEMessagePart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79A15ADE54100CC2ECD /* VMIMEMessagePart.cpp */; };
+		E418C7BF15ADE54100CC2ECD /* VMIMEMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79B15ADE54100CC2ECD /* VMIMEMessagePart.h */; };
+		E418C7C015ADE54100CC2ECD /* VMIMEReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79C15ADE54100CC2ECD /* VMIMEReader.cpp */; };
+		E418C7C115ADE54100CC2ECD /* VMIMEReader.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79D15ADE54100CC2ECD /* VMIMEReader.h */; };
+		E418C7C215ADE54100CC2ECD /* VMIMEWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79E15ADE54100CC2ECD /* VMIMEWriter.cpp */; };
+		E418C7C315ADE54100CC2ECD /* VMIMEWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79F15ADE54100CC2ECD /* VMIMEWriter.h */; };
+		E418C7C415ADE54100CC2ECD /* VNameValueCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C7A015ADE54100CC2ECD /* VNameValueCollection.cpp */; };
+		E418C7C515ADE54100CC2ECD /* VNameValueCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C7A115ADE54100CC2ECD /* VNameValueCollection.h */; };
+		E42453B0176203CB0068C17C /* VHTTPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42453AD176203CB0068C17C /* VHTTPClient.cpp */; };
+		E42453B3176203CB0068C17C /* VHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E42453AE176203CB0068C17C /* VHTTPClient.h */; };
+		E42CBC9B15AAE14200D10481 /* VHTTPHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42CBC8915AAE11800D10481 /* VHTTPHeader.cpp */; };
+		E42CBC9C15AAE14200D10481 /* VHTTPHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E42CBC8A15AAE11800D10481 /* VHTTPHeader.h */; };
+		E42CBC9D15AAE14200D10481 /* VHTTPMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42CBC8B15AAE11800D10481 /* VHTTPMessage.cpp */; };
+		E42CBC9E15AAE14200D10481 /* VHTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E42CBC8C15AAE11800D10481 /* VHTTPMessage.h */; };
+		E42CBC9F15AAE14200D10481 /* VMIMEMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42CBC8D15AAE11800D10481 /* VMIMEMessage.cpp */; };
+		E42CBCA015AAE14200D10481 /* VMIMEMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E42CBC8E15AAE11800D10481 /* VMIMEMessage.h */; };
+		E49ADF2D18AA589F00DED4FB /* libzipDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46CCD9D18A92F56004D308C /* libzipDebug.framework */; };
+		E4E1DBFA16A078E200C080BD /* VProxyManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4E1DBF716A078E200C080BD /* VProxyManager.cpp */; };
+		E4E1DBFD16A078E200C080BD /* VProxyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E1DBF816A078E200C080BD /* VProxyManager.h */; };
+		F4A2BF8F18ACBA5C00D30493 /* zlibDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46CCDB118A92F6A004D308C /* zlibDebug.framework */; };
+		F4A85B46185A0DAF00D1A6D4 /* ServerNet_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* ServerNet_Prefix.pch */; };
+		F4A85B47185A0DAF00D1A6D4 /* VEndPointStream.h in Headers */ = {isa = PBXBuildFile; fileRef = CD647271157F8BE000D9710D /* VEndPointStream.h */; };
+		F4A85B48185A0DAF00D1A6D4 /* VHTTPHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E42CBC8A15AAE11800D10481 /* VHTTPHeader.h */; };
+		F4A85B49185A0DAF00D1A6D4 /* VHTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E42CBC8C15AAE11800D10481 /* VHTTPMessage.h */; };
+		F4A85B4A185A0DAF00D1A6D4 /* VMIMEMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E42CBC8E15AAE11800D10481 /* VMIMEMessage.h */; };
+		F4A85B4B185A0DAF00D1A6D4 /* HTTPTools.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79715ADE54100CC2ECD /* HTTPTools.h */; };
+		F4A85B4C185A0DAF00D1A6D4 /* VHTTPCookie.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79915ADE54100CC2ECD /* VHTTPCookie.h */; };
+		F4A85B4D185A0DAF00D1A6D4 /* VMIMEMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79B15ADE54100CC2ECD /* VMIMEMessagePart.h */; };
+		F4A85B4E185A0DAF00D1A6D4 /* VMIMEReader.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79D15ADE54100CC2ECD /* VMIMEReader.h */; };
+		F4A85B4F185A0DAF00D1A6D4 /* VMIMEWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C79F15ADE54100CC2ECD /* VMIMEWriter.h */; };
+		F4A85B50185A0DAF00D1A6D4 /* VNameValueCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = E418C7A115ADE54100CC2ECD /* VNameValueCollection.h */; };
+		F4A85B51185A0DAF00D1A6D4 /* VProxyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E1DBF816A078E200C080BD /* VProxyManager.h */; };
+		F4A85B52185A0DAF00D1A6D4 /* VHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E42453AE176203CB0068C17C /* VHTTPClient.h */; };
+		F4A85B53185A0DAF00D1A6D4 /* VWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8D7476179D7F42003A22F5 /* VWebSocket.h */; };
+		F4A85B54185A0DAF00D1A6D4 /* CryptoTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F9387DE91815757800BF67F2 /* CryptoTools.h */; };
+		F4A85B56185A0DAF00D1A6D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		F4A85B58185A0DAF00D1A6D4 /* VServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41A9D2E209DBFAD900BD8FEC /* VServer.cpp */; };
+		F4A85B59185A0DAF00D1A6D4 /* VWorkerPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41A9D2E509DBFAD900BD8FEC /* VWorkerPool.cpp */; };
+		F4A85B5A185A0DAF00D1A6D4 /* IRequestLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA1B26670D3D0AC600FA4152 /* IRequestLogger.cpp */; };
+		F4A85B5B185A0DAF00D1A6D4 /* VOpenSslLocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F93EB551133B3EC5006EDE6D /* VOpenSslLocker.cpp */; };
+		F4A85B5C185A0DAF00D1A6D4 /* XBsdSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9FCEA1613BDB4CA00E15CBE /* XBsdSocket.cpp */; };
+		F4A85B5D185A0DAF00D1A6D4 /* VSslDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90168AE1403DD6A0052EF5D /* VSslDelegate.cpp */; };
+		F4A85B5E185A0DAF00D1A6D4 /* SelectIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B704147AAAF400B72F6F /* SelectIO.cpp */; };
+		F4A85B5F185A0DAF00D1A6D4 /* ServiceDiscovery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B705147AAAF400B72F6F /* ServiceDiscovery.cpp */; };
+		F4A85B60185A0DAF00D1A6D4 /* VTCPEndPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B706147AAAF400B72F6F /* VTCPEndPoint.cpp */; };
+		F4A85B61185A0DAF00D1A6D4 /* VUDPEndPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B707147AAAF400B72F6F /* VUDPEndPoint.cpp */; };
+		F4A85B62185A0DAF00D1A6D4 /* Session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B714147AB79400B72F6F /* Session.cpp */; };
+		F4A85B63185A0DAF00D1A6D4 /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B718147AB9B400B72F6F /* Tools.cpp */; };
+		F4A85B64185A0DAF00D1A6D4 /* VConnectionHandlerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B71C147ABB6500B72F6F /* VConnectionHandlerFactory.cpp */; };
+		F4A85B65185A0DAF00D1A6D4 /* VSockListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B721147BA4D300B72F6F /* VSockListener.cpp */; };
+		F4A85B66185A0DAF00D1A6D4 /* XBsdNetAddr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C071A014E2D19F00BA9C4C /* XBsdNetAddr.cpp */; };
+		F4A85B67185A0DAF00D1A6D4 /* VNetAddr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9193EF014E956700075E46B /* VNetAddr.cpp */; };
+		F4A85B68185A0DAF00D1A6D4 /* VEndPointStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD647275157F8BF500D9710D /* VEndPointStream.cpp */; };
+		F4A85B69185A0DAF00D1A6D4 /* VHTTPHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42CBC8915AAE11800D10481 /* VHTTPHeader.cpp */; };
+		F4A85B6A185A0DAF00D1A6D4 /* VHTTPMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42CBC8B15AAE11800D10481 /* VHTTPMessage.cpp */; };
+		F4A85B6B185A0DAF00D1A6D4 /* VMIMEMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42CBC8D15AAE11800D10481 /* VMIMEMessage.cpp */; };
+		F4A85B6C185A0DAF00D1A6D4 /* HTTPTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79615ADE54100CC2ECD /* HTTPTools.cpp */; };
+		F4A85B6D185A0DAF00D1A6D4 /* VHTTPCookie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79815ADE54100CC2ECD /* VHTTPCookie.cpp */; };
+		F4A85B6E185A0DAF00D1A6D4 /* VMIMEMessagePart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79A15ADE54100CC2ECD /* VMIMEMessagePart.cpp */; };
+		F4A85B6F185A0DAF00D1A6D4 /* VMIMEReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79C15ADE54100CC2ECD /* VMIMEReader.cpp */; };
+		F4A85B70185A0DAF00D1A6D4 /* VMIMEWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C79E15ADE54100CC2ECD /* VMIMEWriter.cpp */; };
+		F4A85B71185A0DAF00D1A6D4 /* VNameValueCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E418C7A015ADE54100CC2ECD /* VNameValueCollection.cpp */; };
+		F4A85B72185A0DAF00D1A6D4 /* VProxyManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4E1DBF716A078E200C080BD /* VProxyManager.cpp */; };
+		F4A85B73185A0DAF00D1A6D4 /* VHTTPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42453AD176203CB0068C17C /* VHTTPClient.cpp */; };
+		F4A85B74185A0DAF00D1A6D4 /* VWebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8D7475179D7F42003A22F5 /* VWebSocket.cpp */; };
+		F4A85B75185A0DAF00D1A6D4 /* CryptoTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9387DE81815757800BF67F2 /* CryptoTools.cpp */; };
+		F4A85B7B185A0DAF00D1A6D4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA1F620F3FA13C00EF41C9 /* CoreFoundation.framework */; };
+		F4A85B7C185A0DAF00D1A6D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542123ED16A0CE090081A61D /* SystemConfiguration.framework */; };
+		F4A85B8E185A0E9600D1A6D4 /* OpenSSLDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A85B1E185A0D9400D1A6D4 /* OpenSSLDebug.framework */; };
+		F4CAFEF8187DCF8B00967A1B /* KernelIPCDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A9D2C109DBF9D800BD8FEC /* KernelIPCDebug.framework */; };
+		F4CAFEF9187DCF9000967A1B /* XMLDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859BEF8E0EDDB2530068D42B /* XMLDebug.framework */; };
+		F4CAFEFA187DCF9B00967A1B /* KernelDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A9D2B109DBF99300BD8FEC /* KernelDebug.framework */; };
+		F90168B41403DD6A0052EF5D /* VSslDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90168AE1403DD6A0052EF5D /* VSslDelegate.cpp */; };
+		F9193EF214E956700075E46B /* VNetAddr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9193EF014E956700075E46B /* VNetAddr.cpp */; };
+		F9387DEB1815757800BF67F2 /* CryptoTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9387DE81815757800BF67F2 /* CryptoTools.cpp */; };
+		F9387DEE1815757800BF67F2 /* CryptoTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F9387DE91815757800BF67F2 /* CryptoTools.h */; };
+		F9C071A214E2D19F00BA9C4C /* XBsdNetAddr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C071A014E2D19F00BA9C4C /* XBsdNetAddr.cpp */; };
+		F9D9B710147AAAF400B72F6F /* SelectIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B704147AAAF400B72F6F /* SelectIO.cpp */; };
+		F9D9B711147AAAF400B72F6F /* ServiceDiscovery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B705147AAAF400B72F6F /* ServiceDiscovery.cpp */; };
+		F9D9B712147AAAF400B72F6F /* VTCPEndPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B706147AAAF400B72F6F /* VTCPEndPoint.cpp */; };
+		F9D9B713147AAAF400B72F6F /* VUDPEndPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B707147AAAF400B72F6F /* VUDPEndPoint.cpp */; };
+		F9D9B717147AB79400B72F6F /* Session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B714147AB79400B72F6F /* Session.cpp */; };
+		F9D9B71B147AB9B400B72F6F /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B718147AB9B400B72F6F /* Tools.cpp */; };
+		F9D9B71F147ABB6500B72F6F /* VConnectionHandlerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B71C147ABB6500B72F6F /* VConnectionHandlerFactory.cpp */; };
+		F9D9B723147BA4D300B72F6F /* VSockListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D9B721147BA4D300B72F6F /* VSockListener.cpp */; };
+		F9FCEA1C13BDB4CA00E15CBE /* XBsdSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9FCEA1613BDB4CA00E15CBE /* XBsdSocket.cpp */; };
+		F9FCEA1E13BDB4D100E15CBE /* VOpenSslLocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F93EB551133B3EC5006EDE6D /* VOpenSslLocker.cpp */; };
+		F9FCEA2113BDB4D100E15CBE /* IRequestLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA1B26670D3D0AC600FA4152 /* IRequestLogger.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41A9D2B009DBF99300BD8FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = Kernel;
+		};
+		41A9D2B209DBF99300BD8FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0235BC0C071EDC5200BEEE2E;
+			remoteInfo = M_APM;
+		};
+		41A9D2B409DBF99300BD8FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9BBA8FD09BC8AC500F3DCFC;
+			remoteInfo = KernelLib;
+		};
+		41A9D2C009DBF9D800BD8FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2BC09DBF9D800BD8FEC /* KernelIPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = KernelIPC;
+		};
+		6D9B7017183E4C1C000691CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9B6FFC183E4714000691CB;
+			remoteInfo = "KernelLib x64";
+		};
+		6D9B701A183E4C1C000691CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2BC09DBF9D800BD8FEC /* KernelIPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9B6F1D183E46BA000691CB;
+			remoteInfo = "KernelIPCLib x64";
+		};
+		859BEF8D0EDDB2530068D42B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859BEF890EDDB2530068D42B /* XML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = XML;
+		};
+		B508DD930BEA4BD20036C46F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2BC09DBF9D800BD8FEC /* KernelIPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B54AA6920BEA453E005240A2;
+			remoteInfo = KernelIPCLib;
+		};
+		E46CCD9818A92F56004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46CCD8B18A92F56004D308C /* libzip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F437D321113EC9B1009FE5D8;
+			remoteInfo = "libzip i386";
+		};
+		E46CCD9A18A92F56004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46CCD8B18A92F56004D308C /* libzip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F437D378113ECB07009FE5D8;
+			remoteInfo = "libzip x86_64";
+		};
+		E46CCD9C18A92F56004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46CCD8B18A92F56004D308C /* libzip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4AC04E2185F4322007C4031;
+			remoteInfo = libzip;
+		};
+		E46CCDA218A92F56004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44213D2140E6205008F6502 /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DBB6E4618A3D49400FAA889;
+			remoteInfo = "OpenSSLLib i386";
+		};
+		E46CCDA418A92F56004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44213D2140E6205008F6502 /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DF9B5A018A3F1F2001C8698;
+			remoteInfo = "OpenSSLLib x86_64";
+		};
+		E46CCDAC18A92F6A004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46CCDA618A92F6A004D308C /* zlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F464382F113EA01800639653;
+			remoteInfo = "zlib i386";
+		};
+		E46CCDAE18A92F6A004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46CCDA618A92F6A004D308C /* zlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4643859113EA24A00639653;
+			remoteInfo = "zlib x64";
+		};
+		E46CCDB018A92F6A004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46CCDA618A92F6A004D308C /* zlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F45415CA185B07D500C7FB99;
+			remoteInfo = zlib;
+		};
+		E46CCDB218A92F98004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46CCD8B18A92F56004D308C /* libzip.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4AC048D185F4322007C4031;
+			remoteInfo = libzip;
+		};
+		E46CCDB418A92F9C004D308C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46CCDA618A92F6A004D308C /* zlib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F45415A6185B07D500C7FB99;
+			remoteInfo = zlib;
+		};
+		F44213DA140E6206008F6502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44213D2140E6205008F6502 /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4643BF9113EA87000639653;
+			remoteInfo = "OpenSSL i386";
+		};
+		F44213DC140E6206008F6502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44213D2140E6205008F6502 /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4643EBB113EA8D600639653;
+			remoteInfo = "OpenSSL x86_64";
+		};
+		F4643469113E8FB200639653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F46431A2113E7C4800639653;
+			remoteInfo = "M_APM x64";
+		};
+		F4A85B1D185A0D9400D1A6D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44213D2140E6205008F6502 /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F41D65E81858767100565CA7;
+			remoteInfo = OpenSSL;
+		};
+		F4A85B25185A0D9400D1A6D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4E1C3561859B83C005F1140;
+			remoteInfo = M_APM;
+		};
+		F4A85B86185A0E7E00D1A6D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44213D2140E6205008F6502 /* OpenSSL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F41D62F51858767100565CA7;
+			remoteInfo = OpenSSL;
+		};
+		F4A85B88185A0E8200D1A6D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E1C2481859B823005F1140;
+			remoteInfo = Kernel;
+		};
+		F4A85B8A185A0E8600D1A6D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A9D2BC09DBF9D800BD8FEC /* KernelIPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F42FBAB4185A02CD00EFC5CF;
+			remoteInfo = KernelIPC;
+		};
+		F4A85B8C185A0E8A00D1A6D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859BEF890EDDB2530068D42B /* XML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4ED7C91185A0ADC0002399A;
+			remoteInfo = XML;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32BAE0B70371A74B00C91783 /* ServerNet_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerNet_Prefix.pch; sourceTree = "<group>"; };
+		3957A5D30C29273100794CD3 /* xtoolbox_performance.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_performance.xcconfig; path = ../../../xtoolbox_performance.xcconfig; sourceTree = SOURCE_ROOT; };
+		41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../../../Kernel/Projects/Xcode/Kernel.xcodeproj; sourceTree = SOURCE_ROOT; };
+		41A9D2BC09DBF9D800BD8FEC /* KernelIPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KernelIPC.xcodeproj; path = ../../../KernelIPC/Projects/Xcode/KernelIPC.xcodeproj; sourceTree = SOURCE_ROOT; };
+		41A9D2E209DBFAD900BD8FEC /* VServer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = VServer.cpp; path = ../../Sources/VServer.cpp; sourceTree = SOURCE_ROOT; };
+		41A9D2E509DBFAD900BD8FEC /* VWorkerPool.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = VWorkerPool.cpp; path = ../../Sources/VWorkerPool.cpp; sourceTree = SOURCE_ROOT; };
+		542123ED16A0CE090081A61D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6D9B6EC7183E430A000691CB /* libServerNetDebug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libServerNetDebug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCA1F620F3FA13C00EF41C9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		859BEF890EDDB2530068D42B /* XML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XML.xcodeproj; path = ../../../XML/Projects/Xcode/XML.xcodeproj; sourceTree = SOURCE_ROOT; };
+		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B1C69A7A1962DCCB0064F54D /* IKeyCertChainSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IKeyCertChainSource.h; path = ../../Sources/IKeyCertChainSource.h; sourceTree = "<group>"; };
+		B508DD9D0BEA4BF70036C46F /* libServerNetDebug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libServerNetDebug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1B26670D3D0AC600FA4152 /* IRequestLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IRequestLogger.cpp; path = ../../Sources/IRequestLogger.cpp; sourceTree = SOURCE_ROOT; };
+		CD647271157F8BE000D9710D /* VEndPointStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VEndPointStream.h; path = ../../Sources/VEndPointStream.h; sourceTree = SOURCE_ROOT; };
+		CD647275157F8BF500D9710D /* VEndPointStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VEndPointStream.cpp; path = ../../Sources/VEndPointStream.cpp; sourceTree = SOURCE_ROOT; };
+		CD8D7475179D7F42003A22F5 /* VWebSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VWebSocket.cpp; path = ../../Sources/VWebSocket.cpp; sourceTree = "<group>"; };
+		CD8D7476179D7F42003A22F5 /* VWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWebSocket.h; path = ../../Sources/VWebSocket.h; sourceTree = "<group>"; };
+		D24D1A9D0B7C70A5007D174C /* xtoolbox_base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_base.xcconfig; path = ../../../xtoolbox_base.xcconfig; sourceTree = SOURCE_ROOT; };
+		D24D1A9E0B7C70A5007D174C /* xtoolbox_beta.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_beta.xcconfig; path = ../../../xtoolbox_beta.xcconfig; sourceTree = SOURCE_ROOT; };
+		D24D1A9F0B7C70A5007D174C /* xtoolbox_debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_debug.xcconfig; path = ../../../xtoolbox_debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		D24D1AA00B7C70A5007D174C /* xtoolbox_release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_release.xcconfig; path = ../../../xtoolbox_release.xcconfig; sourceTree = SOURCE_ROOT; };
+		D24D1C9F0B7C8EB0007D174C /* xtoolbox_coverage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_coverage.xcconfig; path = ../../../xtoolbox_coverage.xcconfig; sourceTree = SOURCE_ROOT; };
+		E418C79615ADE54100CC2ECD /* HTTPTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HTTPTools.cpp; path = ../../Sources/HTTPTools.cpp; sourceTree = SOURCE_ROOT; };
+		E418C79715ADE54100CC2ECD /* HTTPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPTools.h; path = ../../Sources/HTTPTools.h; sourceTree = SOURCE_ROOT; };
+		E418C79815ADE54100CC2ECD /* VHTTPCookie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VHTTPCookie.cpp; path = ../../Sources/VHTTPCookie.cpp; sourceTree = SOURCE_ROOT; };
+		E418C79915ADE54100CC2ECD /* VHTTPCookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VHTTPCookie.h; path = ../../Sources/VHTTPCookie.h; sourceTree = SOURCE_ROOT; };
+		E418C79A15ADE54100CC2ECD /* VMIMEMessagePart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VMIMEMessagePart.cpp; path = ../../Sources/VMIMEMessagePart.cpp; sourceTree = SOURCE_ROOT; };
+		E418C79B15ADE54100CC2ECD /* VMIMEMessagePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMIMEMessagePart.h; path = ../../Sources/VMIMEMessagePart.h; sourceTree = SOURCE_ROOT; };
+		E418C79C15ADE54100CC2ECD /* VMIMEReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VMIMEReader.cpp; path = ../../Sources/VMIMEReader.cpp; sourceTree = SOURCE_ROOT; };
+		E418C79D15ADE54100CC2ECD /* VMIMEReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMIMEReader.h; path = ../../Sources/VMIMEReader.h; sourceTree = SOURCE_ROOT; };
+		E418C79E15ADE54100CC2ECD /* VMIMEWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VMIMEWriter.cpp; path = ../../Sources/VMIMEWriter.cpp; sourceTree = SOURCE_ROOT; };
+		E418C79F15ADE54100CC2ECD /* VMIMEWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMIMEWriter.h; path = ../../Sources/VMIMEWriter.h; sourceTree = SOURCE_ROOT; };
+		E418C7A015ADE54100CC2ECD /* VNameValueCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VNameValueCollection.cpp; path = ../../Sources/VNameValueCollection.cpp; sourceTree = SOURCE_ROOT; };
+		E418C7A115ADE54100CC2ECD /* VNameValueCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VNameValueCollection.h; path = ../../Sources/VNameValueCollection.h; sourceTree = SOURCE_ROOT; };
+		E42453AD176203CB0068C17C /* VHTTPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VHTTPClient.cpp; path = ../../Sources/VHTTPClient.cpp; sourceTree = "<group>"; };
+		E42453AE176203CB0068C17C /* VHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VHTTPClient.h; path = ../../Sources/VHTTPClient.h; sourceTree = "<group>"; };
+		E42CBC8915AAE11800D10481 /* VHTTPHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VHTTPHeader.cpp; path = ../../Sources/VHTTPHeader.cpp; sourceTree = SOURCE_ROOT; };
+		E42CBC8A15AAE11800D10481 /* VHTTPHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VHTTPHeader.h; path = ../../Sources/VHTTPHeader.h; sourceTree = SOURCE_ROOT; };
+		E42CBC8B15AAE11800D10481 /* VHTTPMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VHTTPMessage.cpp; path = ../../Sources/VHTTPMessage.cpp; sourceTree = SOURCE_ROOT; };
+		E42CBC8C15AAE11800D10481 /* VHTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VHTTPMessage.h; path = ../../Sources/VHTTPMessage.h; sourceTree = SOURCE_ROOT; };
+		E42CBC8D15AAE11800D10481 /* VMIMEMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VMIMEMessage.cpp; path = ../../Sources/VMIMEMessage.cpp; sourceTree = SOURCE_ROOT; };
+		E42CBC8E15AAE11800D10481 /* VMIMEMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMIMEMessage.h; path = ../../Sources/VMIMEMessage.h; sourceTree = SOURCE_ROOT; };
+		E46CCD8B18A92F56004D308C /* libzip.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libzip.xcodeproj; path = ../../../../../libzip/0.10/Projects/MacOS/XCode/libzip/libzip.xcodeproj; sourceTree = "<group>"; };
+		E46CCDA618A92F6A004D308C /* zlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = zlib.xcodeproj; path = ../../../../../zlib/1.2.5/projects/MacOS/zlib.xcodeproj; sourceTree = "<group>"; };
+		E4E1DBF716A078E200C080BD /* VProxyManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VProxyManager.cpp; path = ../../Sources/VProxyManager.cpp; sourceTree = "<group>"; };
+		E4E1DBF816A078E200C080BD /* VProxyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VProxyManager.h; path = ../../Sources/VProxyManager.h; sourceTree = "<group>"; };
+		F44213D2140E6205008F6502 /* OpenSSL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OpenSSL.xcodeproj; path = ../../../../../openssl/1.0.0d/Projects/XCode/OpenSSL.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F4643476113E8FE100639653 /* xtoolbox_x64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_x64.xcconfig; path = ../../../xtoolbox_x64.xcconfig; sourceTree = SOURCE_ROOT; };
+		F4A85B84185A0DAF00D1A6D4 /* ServerNetDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ServerNetDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90168AD1403DD6A0052EF5D /* SslStub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SslStub.cpp; path = ../../Sources/SslStub.cpp; sourceTree = SOURCE_ROOT; };
+		F90168AE1403DD6A0052EF5D /* VSslDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VSslDelegate.cpp; path = ../../Sources/VSslDelegate.cpp; sourceTree = SOURCE_ROOT; };
+		F914B6E51464593A004ACE34 /* VEcho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VEcho.h; path = ../../Examples/VEcho.h; sourceTree = SOURCE_ROOT; };
+		F914B6E61464593A004ACE34 /* VEcho.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VEcho.cpp; path = ../../Examples/VEcho.cpp; sourceTree = SOURCE_ROOT; };
+		F914B6E71464595D004ACE34 /* IOpenSslLocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOpenSslLocker.h; path = ../../Sources/IOpenSslLocker.h; sourceTree = SOURCE_ROOT; };
+		F914B6E81464595D004ACE34 /* IRequestLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRequestLogger.h; path = ../../Sources/IRequestLogger.h; sourceTree = SOURCE_ROOT; };
+		F914B6E91464595D004ACE34 /* ServerNetTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerNetTypes.h; path = ../../Sources/ServerNetTypes.h; sourceTree = SOURCE_ROOT; };
+		F914B6EA1464595D004ACE34 /* VOpenSslLocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VOpenSslLocker.h; path = ../../Sources/VOpenSslLocker.h; sourceTree = SOURCE_ROOT; };
+		F914B6EF1464595D004ACE34 /* VWorkerPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWorkerPool.h; path = ../../Sources/VWorkerPool.h; sourceTree = SOURCE_ROOT; };
+		F914B6F01464595D004ACE34 /* VServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VServer.h; path = ../../Sources/VServer.h; sourceTree = SOURCE_ROOT; };
+		F914B6F11464595D004ACE34 /* VSslDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSslDelegate.h; path = ../../Sources/VSslDelegate.h; sourceTree = SOURCE_ROOT; };
+		F914B6F21464595D004ACE34 /* XBsdSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBsdSocket.h; path = ../../Sources/XBsdSocket.h; sourceTree = SOURCE_ROOT; };
+		F914B6F31464595D004ACE34 /* VServerErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VServerErrors.h; path = ../../Sources/VServerErrors.h; sourceTree = SOURCE_ROOT; };
+		F914B6F41464595D004ACE34 /* SslStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SslStub.h; path = ../../Sources/SslStub.h; sourceTree = SOURCE_ROOT; };
+		F9193ED614E531D20075E46B /* VNetAddr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VNetAddr.h; path = ../../Sources/VNetAddr.h; sourceTree = SOURCE_ROOT; };
+		F9193EF014E956700075E46B /* VNetAddr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VNetAddr.cpp; path = ../../Sources/VNetAddr.cpp; sourceTree = SOURCE_ROOT; };
+		F9315860150DFCD40044E84C /* XWinNetAddr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XWinNetAddr.cpp; path = ../../Sources/XWinNetAddr.cpp; sourceTree = SOURCE_ROOT; };
+		F9315861150DFCF40044E84C /* XWinNetAddr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XWinNetAddr.h; path = ../../Sources/XWinNetAddr.h; sourceTree = SOURCE_ROOT; };
+		F932AAD314AB2B6400EFFA79 /* ServerNetArchTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerNetArchTypes.h; path = ../../Sources/ServerNetArchTypes.h; sourceTree = SOURCE_ROOT; };
+		F932AAD414AB2B6400EFFA79 /* ServerNetSystemTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerNetSystemTypes.h; path = ../../Sources/ServerNetSystemTypes.h; sourceTree = SOURCE_ROOT; };
+		F936CA441486744E00400F5C /* ICriticalError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICriticalError.h; path = ../../Sources/ICriticalError.h; sourceTree = SOURCE_ROOT; };
+		F9387DE81815757800BF67F2 /* CryptoTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CryptoTools.cpp; path = ../../Sources/CryptoTools.cpp; sourceTree = "<group>"; };
+		F9387DE91815757800BF67F2 /* CryptoTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CryptoTools.h; path = ../../Sources/CryptoTools.h; sourceTree = "<group>"; };
+		F93ACDA9147A4C7E00C4D0D2 /* VSharedWorkers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSharedWorkers.h; path = ../../SharedWorkers/VSharedWorkers.h; sourceTree = SOURCE_ROOT; };
+		F93ACDAD147A4CA900C4D0D2 /* VEndPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VEndPoint.h; path = ../../Sources/VEndPoint.h; sourceTree = SOURCE_ROOT; };
+		F93ACDB1147A4CD100C4D0D2 /* VTCPEndPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTCPEndPoint.h; path = ../../Sources/VTCPEndPoint.h; sourceTree = SOURCE_ROOT; };
+		F93ACDB5147A4D2400C4D0D2 /* VUDPEndPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VUDPEndPoint.h; path = ../../Sources/VUDPEndPoint.h; sourceTree = SOURCE_ROOT; };
+		F93ACDBF147A4D4300C4D0D2 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Session.h; path = ../../Sources/Session.h; sourceTree = SOURCE_ROOT; };
+		F93ACDC6147A4D6700C4D0D2 /* VConnectionHandlerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VConnectionHandlerFactory.h; path = ../../Sources/VConnectionHandlerFactory.h; sourceTree = SOURCE_ROOT; };
+		F93ACDCD147A4DB300C4D0D2 /* SelectIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectIO.h; path = ../../Sources/SelectIO.h; sourceTree = SOURCE_ROOT; };
+		F93ACDD4147A4DD300C4D0D2 /* ServiceDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceDiscovery.h; path = ../../Sources/ServiceDiscovery.h; sourceTree = SOURCE_ROOT; };
+		F93EB551133B3EC5006EDE6D /* VOpenSslLocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VOpenSslLocker.cpp; path = ../../Sources/VOpenSslLocker.cpp; sourceTree = SOURCE_ROOT; };
+		F99AD64E1352F56300CAD830 /* VServerNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VServerNet.h; path = ../../VServerNet.h; sourceTree = SOURCE_ROOT; };
+		F99C327D147E91E600348B16 /* VSharedWorkers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VSharedWorkers.cpp; path = ../../SharedWorkers/VSharedWorkers.cpp; sourceTree = SOURCE_ROOT; };
+		F9C0719F14E2D17B00BA9C4C /* XBsdNetAddr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBsdNetAddr.h; path = ../../Sources/XBsdNetAddr.h; sourceTree = SOURCE_ROOT; };
+		F9C071A014E2D19F00BA9C4C /* XBsdNetAddr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XBsdNetAddr.cpp; path = ../../Sources/XBsdNetAddr.cpp; sourceTree = SOURCE_ROOT; };
+		F9D9B647147A6BAC00B72F6F /* VSockListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSockListener.h; path = ../../Sources/VSockListener.h; sourceTree = SOURCE_ROOT; };
+		F9D9B64B147A833F00B72F6F /* IConnectionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IConnectionListener.h; path = ../../Sources/IConnectionListener.h; sourceTree = SOURCE_ROOT; };
+		F9D9B651147A8F3200B72F6F /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tools.h; path = ../../Sources/Tools.h; sourceTree = SOURCE_ROOT; };
+		F9D9B65B147AA2BA00B72F6F /* VServerNetPrecompiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VServerNetPrecompiled.h; path = ../../Sources/VServerNetPrecompiled.h; sourceTree = SOURCE_ROOT; };
+		F9D9B65C147AA2BA00B72F6F /* XWinSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XWinSocket.h; path = ../../Sources/XWinSocket.h; sourceTree = SOURCE_ROOT; };
+		F9D9B681147AA32400B72F6F /* VServerNetPCH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VServerNetPCH.cpp; path = ../Visual/VServerNetPCH.cpp; sourceTree = SOURCE_ROOT; };
+		F9D9B704147AAAF400B72F6F /* SelectIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SelectIO.cpp; path = ../../Sources/SelectIO.cpp; sourceTree = SOURCE_ROOT; };
+		F9D9B705147AAAF400B72F6F /* ServiceDiscovery.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ServiceDiscovery.cpp; path = ../../Sources/ServiceDiscovery.cpp; sourceTree = SOURCE_ROOT; };
+		F9D9B706147AAAF400B72F6F /* VTCPEndPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VTCPEndPoint.cpp; path = ../../Sources/VTCPEndPoint.cpp; sourceTree = SOURCE_ROOT; };
+		F9D9B707147AAAF400B72F6F /* VUDPEndPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VUDPEndPoint.cpp; path = ../../Sources/VUDPEndPoint.cpp; sourceTree = SOURCE_ROOT; };
+		F9D9B714147AB79400B72F6F /* Session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Session.cpp; path = ../../Sources/Session.cpp; sourceTree = SOURCE_ROOT; };
+		F9D9B718147AB9B400B72F6F /* Tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tools.cpp; path = ../../Sources/Tools.cpp; sourceTree = SOURCE_ROOT; };
+		F9D9B71C147ABB6500B72F6F /* VConnectionHandlerFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VConnectionHandlerFactory.cpp; path = ../../Sources/VConnectionHandlerFactory.cpp; sourceTree = SOURCE_ROOT; };
+		F9D9B721147BA4D300B72F6F /* VSockListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VSockListener.cpp; path = ../../Sources/VSockListener.cpp; sourceTree = SOURCE_ROOT; };
+		F9FCEA1613BDB4CA00E15CBE /* XBsdSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XBsdSocket.cpp; path = ../../Sources/XBsdSocket.cpp; sourceTree = SOURCE_ROOT; };
+		F9FCEA1713BDB4CA00E15CBE /* XWinSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XWinSocket.cpp; path = ../../Sources/XWinSocket.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D9B6EBE183E430A000691CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9B6EBF183E430A000691CB /* CoreFoundation.framework in Frameworks */,
+				6D9B6EC0183E430A000691CB /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B508DD9B0BEA4BF70036C46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCA1F640F3FA13C00EF41C9 /* CoreFoundation.framework in Frameworks */,
+				542123EF16A0CE090081A61D /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A85B76185A0DAF00D1A6D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49ADF2D18AA589F00DED4FB /* libzipDebug.framework in Frameworks */,
+				F4A2BF8F18ACBA5C00D30493 /* zlibDebug.framework in Frameworks */,
+				F4A85B8E185A0E9600D1A6D4 /* OpenSSLDebug.framework in Frameworks */,
+				F4CAFEFA187DCF9B00967A1B /* KernelDebug.framework in Frameworks */,
+				F4CAFEF9187DCF9000967A1B /* XMLDebug.framework in Frameworks */,
+				F4CAFEF8187DCF8B00967A1B /* KernelIPCDebug.framework in Frameworks */,
+				F4A85B7B185A0DAF00D1A6D4 /* CoreFoundation.framework in Frameworks */,
+				F4A85B7C185A0DAF00D1A6D4 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B508DD9D0BEA4BF70036C46F /* libServerNetDebug.a */,
+				6D9B6EC7183E430A000691CB /* libServerNetDebug.a */,
+				F4A85B84185A0DAF00D1A6D4 /* ServerNetDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ServerNet */ = {
+			isa = PBXGroup;
+			children = (
+				F9BA3AD8152DC450008E176F /* Dependencies */,
+				F93ACDA8147A4C2700C4D0D2 /* SharedWorkers */,
+				F914B6E41464590B004ACE34 /* Examples */,
+				D24D1A9C0B7C70A5007D174C /* config */,
+				41A9D2C709DBF9F000BD8FEC /* Headers */,
+				E42453A71762039C0068C17C /* HTTPClient */,
+				E42CBC8815AAE0E200D10481 /* MIMEMessages */,
+				E4E1DBF016A078AB00C080BD /* Proxy */,
+				08FB77ACFE841707C02AAC07 /* Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+			);
+			name = ServerNet;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				542123ED16A0CE090081A61D /* SystemConfiguration.framework */,
+				6DCA1F620F3FA13C00EF41C9 /* CoreFoundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D07F2C70486CC7A007CD1D0 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F9387DE81815757800BF67F2 /* CryptoTools.cpp */,
+				F9387DE91815757800BF67F2 /* CryptoTools.h */,
+				F9D9B702147AA76200B72F6F /* Precompiled */,
+				BA1B26670D3D0AC600FA4152 /* IRequestLogger.cpp */,
+				F9D9B704147AAAF400B72F6F /* SelectIO.cpp */,
+				F9D9B705147AAAF400B72F6F /* ServiceDiscovery.cpp */,
+				F9D9B714147AB79400B72F6F /* Session.cpp */,
+				F90168AD1403DD6A0052EF5D /* SslStub.cpp */,
+				F9D9B718147AB9B400B72F6F /* Tools.cpp */,
+				F9D9B71C147ABB6500B72F6F /* VConnectionHandlerFactory.cpp */,
+				F9193EF014E956700075E46B /* VNetAddr.cpp */,
+				F93EB551133B3EC5006EDE6D /* VOpenSslLocker.cpp */,
+				F9D9B721147BA4D300B72F6F /* VSockListener.cpp */,
+				F90168AE1403DD6A0052EF5D /* VSslDelegate.cpp */,
+				CD647275157F8BF500D9710D /* VEndPointStream.cpp */,
+				F9D9B706147AAAF400B72F6F /* VTCPEndPoint.cpp */,
+				F9D9B707147AAAF400B72F6F /* VUDPEndPoint.cpp */,
+				CD8D7475179D7F42003A22F5 /* VWebSocket.cpp */,
+				41A9D2E509DBFAD900BD8FEC /* VWorkerPool.cpp */,
+				41A9D2E209DBFAD900BD8FEC /* VServer.cpp */,
+				F9C071A014E2D19F00BA9C4C /* XBsdNetAddr.cpp */,
+				F9FCEA1613BDB4CA00E15CBE /* XBsdSocket.cpp */,
+				F9315860150DFCD40044E84C /* XWinNetAddr.cpp */,
+				F9FCEA1713BDB4CA00E15CBE /* XWinSocket.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		41A9D2AB09DBF99300BD8FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41A9D2B509DBF99300BD8FEC /* libKernelDebug.a */,
+				41A9D2B309DBF99300BD8FEC /* libM_APMDebug.a */,
+				F464346A113E8FB200639653 /* libM_APMDebug.a */,
+				6D9B7018183E4C1C000691CB /* libKernelDebug.a */,
+				F4A85B26185A0D9400D1A6D4 /* libM_APMDebug.a */,
+				41A9D2B109DBF99300BD8FEC /* KernelDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41A9D2BD09DBF9D800BD8FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B508DD940BEA4BD20036C46F /* libKernelIPCDebug.a */,
+				6D9B701B183E4C1C000691CB /* libKernelIPCDebug.a */,
+				41A9D2C109DBF9D800BD8FEC /* KernelIPCDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41A9D2C709DBF9F000BD8FEC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F9D9B69A147AA3A700B72F6F /* Precompiled */,
+				F95C514D14E2D5D3006824CE /* Types */,
+				F9D9B64B147A833F00B72F6F /* IConnectionListener.h */,
+				F936CA441486744E00400F5C /* ICriticalError.h */,
+				B1C69A7A1962DCCB0064F54D /* IKeyCertChainSource.h */,
+				F914B6E71464595D004ACE34 /* IOpenSslLocker.h */,
+				F914B6E81464595D004ACE34 /* IRequestLogger.h */,
+				F93ACDCD147A4DB300C4D0D2 /* SelectIO.h */,
+				F93ACDD4147A4DD300C4D0D2 /* ServiceDiscovery.h */,
+				F93ACDBF147A4D4300C4D0D2 /* Session.h */,
+				F914B6F41464595D004ACE34 /* SslStub.h */,
+				F9D9B651147A8F3200B72F6F /* Tools.h */,
+				F93ACDC6147A4D6700C4D0D2 /* VConnectionHandlerFactory.h */,
+				CD647271157F8BE000D9710D /* VEndPointStream.h */,
+				F93ACDAD147A4CA900C4D0D2 /* VEndPoint.h */,
+				F914B6EA1464595D004ACE34 /* VOpenSslLocker.h */,
+				F914B6F01464595D004ACE34 /* VServer.h */,
+				F914B6F31464595D004ACE34 /* VServerErrors.h */,
+				F99AD64E1352F56300CAD830 /* VServerNet.h */,
+				F9D9B647147A6BAC00B72F6F /* VSockListener.h */,
+				F914B6F11464595D004ACE34 /* VSslDelegate.h */,
+				F93ACDB1147A4CD100C4D0D2 /* VTCPEndPoint.h */,
+				F93ACDB5147A4D2400C4D0D2 /* VUDPEndPoint.h */,
+				CD8D7476179D7F42003A22F5 /* VWebSocket.h */,
+				F914B6EF1464595D004ACE34 /* VWorkerPool.h */,
+				F9193ED614E531D20075E46B /* VNetAddr.h */,
+				F9C0719F14E2D17B00BA9C4C /* XBsdNetAddr.h */,
+				F914B6F21464595D004ACE34 /* XBsdSocket.h */,
+				F9315861150DFCF40044E84C /* XWinNetAddr.h */,
+				F9D9B65C147AA2BA00B72F6F /* XWinSocket.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		859BEF8A0EDDB2530068D42B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				859BEF8E0EDDB2530068D42B /* XMLDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D24D1A9C0B7C70A5007D174C /* config */ = {
+			isa = PBXGroup;
+			children = (
+				F4643476113E8FE100639653 /* xtoolbox_x64.xcconfig */,
+				D24D1A9D0B7C70A5007D174C /* xtoolbox_base.xcconfig */,
+				D24D1A9E0B7C70A5007D174C /* xtoolbox_beta.xcconfig */,
+				D24D1A9F0B7C70A5007D174C /* xtoolbox_debug.xcconfig */,
+				D24D1AA00B7C70A5007D174C /* xtoolbox_release.xcconfig */,
+				D24D1C9F0B7C8EB0007D174C /* xtoolbox_coverage.xcconfig */,
+				3957A5D30C29273100794CD3 /* xtoolbox_performance.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		E42453A71762039C0068C17C /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				E42453AD176203CB0068C17C /* VHTTPClient.cpp */,
+				E42453AE176203CB0068C17C /* VHTTPClient.h */,
+			);
+			name = HTTPClient;
+			sourceTree = "<group>";
+		};
+		E42CBC8815AAE0E200D10481 /* MIMEMessages */ = {
+			isa = PBXGroup;
+			children = (
+				E418C79615ADE54100CC2ECD /* HTTPTools.cpp */,
+				E418C79715ADE54100CC2ECD /* HTTPTools.h */,
+				E418C79815ADE54100CC2ECD /* VHTTPCookie.cpp */,
+				E418C79915ADE54100CC2ECD /* VHTTPCookie.h */,
+				E418C79A15ADE54100CC2ECD /* VMIMEMessagePart.cpp */,
+				E418C79B15ADE54100CC2ECD /* VMIMEMessagePart.h */,
+				E418C79C15ADE54100CC2ECD /* VMIMEReader.cpp */,
+				E418C79D15ADE54100CC2ECD /* VMIMEReader.h */,
+				E418C79E15ADE54100CC2ECD /* VMIMEWriter.cpp */,
+				E418C79F15ADE54100CC2ECD /* VMIMEWriter.h */,
+				E418C7A015ADE54100CC2ECD /* VNameValueCollection.cpp */,
+				E418C7A115ADE54100CC2ECD /* VNameValueCollection.h */,
+				E42CBC8915AAE11800D10481 /* VHTTPHeader.cpp */,
+				E42CBC8A15AAE11800D10481 /* VHTTPHeader.h */,
+				E42CBC8B15AAE11800D10481 /* VHTTPMessage.cpp */,
+				E42CBC8C15AAE11800D10481 /* VHTTPMessage.h */,
+				E42CBC8D15AAE11800D10481 /* VMIMEMessage.cpp */,
+				E42CBC8E15AAE11800D10481 /* VMIMEMessage.h */,
+			);
+			name = MIMEMessages;
+			sourceTree = "<group>";
+		};
+		E46CCD8C18A92F56004D308C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E46CCD9918A92F56004D308C /* libzipDebug.framework */,
+				E46CCD9B18A92F56004D308C /* libzipDebug.framework */,
+				E46CCD9D18A92F56004D308C /* libzipDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E46CCDA718A92F6A004D308C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E46CCDAD18A92F6A004D308C /* zlibDebug.framework */,
+				E46CCDAF18A92F6A004D308C /* zlibDebug.framework */,
+				E46CCDB118A92F6A004D308C /* zlibDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4E1DBF016A078AB00C080BD /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				E4E1DBF716A078E200C080BD /* VProxyManager.cpp */,
+				E4E1DBF816A078E200C080BD /* VProxyManager.h */,
+			);
+			name = Proxy;
+			sourceTree = "<group>";
+		};
+		F44213D3140E6205008F6502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F44213DB140E6206008F6502 /* OpenSSLDebug.framework */,
+				F44213DD140E6206008F6502 /* OpenSSLDebug.framework */,
+				F4A85B1E185A0D9400D1A6D4 /* OpenSSLDebug.framework */,
+				E46CCDA318A92F56004D308C /* libOpenSSLLib i386.a */,
+				E46CCDA518A92F56004D308C /* libOpenSSLLib x86_64.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F914B6E41464590B004ACE34 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				F914B6E51464593A004ACE34 /* VEcho.h */,
+				F914B6E61464593A004ACE34 /* VEcho.cpp */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		F93ACDA8147A4C2700C4D0D2 /* SharedWorkers */ = {
+			isa = PBXGroup;
+			children = (
+				F99C327D147E91E600348B16 /* VSharedWorkers.cpp */,
+				F93ACDA9147A4C7E00C4D0D2 /* VSharedWorkers.h */,
+			);
+			name = SharedWorkers;
+			sourceTree = "<group>";
+		};
+		F95C514D14E2D5D3006824CE /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				F932AAD314AB2B6400EFFA79 /* ServerNetArchTypes.h */,
+				F932AAD414AB2B6400EFFA79 /* ServerNetSystemTypes.h */,
+				F914B6E91464595D004ACE34 /* ServerNetTypes.h */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		F9BA3AD8152DC450008E176F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				E46CCDA618A92F6A004D308C /* zlib.xcodeproj */,
+				E46CCD8B18A92F56004D308C /* libzip.xcodeproj */,
+				F44213D2140E6205008F6502 /* OpenSSL.xcodeproj */,
+				41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */,
+				859BEF890EDDB2530068D42B /* XML.xcodeproj */,
+				41A9D2BC09DBF9D800BD8FEC /* KernelIPC.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		F9D9B69A147AA3A700B72F6F /* Precompiled */ = {
+			isa = PBXGroup;
+			children = (
+				32BAE0B70371A74B00C91783 /* ServerNet_Prefix.pch */,
+				F9D9B65B147AA2BA00B72F6F /* VServerNetPrecompiled.h */,
+			);
+			name = Precompiled;
+			sourceTree = "<group>";
+		};
+		F9D9B702147AA76200B72F6F /* Precompiled */ = {
+			isa = PBXGroup;
+			children = (
+				F9D9B681147AA32400B72F6F /* VServerNetPCH.cpp */,
+			);
+			name = Precompiled;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6D9B6E8F183E430A000691CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9B6E90183E430A000691CB /* ServerNet_Prefix.pch in Headers */,
+				6D9B6E91183E430A000691CB /* VEndPointStream.h in Headers */,
+				6D9B6E92183E430A000691CB /* VHTTPHeader.h in Headers */,
+				6D9B6E93183E430A000691CB /* VHTTPMessage.h in Headers */,
+				6D9B6E94183E430A000691CB /* VMIMEMessage.h in Headers */,
+				6D9B6E95183E430A000691CB /* HTTPTools.h in Headers */,
+				6D9B6E96183E430A000691CB /* VHTTPCookie.h in Headers */,
+				6D9B6E97183E430A000691CB /* VMIMEMessagePart.h in Headers */,
+				6D9B6E98183E430A000691CB /* VMIMEReader.h in Headers */,
+				6D9B6E99183E430A000691CB /* VMIMEWriter.h in Headers */,
+				6D9B6E9A183E430A000691CB /* VNameValueCollection.h in Headers */,
+				6D9B6E9B183E430A000691CB /* VProxyManager.h in Headers */,
+				6D9B6E9C183E430A000691CB /* VHTTPClient.h in Headers */,
+				6D9B6E9D183E430A000691CB /* VWebSocket.h in Headers */,
+				6D9B6E9E183E430A000691CB /* CryptoTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B508DD990BEA4BF70036C46F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54DA0E90BEA4CB8006FB990 /* ServerNet_Prefix.pch in Headers */,
+				CD647274157F8BE000D9710D /* VEndPointStream.h in Headers */,
+				E42CBC9C15AAE14200D10481 /* VHTTPHeader.h in Headers */,
+				E42CBC9E15AAE14200D10481 /* VHTTPMessage.h in Headers */,
+				E42CBCA015AAE14200D10481 /* VMIMEMessage.h in Headers */,
+				E418C7BB15ADE54100CC2ECD /* HTTPTools.h in Headers */,
+				E418C7BD15ADE54100CC2ECD /* VHTTPCookie.h in Headers */,
+				E418C7BF15ADE54100CC2ECD /* VMIMEMessagePart.h in Headers */,
+				E418C7C115ADE54100CC2ECD /* VMIMEReader.h in Headers */,
+				E418C7C315ADE54100CC2ECD /* VMIMEWriter.h in Headers */,
+				E418C7C515ADE54100CC2ECD /* VNameValueCollection.h in Headers */,
+				E4E1DBFD16A078E200C080BD /* VProxyManager.h in Headers */,
+				E42453B3176203CB0068C17C /* VHTTPClient.h in Headers */,
+				CD8D747B179D7F42003A22F5 /* VWebSocket.h in Headers */,
+				F9387DEE1815757800BF67F2 /* CryptoTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A85B45185A0DAF00D1A6D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A85B46185A0DAF00D1A6D4 /* ServerNet_Prefix.pch in Headers */,
+				F4A85B47185A0DAF00D1A6D4 /* VEndPointStream.h in Headers */,
+				F4A85B48185A0DAF00D1A6D4 /* VHTTPHeader.h in Headers */,
+				F4A85B49185A0DAF00D1A6D4 /* VHTTPMessage.h in Headers */,
+				F4A85B4A185A0DAF00D1A6D4 /* VMIMEMessage.h in Headers */,
+				F4A85B4B185A0DAF00D1A6D4 /* HTTPTools.h in Headers */,
+				F4A85B4C185A0DAF00D1A6D4 /* VHTTPCookie.h in Headers */,
+				F4A85B4D185A0DAF00D1A6D4 /* VMIMEMessagePart.h in Headers */,
+				F4A85B4E185A0DAF00D1A6D4 /* VMIMEReader.h in Headers */,
+				F4A85B4F185A0DAF00D1A6D4 /* VMIMEWriter.h in Headers */,
+				F4A85B50185A0DAF00D1A6D4 /* VNameValueCollection.h in Headers */,
+				F4A85B51185A0DAF00D1A6D4 /* VProxyManager.h in Headers */,
+				F4A85B52185A0DAF00D1A6D4 /* VHTTPClient.h in Headers */,
+				F4A85B53185A0DAF00D1A6D4 /* VWebSocket.h in Headers */,
+				F4A85B54185A0DAF00D1A6D4 /* CryptoTools.h in Headers */,
+				B1C69A7B1962DCCB0064F54D /* IKeyCertChainSource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D9B6E8E183E430A000691CB /* ServerNetLib x86_64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D9B6EC1183E430A000691CB /* Build configuration list for PBXNativeTarget "ServerNetLib x86_64" */;
+			buildPhases = (
+				6D9B6E8F183E430A000691CB /* Headers */,
+				6D9B6E9F183E430A000691CB /* Sources */,
+				6D9B6EBE183E430A000691CB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ServerNetLib x86_64";
+			productName = ServerNetLib;
+			productReference = 6D9B6EC7183E430A000691CB /* libServerNetDebug.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B508DD9C0BEA4BF70036C46F /* ServerNetLib i386 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B508DDA10BEA4C110036C46F /* Build configuration list for PBXNativeTarget "ServerNetLib i386" */;
+			buildPhases = (
+				B508DD990BEA4BF70036C46F /* Headers */,
+				B508DD9A0BEA4BF70036C46F /* Sources */,
+				B508DD9B0BEA4BF70036C46F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ServerNetLib i386";
+			productName = ServerNetLib;
+			productReference = B508DD9D0BEA4BF70036C46F /* libServerNetDebug.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F4A85B3C185A0DAF00D1A6D4 /* ServerNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4A85B7E185A0DAF00D1A6D4 /* Build configuration list for PBXNativeTarget "ServerNet" */;
+			buildPhases = (
+				F4A85B45185A0DAF00D1A6D4 /* Headers */,
+				F4A85B55185A0DAF00D1A6D4 /* Resources */,
+				F4A85B57185A0DAF00D1A6D4 /* Sources */,
+				F4A85B76185A0DAF00D1A6D4 /* Frameworks */,
+				F4A85B7D185A0DAF00D1A6D4 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E46CCDB518A92F9C004D308C /* PBXTargetDependency */,
+				E46CCDB318A92F98004D308C /* PBXTargetDependency */,
+				F4A85B87185A0E7E00D1A6D4 /* PBXTargetDependency */,
+				F4A85B89185A0E8200D1A6D4 /* PBXTargetDependency */,
+				F4A85B8B185A0E8600D1A6D4 /* PBXTargetDependency */,
+				F4A85B8D185A0E8A00D1A6D4 /* PBXTargetDependency */,
+			);
+			name = ServerNet;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = ServerNet;
+			productReference = F4A85B84185A0DAF00D1A6D4 /* ServerNetDebug.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "ServerNet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* ServerNet */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 41A9D2AB09DBF99300BD8FEC /* Products */;
+					ProjectRef = 41A9D2AA09DBF99300BD8FEC /* Kernel.xcodeproj */;
+				},
+				{
+					ProductGroup = 41A9D2BD09DBF9D800BD8FEC /* Products */;
+					ProjectRef = 41A9D2BC09DBF9D800BD8FEC /* KernelIPC.xcodeproj */;
+				},
+				{
+					ProductGroup = E46CCD8C18A92F56004D308C /* Products */;
+					ProjectRef = E46CCD8B18A92F56004D308C /* libzip.xcodeproj */;
+				},
+				{
+					ProductGroup = F44213D3140E6205008F6502 /* Products */;
+					ProjectRef = F44213D2140E6205008F6502 /* OpenSSL.xcodeproj */;
+				},
+				{
+					ProductGroup = 859BEF8A0EDDB2530068D42B /* Products */;
+					ProjectRef = 859BEF890EDDB2530068D42B /* XML.xcodeproj */;
+				},
+				{
+					ProductGroup = E46CCDA718A92F6A004D308C /* Products */;
+					ProjectRef = E46CCDA618A92F6A004D308C /* zlib.xcodeproj */;
+				},
+			);
+			projectRoot = ../..;
+			targets = (
+				B508DD9C0BEA4BF70036C46F /* ServerNetLib i386 */,
+				6D9B6E8E183E430A000691CB /* ServerNetLib x86_64 */,
+				F4A85B3C185A0DAF00D1A6D4 /* ServerNet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		41A9D2B109DBF99300BD8FEC /* KernelDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KernelDebug.framework;
+			remoteRef = 41A9D2B009DBF99300BD8FEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41A9D2B309DBF99300BD8FEC /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = 41A9D2B209DBF99300BD8FEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41A9D2B509DBF99300BD8FEC /* libKernelDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelDebug.a;
+			remoteRef = 41A9D2B409DBF99300BD8FEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41A9D2C109DBF9D800BD8FEC /* KernelIPCDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KernelIPCDebug.framework;
+			remoteRef = 41A9D2C009DBF9D800BD8FEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9B7018183E4C1C000691CB /* libKernelDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelDebug.a;
+			remoteRef = 6D9B7017183E4C1C000691CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9B701B183E4C1C000691CB /* libKernelIPCDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelIPCDebug.a;
+			remoteRef = 6D9B701A183E4C1C000691CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859BEF8E0EDDB2530068D42B /* XMLDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XMLDebug.framework;
+			remoteRef = 859BEF8D0EDDB2530068D42B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B508DD940BEA4BD20036C46F /* libKernelIPCDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelIPCDebug.a;
+			remoteRef = B508DD930BEA4BD20036C46F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CCD9918A92F56004D308C /* libzipDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libzipDebug.framework;
+			remoteRef = E46CCD9818A92F56004D308C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CCD9B18A92F56004D308C /* libzipDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libzipDebug.framework;
+			remoteRef = E46CCD9A18A92F56004D308C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CCD9D18A92F56004D308C /* libzipDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libzipDebug.framework;
+			remoteRef = E46CCD9C18A92F56004D308C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CCDA318A92F56004D308C /* libOpenSSLLib i386.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libOpenSSLLib i386.a";
+			remoteRef = E46CCDA218A92F56004D308C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CCDA518A92F56004D308C /* libOpenSSLLib x86_64.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libOpenSSLLib x86_64.a";
+			remoteRef = E46CCDA418A92F56004D308C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CCDAD18A92F6A004D308C /* zlibDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = zlibDebug.framework;
+			remoteRef = E46CCDAC18A92F6A004D308C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CCDAF18A92F6A004D308C /* zlibDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = zlibDebug.framework;
+			remoteRef = E46CCDAE18A92F6A004D308C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E46CCDB118A92F6A004D308C /* zlibDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = zlibDebug.framework;
+			remoteRef = E46CCDB018A92F6A004D308C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F44213DB140E6206008F6502 /* OpenSSLDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OpenSSLDebug.framework;
+			remoteRef = F44213DA140E6206008F6502 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F44213DD140E6206008F6502 /* OpenSSLDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OpenSSLDebug.framework;
+			remoteRef = F44213DC140E6206008F6502 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F464346A113E8FB200639653 /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = F4643469113E8FB200639653 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4A85B1E185A0D9400D1A6D4 /* OpenSSLDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OpenSSLDebug.framework;
+			remoteRef = F4A85B1D185A0D9400D1A6D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4A85B26185A0D9400D1A6D4 /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = F4A85B25185A0D9400D1A6D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4A85B55185A0DAF00D1A6D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A85B56185A0DAF00D1A6D4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F4A85B7D185A0DAF00D1A6D4 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D9B6E9F183E430A000691CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9B6EA0183E430A000691CB /* VServer.cpp in Sources */,
+				6D9B6EA1183E430A000691CB /* VWorkerPool.cpp in Sources */,
+				6D9B6EA2183E430A000691CB /* XBsdSocket.cpp in Sources */,
+				6D9B6EA3183E430A000691CB /* VOpenSslLocker.cpp in Sources */,
+				6D9B6EA4183E430A000691CB /* IRequestLogger.cpp in Sources */,
+				6D9B6EA5183E430A000691CB /* VSslDelegate.cpp in Sources */,
+				6D9B6EA6183E430A000691CB /* SelectIO.cpp in Sources */,
+				6D9B6EA7183E430A000691CB /* ServiceDiscovery.cpp in Sources */,
+				6D9B6EA8183E430A000691CB /* VTCPEndPoint.cpp in Sources */,
+				6D9B6EA9183E430A000691CB /* VUDPEndPoint.cpp in Sources */,
+				6D9B6EAA183E430A000691CB /* Session.cpp in Sources */,
+				6D9B6EAB183E430A000691CB /* Tools.cpp in Sources */,
+				6D9B6EAC183E430A000691CB /* VConnectionHandlerFactory.cpp in Sources */,
+				6D9B6EAD183E430A000691CB /* VSockListener.cpp in Sources */,
+				6D9B6EAE183E430A000691CB /* XBsdNetAddr.cpp in Sources */,
+				6D9B6EAF183E430A000691CB /* VNetAddr.cpp in Sources */,
+				6D9B6EB0183E430A000691CB /* VEndPointStream.cpp in Sources */,
+				6D9B6EB1183E430A000691CB /* VHTTPHeader.cpp in Sources */,
+				6D9B6EB2183E430A000691CB /* VHTTPMessage.cpp in Sources */,
+				6D9B6EB3183E430A000691CB /* VMIMEMessage.cpp in Sources */,
+				6D9B6EB4183E430A000691CB /* HTTPTools.cpp in Sources */,
+				6D9B6EB5183E430A000691CB /* VHTTPCookie.cpp in Sources */,
+				6D9B6EB6183E430A000691CB /* VMIMEMessagePart.cpp in Sources */,
+				6D9B6EB7183E430A000691CB /* VMIMEReader.cpp in Sources */,
+				6D9B6EB8183E430A000691CB /* VMIMEWriter.cpp in Sources */,
+				6D9B6EB9183E430A000691CB /* VNameValueCollection.cpp in Sources */,
+				6D9B6EBA183E430A000691CB /* VProxyManager.cpp in Sources */,
+				6D9B6EBB183E430A000691CB /* VHTTPClient.cpp in Sources */,
+				6D9B6EBC183E430A000691CB /* VWebSocket.cpp in Sources */,
+				6D9B6EBD183E430A000691CB /* CryptoTools.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B508DD9A0BEA4BF70036C46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54DA0F60BEA4CCF006FB990 /* VServer.cpp in Sources */,
+				B54DA0F90BEA4CCF006FB990 /* VWorkerPool.cpp in Sources */,
+				F9FCEA1C13BDB4CA00E15CBE /* XBsdSocket.cpp in Sources */,
+				F9FCEA1E13BDB4D100E15CBE /* VOpenSslLocker.cpp in Sources */,
+				F9FCEA2113BDB4D100E15CBE /* IRequestLogger.cpp in Sources */,
+				F90168B41403DD6A0052EF5D /* VSslDelegate.cpp in Sources */,
+				F9D9B710147AAAF400B72F6F /* SelectIO.cpp in Sources */,
+				F9D9B711147AAAF400B72F6F /* ServiceDiscovery.cpp in Sources */,
+				F9D9B712147AAAF400B72F6F /* VTCPEndPoint.cpp in Sources */,
+				F9D9B713147AAAF400B72F6F /* VUDPEndPoint.cpp in Sources */,
+				F9D9B717147AB79400B72F6F /* Session.cpp in Sources */,
+				F9D9B71B147AB9B400B72F6F /* Tools.cpp in Sources */,
+				F9D9B71F147ABB6500B72F6F /* VConnectionHandlerFactory.cpp in Sources */,
+				F9D9B723147BA4D300B72F6F /* VSockListener.cpp in Sources */,
+				F9C071A214E2D19F00BA9C4C /* XBsdNetAddr.cpp in Sources */,
+				F9193EF214E956700075E46B /* VNetAddr.cpp in Sources */,
+				CD647278157F8BF500D9710D /* VEndPointStream.cpp in Sources */,
+				E42CBC9B15AAE14200D10481 /* VHTTPHeader.cpp in Sources */,
+				E42CBC9D15AAE14200D10481 /* VHTTPMessage.cpp in Sources */,
+				E42CBC9F15AAE14200D10481 /* VMIMEMessage.cpp in Sources */,
+				E418C7BA15ADE54100CC2ECD /* HTTPTools.cpp in Sources */,
+				E418C7BC15ADE54100CC2ECD /* VHTTPCookie.cpp in Sources */,
+				E418C7BE15ADE54100CC2ECD /* VMIMEMessagePart.cpp in Sources */,
+				E418C7C015ADE54100CC2ECD /* VMIMEReader.cpp in Sources */,
+				E418C7C215ADE54100CC2ECD /* VMIMEWriter.cpp in Sources */,
+				E418C7C415ADE54100CC2ECD /* VNameValueCollection.cpp in Sources */,
+				E4E1DBFA16A078E200C080BD /* VProxyManager.cpp in Sources */,
+				E42453B0176203CB0068C17C /* VHTTPClient.cpp in Sources */,
+				CD8D7478179D7F42003A22F5 /* VWebSocket.cpp in Sources */,
+				F9387DEB1815757800BF67F2 /* CryptoTools.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A85B57185A0DAF00D1A6D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A85B58185A0DAF00D1A6D4 /* VServer.cpp in Sources */,
+				F4A85B59185A0DAF00D1A6D4 /* VWorkerPool.cpp in Sources */,
+				F4A85B5A185A0DAF00D1A6D4 /* IRequestLogger.cpp in Sources */,
+				F4A85B5B185A0DAF00D1A6D4 /* VOpenSslLocker.cpp in Sources */,
+				F4A85B5C185A0DAF00D1A6D4 /* XBsdSocket.cpp in Sources */,
+				F4A85B5D185A0DAF00D1A6D4 /* VSslDelegate.cpp in Sources */,
+				F4A85B5E185A0DAF00D1A6D4 /* SelectIO.cpp in Sources */,
+				F4A85B5F185A0DAF00D1A6D4 /* ServiceDiscovery.cpp in Sources */,
+				F4A85B60185A0DAF00D1A6D4 /* VTCPEndPoint.cpp in Sources */,
+				F4A85B61185A0DAF00D1A6D4 /* VUDPEndPoint.cpp in Sources */,
+				F4A85B62185A0DAF00D1A6D4 /* Session.cpp in Sources */,
+				F4A85B63185A0DAF00D1A6D4 /* Tools.cpp in Sources */,
+				F4A85B64185A0DAF00D1A6D4 /* VConnectionHandlerFactory.cpp in Sources */,
+				F4A85B65185A0DAF00D1A6D4 /* VSockListener.cpp in Sources */,
+				F4A85B66185A0DAF00D1A6D4 /* XBsdNetAddr.cpp in Sources */,
+				F4A85B67185A0DAF00D1A6D4 /* VNetAddr.cpp in Sources */,
+				F4A85B68185A0DAF00D1A6D4 /* VEndPointStream.cpp in Sources */,
+				F4A85B69185A0DAF00D1A6D4 /* VHTTPHeader.cpp in Sources */,
+				F4A85B6A185A0DAF00D1A6D4 /* VHTTPMessage.cpp in Sources */,
+				F4A85B6B185A0DAF00D1A6D4 /* VMIMEMessage.cpp in Sources */,
+				F4A85B6C185A0DAF00D1A6D4 /* HTTPTools.cpp in Sources */,
+				F4A85B6D185A0DAF00D1A6D4 /* VHTTPCookie.cpp in Sources */,
+				F4A85B6E185A0DAF00D1A6D4 /* VMIMEMessagePart.cpp in Sources */,
+				F4A85B6F185A0DAF00D1A6D4 /* VMIMEReader.cpp in Sources */,
+				F4A85B70185A0DAF00D1A6D4 /* VMIMEWriter.cpp in Sources */,
+				F4A85B71185A0DAF00D1A6D4 /* VNameValueCollection.cpp in Sources */,
+				F4A85B72185A0DAF00D1A6D4 /* VProxyManager.cpp in Sources */,
+				F4A85B73185A0DAF00D1A6D4 /* VHTTPClient.cpp in Sources */,
+				F4A85B74185A0DAF00D1A6D4 /* VWebSocket.cpp in Sources */,
+				F4A85B75185A0DAF00D1A6D4 /* CryptoTools.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E46CCDB318A92F98004D308C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libzip;
+			targetProxy = E46CCDB218A92F98004D308C /* PBXContainerItemProxy */;
+		};
+		E46CCDB518A92F9C004D308C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zlib;
+			targetProxy = E46CCDB418A92F9C004D308C /* PBXContainerItemProxy */;
+		};
+		F4A85B87185A0E7E00D1A6D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenSSL;
+			targetProxy = F4A85B86185A0E7E00D1A6D4 /* PBXContainerItemProxy */;
+		};
+		F4A85B89185A0E8200D1A6D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kernel;
+			targetProxy = F4A85B88185A0E8200D1A6D4 /* PBXContainerItemProxy */;
+		};
+		F4A85B8B185A0E8600D1A6D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KernelIPC;
+			targetProxy = F4A85B8A185A0E8600D1A6D4 /* PBXContainerItemProxy */;
+		};
+		F4A85B8D185A0E8A00D1A6D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XML;
+			targetProxy = F4A85B8C185A0E8A00D1A6D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		126DA2780A4ACFC300D639DA /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24D1C9F0B7C8EB0007D174C /* xtoolbox_coverage.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = ServerNet_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = (
+					"-DFD_SETSIZE=2048",
+					"-D_DARWIN_UNLIMITED_SELECT",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Coverage;
+		};
+		39C390910C27FFC70073EDA8 /* Performance */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+				VALID_ARCHS = i386;
+			};
+			name = Performance;
+		};
+		39C390920C27FFC70073EDA8 /* Performance */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3957A5D30C29273100794CD3 /* xtoolbox_performance.xcconfig */;
+			buildSettings = {
+				GCC_PREFIX_HEADER = ServerNet_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = (
+					"-DFD_SETSIZE=2048",
+					"-D_DARWIN_UNLIMITED_SELECT",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Performance;
+		};
+		41A9D32C09DBFD0D00BD8FEC /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24D1A9E0B7C70A5007D174C /* xtoolbox_beta.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREFIX_HEADER = ServerNet_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = (
+					"-DFD_SETSIZE=2048",
+					"-D_DARWIN_UNLIMITED_SELECT",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Beta;
+		};
+		4FADC24708B4156D00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24D1A9F0B7C70A5007D174C /* xtoolbox_debug.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = ServerNet_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = (
+					"-DFD_SETSIZE=2048",
+					"-D_DARWIN_UNLIMITED_SELECT",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Debug;
+		};
+		4FADC24808B4156D00ABE55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24D1AA00B7C70A5007D174C /* xtoolbox_release.xcconfig */;
+			buildSettings = {
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREFIX_HEADER = ServerNet_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = (
+					"-DFD_SETSIZE=2048",
+					"-D_DARWIN_UNLIMITED_SELECT",
+				);
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					icu,
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Release;
+		};
+		6D9B6EC2183E430A000691CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4643476113E8FE100639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Debug;
+		};
+		6D9B6EC3183E430A000691CB /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4643476113E8FE100639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Coverage;
+		};
+		6D9B6EC4183E430A000691CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4643476113E8FE100639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Release;
+		};
+		6D9B6EC5183E430A000691CB /* Performance */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4643476113E8FE100639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Performance;
+		};
+		6D9B6EC6183E430A000691CB /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4643476113E8FE100639653 /* xtoolbox_x64.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"WITH_DEBUGMSG=1",
+					"WITH_ASSERT=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks x86_64/";
+			};
+			name = Beta;
+		};
+		B508DDA20BEA4C110036C46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		B508DDA30BEA4C110036C46F /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+				VALID_ARCHS = i386;
+			};
+			name = Coverage;
+		};
+		B508DDA40BEA4C110036C46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		B508DDA50BEA4C110036C46F /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"WITH_DEBUGMSG=1",
+					"WITH_ASSERT=1",
+					"XTOOLBOX_AS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				SYMROOT = "$(SRCROOT)/../../../Frameworks i386/";
+				VALID_ARCHS = i386;
+			};
+			name = Beta;
+		};
+		F4A85B7F185A0DAF00D1A6D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debug;
+		};
+		F4A85B80185A0DAF00D1A6D4 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Coverage;
+		};
+		F4A85B81185A0DAF00D1A6D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Release;
+		};
+		F4A85B82185A0DAF00D1A6D4 /* Performance */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Performance;
+		};
+		F4A85B83185A0DAF00D1A6D4 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Beta;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "ServerNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC24708B4156D00ABE55E /* Debug */,
+				126DA2780A4ACFC300D639DA /* Coverage */,
+				4FADC24808B4156D00ABE55E /* Release */,
+				39C390920C27FFC70073EDA8 /* Performance */,
+				41A9D32C09DBFD0D00BD8FEC /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D9B6EC1183E430A000691CB /* Build configuration list for PBXNativeTarget "ServerNetLib x86_64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9B6EC2183E430A000691CB /* Debug */,
+				6D9B6EC3183E430A000691CB /* Coverage */,
+				6D9B6EC4183E430A000691CB /* Release */,
+				6D9B6EC5183E430A000691CB /* Performance */,
+				6D9B6EC6183E430A000691CB /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B508DDA10BEA4C110036C46F /* Build configuration list for PBXNativeTarget "ServerNetLib i386" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B508DDA20BEA4C110036C46F /* Debug */,
+				B508DDA30BEA4C110036C46F /* Coverage */,
+				B508DDA40BEA4C110036C46F /* Release */,
+				39C390910C27FFC70073EDA8 /* Performance */,
+				B508DDA50BEA4C110036C46F /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4A85B7E185A0DAF00D1A6D4 /* Build configuration list for PBXNativeTarget "ServerNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A85B7F185A0DAF00D1A6D4 /* Debug */,
+				F4A85B80185A0DAF00D1A6D4 /* Coverage */,
+				F4A85B81185A0DAF00D1A6D4 /* Release */,
+				F4A85B82185A0DAF00D1A6D4 /* Performance */,
+				F4A85B83185A0DAF00D1A6D4 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

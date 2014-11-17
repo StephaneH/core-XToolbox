@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Translation file for 4D products.
+	Copyright (C) 2011-2014 4D SAS.
+	This file is distributed under the same license as the 4D product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" source-language="en-US" target-language="de" product-version="v14">
+    <header>
+      <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that will
+        be replaced (often by a numeric value) before the string is displayed</note>
+      <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s name
+        and must not be localised</note>
+      <note>\r, \t and \n are meta-characters.</note>
+    </header>
+    <body>
+      <group resname="xbox JavaScript errors">
+        <trans-unit id="4000" resname="ERR_jvsc_4000">
+          <source>Wrong type for parameter #{p1}, expected File or String.</source>
+          <target>Wrong type for parameter #{p1}, expected File or String.</target>
+        </trans-unit>
+        <trans-unit id="4001" resname="ERR_jvsc_4001">
+          <source>Wrong type for parameter #{p1}, expected String.</source>
+          <target>Wrong type for parameter #{p1}, expected String.</target>
+        </trans-unit>
+        <trans-unit id="4002" resname="ERR_jvsc_4002">
+          <source>Wrong type for parameter #{p1}, expected Boolean.</source>
+          <target>Wrong type for parameter #{p1}, expected Boolean.</target>
+        </trans-unit>
+        <trans-unit id="4003" resname="ERR_jvsc_4003">
+          <source>Wrong type for parameter #{p1}, expected Number.</source>
+          <target>Wrong type for parameter #{p1}, expected Number.</target>
+        </trans-unit>
+        <trans-unit id="4004" resname="ERR_jvsc_4004">
+          <source>Wrong type for parameter #{p1}, expected Folder or String.</source>
+          <target>Wrong type for parameter #{p1}, expected Folder or String.</target>
+        </trans-unit>
+        <trans-unit id="4005" resname="ERR_jvsc_4005">
+          <source>Wrong type for parameter #{p1}, expected DataClass Attribute or String.</source>
+          <target>Wrong type for parameter #{p1}, expected DataClass Attribute or String.</target>
+        </trans-unit>
+        <trans-unit id="4006" resname="ERR_jvsc_4006">
+          <source>Wrong type for parameter #{p1}, expected Function.</source>
+          <target>Wrong type for parameter #{p1}, expected Function.</target>
+        </trans-unit>
+        <trans-unit id="4007" resname="ERR_jvsc_4007">
+          <source>Wrong type for parameter #{p1}, expected Object.</source>
+          <target>Wrong type for parameter #{p1}, expected Object.</target>
+        </trans-unit>
+        <trans-unit id="4008" resname="ERR_jvsc_4008">
+          <source>Wrong type for parameter #{p1}, expected Buffer.</source>
+          <target>Wrong type for parameter #{p1}, expected Buffer.</target>
+        </trans-unit>
+        <trans-unit id="4009" resname="ERR_jvsc_4009">
+          <source>Wrong type for parameter #{p1}, expected Array.</source>
+          <target>Wrong type for parameter #{p1}, expected Array.</target>
+        </trans-unit>
+        <trans-unit id="4010" resname="ERR_jvsc_4010">
+          <source>Method or constructor {p1} expects argument(s).</source>
+          <target>Method or constructor {p1} expects argument(s).</target>
+        </trans-unit>
+        <trans-unit id="4011" resname="ERR_jvsc_4011">
+          <source>Wrong type for parameter #{p1}.</source>
+          <target>Wrong type for parameter #{p1}.</target>
+        </trans-unit>
+        <trans-unit id="4012" resname="ERR_jvsc_4012">
+          <source>Wrong type for parameter #{p1}, expected Entity DataClass or String.</source>
+          <target>Wrong type for parameter #{p1}, expected Entity DataClass or String.</target>
+        </trans-unit>
+        <trans-unit id="4013" resname="ERR_jvsc_4013">
+          <source>File object must refer to an actual file!</source>
+          <target>File object must refer to an actual file!</target>
+        </trans-unit>
+        <trans-unit id="4014" resname="ERR_jvsc_4014">
+          <source>Folder object must refer to an actual folder!</source>
+          <target>Folder object must refer to an actual folder!</target>
+        </trans-unit>
+        <trans-unit id="4015" resname="ERR_jvsc_4015">
+          <source>Cannot call undefined function object.</source>
+          <target>Cannot call undefined function object.</target>
+        </trans-unit>
+        <trans-unit id="4016" resname="ERR_jvsc_4016">
+          <source>Cannot call '{p1}'. The expression is not evaluated as a function object.</source>
+          <target>Cannot call '{p1}'. The expression is not evaluated as a function object.</target>
+        </trans-unit>
+        <trans-unit id="4020" resname="ERR_jvsc_4020">
+          <source>Syntax error "{p1}"!</source>
+          <target>Syntax error "{p1}"!</target>
+        </trans-unit>
+        <trans-unit id="4021" resname="ERR_jvsc_4021">
+          <source>Script "{p1}" not found!</source>
+          <target>Script "{p1}" not found!</target>
+        </trans-unit>
+        <trans-unit id="4022" resname="ERR_jvsc_4022">
+          <source>Trying to do a structured clone of an unsupported data type (DataCloneError)!</source>
+          <target>Trying to do a structured clone of an unsupported data type (DataCloneError)!</target>
+        </trans-unit>
+        <trans-unit id="4023" resname="ERR_jvsc_4023">
+          <source>Evaluation of require() function implementation ({p1}) failed!</source>
+          <target>Evaluation of require() function implementation ({p1}) failed!</target>
+        </trans-unit>
+        <trans-unit id="4024" resname="ERR_jvsc_4024">
+          <source>SharedWorker ({p1}) cannot be created recursively!</source>
+          <target>SharedWorker ({p1}) cannot be created recursively!</target>
+        </trans-unit>
+        <trans-unit id="4025" resname="ERR_jvsc_4025">
+          <source>Trying to reference a neutralized object!</source>
+          <target>Trying to reference a neutralized object!</target>
+        </trans-unit>
+        <trans-unit id="4026" resname="ERR_jvsc_4026">
+          <source>Parameter #{p1} is not a valid property for the attribute {p2}.</source>
+          <target>Parameter #{p1} is not a valid property for the attribute {p2}.</target>
+        </trans-unit>
+        <trans-unit id="4050" resname="ERR_jvsc_4050">
+          <source>Invalid object state: Method {p1} cannot be called in current state.</source>
+          <target>Invalid object state: Method {p1} cannot be called in current state.</target>
+        </trans-unit>
+        <trans-unit id="4051" resname="ERR_jvsc_4051">
+          <source>Method {p1} is not supported or implemented.</source>
+          <target>Method {p1} is not supported or implemented.</target>
+        </trans-unit>
+        <trans-unit id="4052" resname="ERR_jvsc_4052">
+          <source>Function {p1} does not support all or part of argument {p2}.</source>
+          <target>Function {p1} does not support all or part of argument {p2}.</target>
+        </trans-unit>
+        <trans-unit id="4053" resname="ERR_jvsc_4053">
+          <source>Number given as argument {p1} has invalid value (check range).</source>
+          <target>Number given as argument {p1} has invalid value (check range).</target>
+        </trans-unit>
+        <trans-unit id="4054" resname="ERR_jvsc_4054">
+          <source>{p1} operation is forbidden.</source>
+          <target>{p1} operation is forbidden.</target>
+        </trans-unit>
+        <trans-unit id="4055" resname="ERR_jvsc_4055">
+          <source>{p1}, line #{p2}, {p3}.</source>
+          <target>{p1}, line #{p2}, {p3}.</target>
+        </trans-unit>
+        <trans-unit id="4056" resname="ERR_jvsc_4056">
+          <source>{p1}</source>
+          <target>{p1}</target>
+        </trans-unit>
+        <trans-unit id="4100" resname="ERR_jvsc_4100">
+          <source>Buffer encoding failed!</source>
+          <target>Buffer encoding failed!</target>
+        </trans-unit>
+        <trans-unit id="4101" resname="ERR_jvsc_4101">
+          <source>Out of bound of Buffer object!</source>
+          <target>Out of bound of Buffer object!</target>
+        </trans-unit>
+        <trans-unit id="4102" resname="ERR_jvsc_4102">
+          <source>Unsupported or unknown encoding {p1}!</source>
+          <target>Unsupported or unknown encoding {p1}!</target>
+        </trans-unit>
+        <trans-unit id="4120" resname="ERR_jvsc_4120">
+          <source>ArrayBuffer has been neutered.</source>
+          <target>ArrayBuffer has been neutered.</target>
+        </trans-unit>
+        <trans-unit id="4121" resname="ERR_jvsc_4121">
+          <source>Out of bound of TypedArray object!</source>
+          <target>Out of bound of TypedArray object!</target>
+        </trans-unit>
+        <trans-unit id="4122" resname="ERR_jvsc_4122">
+          <source>Trying to fill a TypedArray with a bigger Array or TypedArray!</source>
+          <target>Trying to fill a TypedArray with a bigger Array or TypedArray!</target>
+        </trans-unit>
+        <trans-unit id="4200" resname="ERR_jvsc_4200">
+          <source>Socket is already connected!</source>
+          <target>Socket is already connected!</target>
+        </trans-unit>
+        <trans-unit id="4201" resname="ERR_jvsc_4201">
+          <source>Expecting SSL key and certificate (options.key and options.cert)!</source>
+          <target>Expecting SSL key and certificate (options.key and options.cert)!</target>
+        </trans-unit>
+        <trans-unit id="4300" resname="ERR_jvsc_4300">
+          <source>Argument {p1} has invalid file system type (must be TEMPORARY ou PERSISTENT)!</source>
+          <target>Argument {p1} has invalid file system type (must be TEMPORARY ou PERSISTENT)!</target>
+        </trans-unit>
+        <trans-unit id="4301" resname="ERR_jvsc_4301">
+          <source>Wrong type for parameter #{p1}, expected DirectoryEntry object.</source>
+          <target>Wrong type for parameter #{p1}, expected DirectoryEntry object.</target>
+        </trans-unit>
+        <trans-unit id="4302" resname="ERR_jvsc_4302">
+          <source>Wrong type for parameter #{p1}, expected DirectoryEntrySync object.</source>
+          <target>Wrong type for parameter #{p1}, expected DirectoryEntrySync object.</target>
+        </trans-unit>
+        <trans-unit id="4303" resname="ERR_jvsc_4303">
+          <source>New name #{p1} must not be an empty string!</source>
+          <target>New name #{p1} must not be an empty string!</target>
+        </trans-unit>
+        <trans-unit id="4400" resname="ERR_jvsc_4400">
+          <source>BinaryStream does not support net.Socket objects! Use net.SocketSync instead.</source>
+          <target>BinaryStream does not support net.Socket objects! Use net.SocketSync instead.</target>
+        </trans-unit>
+        <trans-unit id="4500" resname="ERR_jvsc_4500">
+          <source>Unable to retrieve source URL for module loading.</source>
+          <target>Unable to retrieve source URL for module loading.</target>
+        </trans-unit>
+        <trans-unit id="4501" resname="ERR_jvsc_4501">
+          <source>SSJS module system internal error!</source>
+          <target>SSJS module system internal error!</target>
+        </trans-unit>
+        <trans-unit id="4600" resname="ERR_jvsc_4600">
+          <source>Invalid system worker name: '{p1}'.</source>
+          <target>Invalid system worker name: '{p1}'.</target>
+        </trans-unit>
+        <trans-unit id="4601" resname="ERR_jvsc_4601">
+          <source>Failed to load the system workers definition file '{path}'.</source>
+          <target>Failed to load the system workers definition file '{path}'.</target>
+        </trans-unit>
+        <trans-unit id="4602" resname="ERR_jvsc_4602">
+          <source>System worker '{p1}' not found.</source>
+          <target>System worker '{p1}' not found.</target>
+        </trans-unit>
+        <trans-unit id="5121" resname="ERR_jvsc_5121">
+          <source>The argument is missing.</source>
+          <target>The argument is missing.</target>
+        </trans-unit>
+        <trans-unit id="5122" resname="ERR_jvsc_5122">
+          <source>File path is invalid.</source>
+          <target>File path is invalid.</target>
+        </trans-unit>
+        <trans-unit id="5123" resname="ERR_jvsc_5123">
+          <source>File does not exist.</source>
+          <target>File does not exist.</target>
+        </trans-unit>
+        <trans-unit id="5124" resname="ERR_jvsc_5124">
+          <source>Current solution is missing.</source>
+          <target>Current solution is missing.</target>
+        </trans-unit>
+        <trans-unit id="5125" resname="ERR_jvsc_5125">
+          <source>Wrong argument number.</source>
+          <target>Wrong argument number.</target>
+        </trans-unit>
+        <trans-unit id="5126" resname="ERR_jvsc_5126">
+          <source>Argument mismatch error.</source>
+          <target>Argument mismatch error.</target>
+        </trans-unit>
+        <trans-unit id="6000" resname="ERR_jvsc_6000">
+          <source>SyntaxError</source>
+          <target>SyntaxError</target>
+        </trans-unit>
+        <trans-unit id="6001" resname="ERR_jvsc_6001">
+          <source>InvalidAccessError</source>
+          <target>InvalidAccessError</target>
+        </trans-unit>
+      </group>
+      <group id="1900" resname="XMLHttpRequest Errors Text">
+        <trans-unit resname="ERR_XHRQ_1000" id="1">
+          <source>Invalid URL method</source>
+          <target>Invalid URL method</target>
+        </trans-unit>
+        <trans-unit resname="ERR_XHRQ_1001" id="2">
+          <source>Dangerous URL method</source>
+          <target>Dangerous URL method</target>
+        </trans-unit>
+        <trans-unit resname="ERR_XHRQ_1002" id="3">
+          <source>Unsupported URL protocol</source>
+          <target>Unsupported URL protocol</target>
+        </trans-unit>
+        <trans-unit resname="ERR_XHRQ_1003" id="4">
+          <source>Invalid state for requested operation</source>
+          <target>Invalid state for requested operation</target>
+        </trans-unit>
+        <trans-unit resname="ERR_XHRQ_1004" id="5">
+          <source>Internal JavaScript binding error</source>
+          <target>Internal JavaScript binding error</target>
+        </trans-unit>
+        <trans-unit resname="ERR_XHRQ_1005" id="6">
+          <source>Send could not complete</source>
+          <target>Send could not complete</target>
+        </trans-unit>
+        <trans-unit resname="ERR_XHRQ_1008" id="7">
+          <source>Internal implementation error</source>
+          <target>Internal implementation error</target>
+        </trans-unit>
+        <trans-unit resname="ERR_XHRQ_1009" id="8">
+          <source>Unsupported parameter for requested operation</source>
+          <target>Unsupported parameter for requested operation</target>
+        </trans-unit>
+      </group>
+      <group id="2000" resname="cURL Wrappers Errors Text">
+        <trans-unit resname="ERR_CWRP_1101" id="1">
+          <source>Unsupported protocol</source>
+          <target>Unsupported protocol</target>
+        </trans-unit>
+        <trans-unit resname="ERR_CWRP_1105" id="2">
+          <source>Could not resolve proxy</source>
+          <target>Could not resolve proxy</target>
+        </trans-unit>
+        <trans-unit resname="ERR_CWRP_1106" id="3">
+          <source>Could not resolve hostname</source>
+          <target>Could not resolve hostname</target>
+        </trans-unit>
+        <trans-unit resname="ERR_CWRP_1107" id="4">
+          <source>Could not connect</source>
+          <target>Could not connect</target>
+        </trans-unit>
+        <trans-unit resname="ERR_CWRP_1199" id="5">
+          <source>Undefined implementation error</source>
+          <target>Undefined implementation error</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

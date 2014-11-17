@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+	Translation file for 4D products.
+	Copyright (C) 2007-2013 4D SAS.
+	This file is distributed under the same license as the 4D product package.
+-->
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="ja">
+		  <header>
+			  <note>The character "%" (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+			  <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable's name and must not be localised</note>
+			  <note>\r, \t and \n are meta-characters.</note>
+		</header>
+		  <body>
+		    <group resname="xbox kernel errors">
+			    <trans-unit id="28" resname="ERR_xbox_100">
+			       <source>Memory allocation failed</source>
+			       <target>メモリの割当に失敗しました</target>
+			</trans-unit>
+			    <trans-unit id="33" resname="ERR_xbox_107">
+			       <source>String allocation failed</source>
+			       <target>文字列の割り当てに失敗しました</target>
+			</trans-unit>
+			    <trans-unit id="32" resname="ERR_xbox_200">
+			       <source>Attempt to read beyond end of stream</source>
+			       <target>ストリームの終端を超えた読み込みを行おうとしました</target>
+			</trans-unit>
+			    <trans-unit id="39" resname="ERR_xbox_208">
+				      <source>No text converter to read the stream</source>
+				      <target>ストリームを読み込むためのテキストコンバーターがありません</target>
+			</trans-unit>
+			    <trans-unit id="29" resname="ERR_xbox_300">
+			       <source>Text conversion failed</source>
+			       <target>テキストの変換に失敗しました</target>
+			</trans-unit>
+			    <trans-unit id="30" resname="ERR_xbox_303">
+			       <source>Failed to initialize ICU library</source>
+			       <target>ICUライブラリの初期化に失敗しました</target>
+			</trans-unit>
+			    <trans-unit id="31" resname="ERR_xbox_304">
+			       <source>Regex error {message} while parsing pattern "{pattern}"</source>
+			       <target>"{pattern}" を解析中に、正規表現エラー {message} が発生しました</target>
+			       <note>regex pattern matching error. Error message is provided by ICU</note>
+			</trans-unit>
+			    <trans-unit id="56" resname="ERR_xbox_550">
+			       <source>JSON malformed in {source}line {line}, position {position}.</source>
+			       <target>JSONが正しくありません: ソース {source} 行 {line} 列 {position}</target>
+          <note>{source} can be empty or a file path or url.</note>
+      </trans-unit>
+        <trans-unit id="57" resname="ERR_xbox_551">
+          <source>JSON malformed. Found '{found}', was expecting: {expected}.</source>
+          <target>JSONが正しくありません。Found '{found}', was expecting: {expected}.</target>
+      </trans-unit>
+        <trans-unit id="58" resname="ERR_xbox_552">
+          <source>JSON malformed. Unterminated {token}.</source>
+          <target>JSONが正しくありません。{token}が終了されていません。</target>
+      </trans-unit>
+        <trans-unit id="59" resname="ERR_xbox_553">
+          <source>JSON malformed. Extra comma before {token}.</source>
+          <target>JSONが正しくありません。{token}の前のコンマが不要です。</target>
+      </trans-unit>
+        <trans-unit id="60" resname="ERR_xbox_554">
+          <source>JSON malformed. Was expecting: {expected}.</source>
+          <target>JSONが正しくありません。{expected}が足りません。</target>
+      </trans-unit>
+        <trans-unit id="1" resname="ERR_xbox_600">
+			       <source>File "{name}" not found ({path})</source>
+			       <target>ファイル "{name}" が見つかりません: ({path})</target>
+			</trans-unit>
+			    <trans-unit id="2" resname="ERR_xbox_601">
+			       <source>Cannot rename file "{name}" to "{newname}" ({path})</source>
+			       <target>ファイル名 "{name}" を "{newname}" に変更できません: ({path})</target>
+			</trans-unit>
+			    <trans-unit id="3" resname="ERR_xbox_602">
+			       <source>Cannot open file "{name}" ({path})</source>
+			       <target>ファイル "{name}" を開くことができません: ({path})</target>
+			</trans-unit>
+			    <trans-unit id="4" resname="ERR_xbox_603">
+			       <source>Cannot close file "{name}" ({path})</source>
+			       <target>ファイル "{name}" を閉じることができません: ({path})</target>
+			</trans-unit>
+			    <trans-unit id="5" resname="ERR_xbox_604">
+			       <source>Cannot delete "{name}" ({path})</source>
+			       <target>"{name}" ({path}) を削除できません。</target>
+			</trans-unit>
+			    <trans-unit id="6" resname="ERR_xbox_605">
+			       <source>Cannot copy file {path} to {destination}.</source>
+			       <target>ファイル {path} を {destination} にコピーすることができません。</target>
+			</trans-unit>
+			    <trans-unit id="7" resname="ERR_xbox_606">
+			       <source>Cannot move file {path} to {destination}.</source>
+			       <target>ファイル {path} を {destination} に移動することができません。</target>
+			</trans-unit>
+			    <trans-unit id="8" resname="ERR_xbox_607">
+			       <source>Cannot create file {path}.</source>
+			       <target>ファイル {path} を作成することができません。</target>
+			</trans-unit>
+			    <trans-unit id="9" resname="ERR_xbox_608">
+			       <source>Cannot get attributes on file {path}.</source>
+			       <target>ファイル {path} の属性を取得できません。</target>
+			</trans-unit>
+			    <trans-unit id="10" resname="ERR_xbox_609">
+			       <source>Cannot set attributes on file {path}.</source>
+			       <target>ファイル {path} の属性を設定できません。</target>
+			</trans-unit>
+			    <trans-unit id="11" resname="ERR_xbox_610">
+			       <source>Cannot create alias on file {path}.</source>
+			       <target>ファイル {path} のエイリアスを作成できません。</target>
+			</trans-unit>
+			    <trans-unit id="12" resname="ERR_xbox_611">
+			       <source>Cannot resolve alias file {path}.</source>
+			       <target>ファイル {path} のエイリアスを解決できません。</target>
+			</trans-unit>
+			    <trans-unit id="13" resname="ERR_xbox_612">
+			       <source>Cannot reveal file {path}.</source>
+			       <target>ファイル {path} を表示できません。</target>
+			</trans-unit>
+			    <trans-unit id="14" resname="ERR_xbox_613">
+			       <source>Invalid file kind for file {path}.</source>
+			       <target>ファイル {path} の種類が無効です。</target>
+			</trans-unit>
+			    <trans-unit id="15" resname="ERR_xbox_614">
+			       <source>"{newname}" is an invalid name for file {path}.</source>
+			       <target>"{newname}" は無効な名前です: {path}</target>
+			</trans-unit>
+			<trans-unit id="41" resname="ERR_xbox_616">
+				<source>File {path} already exists.</source>
+				<target>ファイル {path} は既に存在します。</target>
+			</trans-unit>
+			    <trans-unit id="34" resname="ERR_xbox_617">
+			       <source>Cannot resolve alias file "{path}" to a file.</source>
+			       <target>ファイルへのエイリアスファイル "{path}" を解決できません。</target>
+			</trans-unit>
+			    <trans-unit id="35" resname="ERR_xbox_618">
+			       <source>Cannot resolve alias file "{path}" to a folder.</source>
+			       <target>フォルダーへのエイリアスファイル "{path}" を解決できません。</target>
+			</trans-unit>
+			    <trans-unit id="16" resname="ERR_xbox_650">
+			   	  <source>Folder "{name}" not found ({path}).</source>
+				      <target>フォルダー "{name}" が見つかりません。 ({path})</target>
+			</trans-unit>
+			    <trans-unit id="17" resname="ERR_xbox_651">
+			       <source>Folder {path} not empty.</source>
+			       <target>フォルダー {path} が空ではありません。</target>
+			</trans-unit>
+			    <trans-unit id="18" resname="ERR_xbox_652">
+			       <source>Cannot create folder {path}.</source>
+			       <target>フォルダー {path} を作成できません。</target>
+			</trans-unit>
+			    <trans-unit id="19" resname="ERR_xbox_653">
+			       <source>Cannot delete folder {path}.</source>
+			       <target>フォルダー {path} を削除できません。</target>
+			</trans-unit>
+			    <trans-unit id="20" resname="ERR_xbox_654">
+			       <source>Cannot get attributes on folder {path}.</source>
+			       <target>フォルダー {path} の属性を取得できません。</target>
+			</trans-unit>
+			    <trans-unit id="21" resname="ERR_xbox_655">
+			       <source>Cannot set attributes on folder {path}.</source>
+			       <target>フォルダー {path} の属性を設定できません。</target>
+			</trans-unit>
+			    <trans-unit id="22" resname="ERR_xbox_656">
+			       <source>Cannot reveal folder {path}.</source>
+			       <target>フォルダー {path} を表示できません。</target>
+			</trans-unit>
+			    <trans-unit id="23" resname="ERR_xbox_657">
+			       <source>Cannot rename folder "{name}" to "{newname}" ({path})</source>
+			       <target>フォルダー "{name}" を "{newname}" に名称変更できません: ({path})</target>
+			</trans-unit>
+			    <trans-unit id="24" resname="ERR_xbox_658">
+			       <source>Disk full ({path})</source>
+			       <target>ディスクがいっぱいです ({path})</target>
+			</trans-unit>
+			    <trans-unit id="36" resname="ERR_xbox_659">
+				      <source>Folder {path} already exists.</source>
+				      <target>フォルダー {path} は既に存在します。</target>
+			</trans-unit>
+			    <trans-unit id="37" resname="ERR_xbox_660">
+				      <source>Can't copy {path} into child folder {destination}.</source>
+				      <target>{path} を {destination} にコピーできません。</target>
+			</trans-unit>
+			    <trans-unit id="40" resname="ERR_xbox_661">
+				      <source>Can't move {path} into trash.</source>
+				      <target>{path} をゴミ箱に移動できません。</target>
+			</trans-unit>
+			    <trans-unit id="50" resname="ERR_xbox_680">
+				      <source>Path to file system is not correctly encoded!</source>
+				      <target>ファイルシステムへのパスが正しくエンコードされていません。</target>
+			</trans-unit>
+			    <trans-unit id="51" resname="ERR_xbox_681">
+				      <source>Operation is not authorized on this file system!</source>
+				      <target>このファイルシステム上で操作は許可されていません。</target>
+			</trans-unit>
+			    <trans-unit id="52" resname="ERR_xbox_682">
+				      <source>File or folder not found!</source>
+				      <target>ファイルまたはフォルダーが見つかりません。</target>
+			</trans-unit>
+			    <trans-unit id="53" resname="ERR_xbox_683">
+				      <source>File system is not in valid state!</source>
+				      <target>ファイルシステムが有効な状態ではありません。</target>
+			</trans-unit>
+			    <trans-unit id="54" resname="ERR_xbox_684">
+				      <source>Attempting to write or modify a non-writable file system!</source>
+				      <target>書き込み不可のファイルシステムに書き込みまたは更新を行おうとしています。</target>
+			</trans-unit>
+			    <trans-unit id="55" resname="ERR_xbox_685">
+				      <source>File system is full!</source>
+				      <target>ファイルシステムがいっぱいです。</target>
+			</trans-unit>
+			<trans-unit id="61" resname="ERR_xbox_686">
+				<source>Invalid name '{name}' for a file system.</source>
+				<target>'{name}'は有効なファイルシステム名ではありません。</target>
+			</trans-unit>
+			<trans-unit id="62" resname="ERR_xbox_687">
+				<source>Can't load file system definition file {path}.</source>
+				<target>ファイルシステム定義ファイル{path}をロードすることができません。</target>
+			</trans-unit>			
+			    <trans-unit id="38" resname="ERR_xbox_900">
+			       <source>JSON cannot stringify cyclic structures.</source>
+			       <target>JSONは循環的な構造を文字列化できません。</target>
+			</trans-unit>
+			    <trans-unit id="25" resname="ERR_xmlc_1">
+			       <source>{systemID}, line:{line}, column:{column}</source>
+			       <target>{systemID}, 行:{line}, 列:{column}</target>
+				      <note>Location of error during xerces parsing.</note>
+			</trans-unit>
+			    <trans-unit id="26" resname="ERR_xmlc_2">
+        		<source>{message}</source>
+        		<target>{message}</target>
+				      <note>xerces parsing error.</note>
+      		</trans-unit>
+			    <trans-unit id="27" resname="ERR_xmlc_3">
+        		<source>{message}</source>
+        		<target>{message}</target>
+				      <note>xerces parsing fatal error.</note>
+			</trans-unit>
+		</group>
+      
+    </body>
+   </file>
+</xliff>

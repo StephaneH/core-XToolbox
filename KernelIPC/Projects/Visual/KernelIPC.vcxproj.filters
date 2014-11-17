@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{db3466a9-7f4a-4b06-8e95-25d3ed20c6b0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3d1453e3-9a35-4af7-bf1a-7df72fb8e112}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Communication">
+      <UniqueIdentifier>{b27da3b8-5e08-48fc-a8b0-54b6f2ba5770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{8a80e17b-6bfe-4cae-857f-a28893a0e3d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Processes">
+      <UniqueIdentifier>{934df9b2-12b1-44f2-90a5-5fef7ea3a671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{24478a11-1326-4aaf-bcc0-a6a7f128e058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File System Notifications">
+      <UniqueIdentifier>{d14a419f-685a-44d9-8e20-0ef0ecd07c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Semaphore and Shared Memory">
+      <UniqueIdentifier>{27c893f0-086f-4c23-ac48-81d231596413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Semaphore and Shared Memory\Win">
+      <UniqueIdentifier>{3d004e51-0ae3-4db7-a799-0f75e840aba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Semaphore and Shared Memory\Mac &amp; Linux">
+      <UniqueIdentifier>{e7463121-f909-49b4-84b5-48b7910bb9a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sleep Notifications">
+      <UniqueIdentifier>{241a21df-a96e-4c7b-ba5a-e595e7682cb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Command Line Parser">
+      <UniqueIdentifier>{130359f7-682d-4534-bba3-69d48c5680db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\VKernelIPC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VKernelIPCErrors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VKernelIPCFlags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VKernelIPCPrecompiled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VKernelIPCTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\ICommandControler.h">
+      <Filter>Source Files\Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\IStreamRequest.h">
+      <Filter>Source Files\Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VAttachment.h">
+      <Filter>Source Files\Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VCommand.h">
+      <Filter>Source Files\Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VDebugAttachments.h">
+      <Filter>Source Files\Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSignal.h">
+      <Filter>Source Files\Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\CComponent.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\CPlugin.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VComponentImp.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VComponentLibrary.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VComponentManager.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VPluginImp.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VDaemon.h">
+      <Filter>Source Files\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VEnvironmentVariables.h">
+      <Filter>Source Files\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VProcessIPC.h">
+      <Filter>Source Files\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VProcessLauncher.h">
+      <Filter>Source Files\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VProcessMain.h">
+      <Filter>Source Files\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinDaemon.h">
+      <Filter>Source Files\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinProcessLauncher.h">
+      <Filter>Source Files\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinProcessMain.h">
+      <Filter>Source Files\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinShellLaunch.h">
+      <Filter>Source Files\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VEndPoint.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VFileSystemNotification.h">
+      <Filter>Source Files\File System Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinFileSystemNotification.h">
+      <Filter>Source Files\File System Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSharedMemory.h">
+      <Filter>Source Files\Semaphore and Shared Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSharedSemaphore.h">
+      <Filter>Source Files\Semaphore and Shared Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XWinIPC.h">
+      <Filter>Source Files\Semaphore and Shared Memory\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XLinuxFileSystemNotification.h">
+      <Filter>Source Files\File System Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VSleepNotifier.h">
+      <Filter>Source Files\Sleep Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XLinuxSleepNotifier.h">
+      <Filter>Source Files\Sleep Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\XMacSleepNotifier.h">
+      <Filter>Source Files\Sleep Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VCommandLineParser.h">
+      <Filter>Source Files\Command Line Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VCommandLineParserExtension.h">
+      <Filter>Source Files\Command Line Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\VCommandLineParserOption.h">
+      <Filter>Source Files\Command Line Parser</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KernelIPCPCH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\ICommandControler.cpp">
+      <Filter>Source Files\Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VAttachment.cpp">
+      <Filter>Source Files\Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VCommand.cpp">
+      <Filter>Source Files\Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VDebugAttachments.cpp">
+      <Filter>Source Files\Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSignal.cpp">
+      <Filter>Source Files\Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VComponentLibrary.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VComponentManager.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VDaemon.cpp">
+      <Filter>Source Files\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VEnvironmentVariables.cpp">
+      <Filter>Source Files\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VProcessIPC.cpp">
+      <Filter>Source Files\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VProcessLauncher.cpp">
+      <Filter>Source Files\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacDaemon.cpp">
+      <Filter>Source Files\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacProcessLauncher.cpp">
+      <Filter>Source Files\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinDaemon.cpp">
+      <Filter>Source Files\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinProcessLauncher.cpp">
+      <Filter>Source Files\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinShellLaunch.cpp">
+      <Filter>Source Files\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VFileSystemNotification.cpp">
+      <Filter>Source Files\File System Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacFileSystemNotification.cpp">
+      <Filter>Source Files\File System Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinFileSystemNotification.cpp">
+      <Filter>Source Files\File System Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSharedMemory.cpp">
+      <Filter>Source Files\Semaphore and Shared Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSharedSemaphore.cpp">
+      <Filter>Source Files\Semaphore and Shared Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinIPC.cpp">
+      <Filter>Source Files\Semaphore and Shared Memory\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XSysVIPC.cpp">
+      <Filter>Source Files\Semaphore and Shared Memory\Mac &amp; Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XLinuxFileSystemNotification.cpp">
+      <Filter>Source Files\File System Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSleepNotifier.cpp">
+      <Filter>Source Files\Sleep Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XLinuxSleepNotifier.cpp">
+      <Filter>Source Files\Sleep Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XMacSleepNotifier.cpp">
+      <Filter>Source Files\Sleep Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VCommandLineParser.cpp">
+      <Filter>Source Files\Command Line Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VCommandLineParserOption.cpp">
+      <Filter>Source Files\Command Line Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VCommandLineParserHelp.cpp">
+      <Filter>Source Files\Command Line Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VCommandLineParserExtension.cpp">
+      <Filter>Source Files\Command Line Parser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Sources\XMacDaemon.h">
+      <Filter>Source Files\Processes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacProcessLauncher.h">
+      <Filter>Source Files\Processes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacProcessMain.h">
+      <Filter>Source Files\Processes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XMacFileSystemNotification.h">
+      <Filter>Source Files\File System Notifications</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XSysVIPC.h">
+      <Filter>Source Files\Semaphore and Shared Memory\Mac &amp; Linux</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

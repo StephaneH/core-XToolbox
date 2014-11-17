@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Beta|Win32">
+      <Configuration>Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Beta|x64">
+      <Configuration>Beta</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugV8|Win32">
+      <Configuration>DebugV8</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugV8|x64">
+      <Configuration>DebugV8</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseV8|Win32">
+      <Configuration>ReleaseV8</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseV8|x64">
+      <Configuration>ReleaseV8</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Dll - XToolbox FP - JavaScript</ProjectName>
+    <ProjectGuid>{6E9F29C6-2757-45FB-B9A4-AA30F5E852F4}</ProjectGuid>
+    <RootNamespace>Dll - XToolbox FP - JavaScript</RootNamespace>
+    <SccProjectName>"//depot/XToolbox/Main/JavaScript"</SccProjectName>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugV8|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugV8|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win32_Beta.props" />
+    <Import Project="$(SolutionDir)\WebKit_Settings.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win32_Release.props" />
+    <Import Project="$(SolutionDir)\WebKit_Settings.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win32_Release.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+    <Import Project="$(SolutionDir)\V8_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win32_Debug.props" />
+    <Import Project="$(SolutionDir)\WebKit_Settings.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugV8|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win32_Debug.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+    <Import Project="$(SolutionDir)\V8_Settings.props" />
+    <Import Project="$(SolutionDir)\ICU_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Beta|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win64_Beta.props" />
+    <Import Project="$(SolutionDir)\WebKit_Settings.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win64_Release.props" />
+    <Import Project="$(SolutionDir)\WebKit_Settings.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win64_Release.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+    <Import Project="$(SolutionDir)\V8_Settings.props" />
+    <Import Project="$(SolutionDir)\ICU_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win64_Debug.props" />
+    <Import Project="$(SolutionDir)\WebKit_Settings.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugV8|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win64_Debug.props" />
+    <Import Project="$(SolutionDir)\Curl_Settings.props" />
+    <Import Project="$(SolutionDir)\V8_Settings.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <TargetName>4DJavaScript</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">
+    <TargetName>4DJavaScript</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>4DJavaScriptDebug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugV8|Win32'">
+    <TargetName>4DJavaScriptDebugV8</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>4DJavaScriptDebug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugV8|x64'">
+    <TargetName>4DJavaScriptDebugV8</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>4DJavaScript</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|Win32'">
+    <TargetName>4DJavaScriptV8</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>4DJavaScript</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|x64'">
+    <TargetName>4DJavaScriptV8</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;wldap32.lib;libcurld_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CURL_OUTPUT)</AdditionalLibraryDirectories>
+      <AdditionalOptions>$(WEBKIT_OUTPUT_LIB)JavascriptCore_Debug.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Message>Creating conf_XTJavaScript.h</Message>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugV8|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>POPOUSE_V8_ENGINE=1;JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;wldap32.lib;libcurld_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CURL_OUTPUT)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalOptions>$(WEBKIT_OUTPUT_LIB)JavascriptCore_Debug.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+    <CustomBuildStep />
+    <PreBuildEvent>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugV8|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_V8_ENGINE=1;JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>v8.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </PreBuildEvent>
+    <CustomBuildStep />
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;wldap32.lib;libcurl_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CURL_OUTPUT)</AdditionalLibraryDirectories>
+      <AdditionalOptions>$(WEBKIT_OUTPUT_LIB)JavascriptCore.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Message>Creating conf_XTJavaScript.h</Message>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>POPOUSE_V8_ENGINE=1;JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>v8.lib;ws2_32.lib;winmm.lib;wldap32.lib;libcurl_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CURL_OUTPUT)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalOptions>$(WEBKIT_OUTPUT_LIB)JavascriptCore.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Message>Creating conf_XTJavaScript.h</Message>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_V8_ENGINE=1;JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>v8.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;wldap32.lib;libcurl_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CURL_OUTPUT)</AdditionalLibraryDirectories>
+      <AdditionalOptions>$(WEBKIT_OUTPUT_LIB)JavascriptCore_Beta.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Message>Creating conf_XTJavaScript.h</Message>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Components\Main\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>JAVASCRIPT_IMPORTS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VJavaScriptPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalOptions>$(WEBKIT_OUTPUT_LIB)JavascriptCore_Beta.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Creating conf_XTJavaScript.h</Message>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Message>Creating conf_XTJavaScript.h</Message>
+      <Command>set RepFic=$(ProjectDir)..\..\..\Include\$(PlatformName)\$(ConfigName)
+IF NOT EXIST "%RepFic%" (mkdir  "%RepFic%")
+
+set strValue=#define USE_V8_ENGINE $(USE_V8_ENGINE)
+
+IF EXIST "%RepFic%\conf_XTJavaScript.h"  (set BoolExist=1) else (set BoolExist=0)
+
+find "%strValue%" &lt; "%RepFic%\conf_XTJavaScript.h"
+set CR=%ERRORLEVEL%
+
+set Maj=0
+IF "%BoolExist%" EQU "0"  (set Maj=1)
+IF "%CR%%BoolExist%" EQU "11"  (set Maj=1)
+
+echo "%CR%-%BoolExist%-%Maj%"
+
+IF "%Maj%" EQU "1" echo "MAJ %RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo //CONFIGURATION GENERER DANS XTOOLBOX JAVASCRIPT&gt; "%RepFic%\conf_XTJavaScript.h"
+IF "%Maj%" EQU "1" echo #define USE_V8_ENGINE $(USE_V8_ENGINE) &gt;&gt; "%RepFic%\conf_XTJavaScript.h"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\CurlWrapper.cpp" />
+    <ClCompile Include="..\..\Sources\JS4D.cpp" />
+    <ClCompile Include="..\..\Sources\V4DContext.cpp" />
+    <ClCompile Include="..\..\Sources\VcURLXMLHttpRequest.cpp" />
+    <ClCompile Include="..\..\Sources\VJSBuffer.cpp" />
+    <ClCompile Include="..\..\Sources\VJSClass.cpp" />
+    <ClCompile Include="..\..\Sources\VJSConstructor.cpp" />
+    <ClCompile Include="..\..\Sources\VJSContext.cpp" />
+    <ClCompile Include="..\..\Sources\VJSCrypto.cpp" />
+    <ClCompile Include="..\..\Sources\VJSDOMEvent.cpp" />
+    <ClCompile Include="..\..\Sources\VJSEndPoint.cpp" />
+    <ClCompile Include="..\..\Sources\VJSEnvironment.cpp" />
+    <ClCompile Include="..\..\Sources\VJSEvent.cpp" />
+    <ClCompile Include="..\..\Sources\VJSEventEmitter.cpp" />
+    <ClCompile Include="..\..\Sources\VJSGlobalClass.cpp" />
+    <ClCompile Include="..\..\Sources\VJSJSON.cpp" />
+    <ClCompile Include="..\..\Sources\VJSMessagePort.cpp" />
+    <ClCompile Include="..\..\Sources\VJSMIME.cpp" />
+    <ClCompile Include="..\..\Sources\VJSModule.cpp" />
+    <ClCompile Include="..\..\Sources\VJSMysqlBuffer.cpp" />
+    <ClCompile Include="..\..\Sources\VJSNet.cpp" />
+    <ClCompile Include="..\..\Sources\VJSNetServer.cpp" />
+    <ClCompile Include="..\..\Sources\VJSNetSocket.cpp" />
+    <ClCompile Include="..\..\Sources\VJSParams.cpp" />
+    <ClCompile Include="..\..\Sources\VJSProcess.cpp" />
+    <ClCompile Include="..\..\Sources\VJSRuntime_Atomic.cpp" />
+    <ClCompile Include="..\..\Sources\VJSRuntime_blob.cpp" />
+    <ClCompile Include="..\..\Sources\VJSRuntime_file.cpp" />
+    <ClCompile Include="..\..\Sources\VJSRuntime_Image.cpp" />
+    <ClCompile Include="..\..\Sources\VJSRuntime_progressIndicator.cpp" />
+    <ClCompile Include="..\..\Sources\VJSRuntime_stream.cpp" />
+    <ClCompile Include="..\..\Sources\VJSStructuredClone.cpp" />
+    <ClCompile Include="..\..\Sources\VJSSystemWorker.cpp" />
+    <ClCompile Include="..\..\Sources\VJSTimer.cpp" />
+    <ClCompile Include="..\..\Sources\VJSTLS.cpp" />
+    <ClCompile Include="..\..\Sources\VJSValue.cpp" />
+    <ClCompile Include="..\..\Sources\VJSW3CArrayBuffer.cpp" />
+    <ClCompile Include="..\..\Sources\VJSW3CFileSystem.cpp" />
+    <ClCompile Include="..\..\Sources\VJSWebSocket.cpp" />
+    <ClCompile Include="..\..\Sources\VJSWebStorage.cpp" />
+    <ClCompile Include="..\..\Sources\VJSWorker.cpp" />
+    <ClCompile Include="..\..\Sources\VJSWorkerProxy.cpp" />
+    <ClCompile Include="..\..\Sources\VSystemWorker.cpp" />
+    <ClCompile Include="..\..\Sources\VXMLHttpRequest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugV8|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugV8|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinEnvironmentVariables.cpp" />
+    <ClCompile Include="JavaScriptPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugV8|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugV8|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseV8|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sources\CurlWrapper.h" />
+    <ClInclude Include="..\..\Sources\JS4D.h" />
+    <ClInclude Include="..\..\Sources\V4DContext.h" />
+    <ClInclude Include="..\..\Sources\VcURLXMLHttpRequest.h" />
+    <ClInclude Include="..\..\Sources\VJSBuffer.h" />
+    <ClInclude Include="..\..\Sources\VJSClass.h" />
+    <ClInclude Include="..\..\Sources\VJSConstructor.h" />
+    <ClInclude Include="..\..\Sources\VJSContext.h" />
+    <ClInclude Include="..\..\Sources\VJSCrypto.h" />
+    <ClInclude Include="..\..\Sources\VJSDOMEvent.h" />
+    <ClInclude Include="..\..\Sources\VJSEndPoint.h" />
+    <ClInclude Include="..\..\Sources\VJSEnvironment.h" />
+    <ClInclude Include="..\..\Sources\VJSErrors.h" />
+    <ClInclude Include="..\..\Sources\VJSEvent.h" />
+    <ClInclude Include="..\..\Sources\VJSEventEmitter.h" />
+    <ClInclude Include="..\..\Sources\VJSGlobalClass.h" />
+    <ClInclude Include="..\..\Sources\VJSJSON.h" />
+    <ClInclude Include="..\..\Sources\VJSMessagePort.h" />
+    <ClInclude Include="..\..\Sources\VJSMIME.h" />
+    <ClInclude Include="..\..\Sources\VJSModule.h" />
+    <ClInclude Include="..\..\Sources\VJSMysqlBuffer.h" />
+    <ClInclude Include="..\..\Sources\VJSNet.h" />
+    <ClInclude Include="..\..\Sources\VJSNetServer.h" />
+    <ClInclude Include="..\..\Sources\VJSNetSocket.h" />
+    <ClInclude Include="..\..\Sources\VJSParams.h" />
+    <ClInclude Include="..\..\Sources\VJSProcess.h" />
+    <ClInclude Include="..\..\Sources\VJSRuntime_Atomic.h" />
+    <ClInclude Include="..\..\Sources\VJSRuntime_blob.h" />
+    <ClInclude Include="..\..\Sources\VJSRuntime_file.h" />
+    <ClInclude Include="..\..\Sources\VJSRuntime_Image.h" />
+    <ClInclude Include="..\..\Sources\VJSRuntime_progressIndicator.h" />
+    <ClInclude Include="..\..\Sources\VJSRuntime_stream.h" />
+    <ClInclude Include="..\..\Sources\VJSStructuredClone.h" />
+    <ClInclude Include="..\..\Sources\VJSSystemWorker.h" />
+    <ClInclude Include="..\..\Sources\VJSTimer.h" />
+    <ClInclude Include="..\..\Sources\VJSTLS.h" />
+    <ClInclude Include="..\..\Sources\VJSValue.h" />
+    <ClInclude Include="..\..\Sources\VJSW3CArrayBuffer.h" />
+    <ClInclude Include="..\..\Sources\VJSW3CFileSystem.h" />
+    <ClInclude Include="..\..\Sources\VJSWebSocket.h" />
+    <ClInclude Include="..\..\Sources\VJSWebStorage.h" />
+    <ClInclude Include="..\..\Sources\VJSWorker.h" />
+    <ClInclude Include="..\..\Sources\VJSWorkerProxy.h" />
+    <ClInclude Include="..\..\Sources\VSystemWorker.h" />
+    <ClInclude Include="..\..\Sources\VXMLHttpRequest.h" />
+    <ClInclude Include="..\..\Sources\XWinEnvironmentVariables.h" />
+    <ClInclude Include="..\..\VJavaScript.h" />
+    <ClInclude Include="..\..\Sources\VJavaScriptPrecompiled.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\curl\7.19.7\lib\libcurl.vcxproj">
+      <Project>{87ee9da4-de1e-4448-8324-183c98dca588}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\webkit\534.53\JavaScriptCore\JavaScriptCore.vcproj\JavaScriptCore\JavaScriptCore.vcxproj">
+      <Project>{011d10f1-b656-4a1b-a0c3-3842f02122c5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\webkit\534.53\JavaScriptCore\JavaScriptCore.vcproj\WTF\WTF.vcxproj">
+      <Project>{aa8a5a85-592b-4357-bc60-e0e91e026af6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Graphics\Projects\Visual\Graphics.vcxproj">
+      <Project>{b0378f32-5d26-4221-a3b5-d6f1adca06d4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\KernelIPC\Projects\Visual\KernelIPC.vcxproj">
+      <Project>{3b6f655c-f3eb-4330-9fea-657af963969e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Kernel\Projects\Visual\Kernel.vcxproj">
+      <Project>{7b41a191-cd46-43cf-b33e-90211fc865ad}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ServerNet\Projects\Visual\ServerNet.vcxproj">
+      <Project>{745b73eb-6200-44c0-8552-ac602a9b0eed}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\XML\Projects\Visual\XML.vcxproj">
+      <Project>{86c7e508-5e7c-4ad5-bdd4-893d9c95876d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\en.lproj\Errors_javascript_EN.xlf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

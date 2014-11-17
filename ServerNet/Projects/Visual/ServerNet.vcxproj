@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Beta|Win32">
+      <Configuration>Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Beta|x64">
+      <Configuration>Beta</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Standalone Debug|Win32">
+      <Configuration>Standalone Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Standalone Debug|x64">
+      <Configuration>Standalone Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Standalone Release|Win32">
+      <Configuration>Standalone Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Standalone Release|x64">
+      <Configuration>Standalone Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Dll - XToolbox FP - ServerNet</ProjectName>
+    <ProjectGuid>{745B73EB-6200-44C0-8552-AC602A9B0EED}</ProjectGuid>
+    <RootNamespace>ServerNet</RootNamespace>
+    <SccProjectName>Perforce Project</SccProjectName>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\XToolbox_Win32_Release.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win32_Debug.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\XToolbox_Win32_Beta.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\XToolbox_Win32_Release.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win32_Debug.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\XToolbox_Win64_Release.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win64_Debug.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Beta|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\XToolbox_Win64_Beta.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\XToolbox_Win64_Release.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\..\..\XToolbox_Win64_Debug.props" />
+    <Import Project="$(SolutionDir)\OpenSSL_Settings.props" />
+    <Import Project="$(SolutionDir)\ZLib_Settings.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>ServerNetDebug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>ServerNetDebug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental />
+    <TargetName>ServerNet</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental />
+    <TargetName>ServerNet</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <LinkIncremental />
+    <TargetName>ServerNet</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">
+    <LinkIncremental />
+    <TargetName>ServerNet</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <TargetName>ServerNetDebug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <TargetName>ServerNetDebug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <TargetName>ServerNet</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <TargetName>ServerNet</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;SERVERNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>false</OptimizeReferences>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)ServerNetDebug.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(Platform);_WINDOWS;_USRDLL;SERVERNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>false</OptimizeReferences>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)ServerNetDebug.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;SERVERNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(OutDir)ServerNet.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;SERVERNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(OutDir)ServerNet.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;SERVERNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <ImportLibrary>$(OutDir)ServerNet.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;SERVERNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <ImportLibrary>$(OutDir)ServerNet.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;SERVERNET_EXPORTS;XTOOLBOX_AS_STANDALONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+      <BrowseInformation />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>ws2_32.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;SERVERNET_EXPORTS;XTOOLBOX_AS_STANDALONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+      <BrowseInformation />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Lib />
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;SERVERNET_EXPORTS;XTOOLBOX_AS_STANDALONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+      <BrowseInformation />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>ws2_32.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Headers;..\..\NetTCP\TCP\COMMON;..\..\NetTCP\TCP\PC\INCLUDE;..\..\NetTCP\TCP\PC\SRC;..\..\..\..\..\4eDimension\$(BranchName)\Network\SLI\Headers;..\..\..\..\..\Components\$(BranchName)\;..\..\..\..\..\4eDimension\$(BranchName)\4D\HSrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;SERVERNET_EXPORTS;XTOOLBOX_AS_STANDALONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>VServerNetPrecompiled.h</PrecompiledHeaderFile>
+      <BrowseInformation />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Lib />
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\CryptoTools.cpp" />
+    <ClCompile Include="..\..\Sources\IRequestLogger.cpp" />
+    <ClCompile Include="..\..\Sources\SelectIO.cpp" />
+    <ClCompile Include="..\..\Sources\ServiceDiscovery.cpp" />
+    <ClCompile Include="..\..\Sources\Session.cpp" />
+    <ClCompile Include="..\..\Sources\SslStub.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">Cdecl</CallingConvention>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">Cdecl</CallingConvention>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Cdecl</CallingConvention>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Cdecl</CallingConvention>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Cdecl</CallingConvention>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Cdecl</CallingConvention>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">Cdecl</CallingConvention>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">Cdecl</CallingConvention>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">Cdecl</CallingConvention>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">
+      </PrecompiledHeader>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">Cdecl</CallingConvention>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Tools.cpp" />
+    <ClCompile Include="..\..\Sources\VConnectionHandlerFactory.cpp" />
+    <ClCompile Include="..\..\Sources\VEndPointStream.cpp" />
+    <ClCompile Include="..\..\Sources\VNetAddr.cpp" />
+    <ClCompile Include="..\..\Sources\VOpenSslLocker.cpp" />
+    <ClCompile Include="..\..\Sources\VServer.cpp" />
+    <ClCompile Include="VServerNetPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\VSockListener.cpp" />
+    <ClCompile Include="..\..\Sources\VSslDelegate.cpp" />
+    <ClCompile Include="..\..\Sources\VTCPEndPoint.cpp" />
+    <ClCompile Include="..\..\Sources\VUDPEndPoint.cpp" />
+    <ClCompile Include="..\..\Sources\VWebSocket.cpp" />
+    <ClCompile Include="..\..\Sources\VWorkerPool.cpp" />
+    <ClCompile Include="..\..\Sources\XBsdNetAddr.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XBsdSocket.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\XWinNetAddr.cpp" />
+    <ClCompile Include="..\..\Sources\XWinSocket.cpp" />
+    <ClCompile Include="..\..\Sources\VEcho.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SharedWorkers\VSharedWorkers.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\HTTPTools.cpp" />
+    <ClCompile Include="..\..\Sources\VHTTPCookie.cpp" />
+    <ClCompile Include="..\..\Sources\VHTTPHeader.cpp" />
+    <ClCompile Include="..\..\Sources\VHTTPMessage.cpp" />
+    <ClCompile Include="..\..\Sources\VMIMEMessage.cpp" />
+    <ClCompile Include="..\..\Sources\VMIMEMessagePart.cpp" />
+    <ClCompile Include="..\..\Sources\VMIMEReader.cpp" />
+    <ClCompile Include="..\..\Sources\VMIMEWriter.cpp" />
+    <ClCompile Include="..\..\Sources\VNameValueCollection.cpp" />
+    <ClCompile Include="..\..\Sources\VProxyManager.cpp" />
+    <ClCompile Include="..\..\Sources\VHTTPClient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sources\CryptoTools.h" />
+    <ClInclude Include="..\..\Sources\IConnectionListener.h" />
+    <ClInclude Include="..\..\Sources\ICriticalError.h" />
+    <ClInclude Include="..\..\Sources\IOpenSslLocker.h" />
+    <ClInclude Include="..\..\Sources\IRequestLogger.h" />
+    <ClInclude Include="..\..\Sources\SelectIO.h" />
+    <ClInclude Include="..\..\Sources\ServerNetArchTypes.h" />
+    <ClInclude Include="..\..\Sources\ServerNetSystemTypes.h" />
+    <ClInclude Include="..\..\Sources\ServerNetTypes.h" />
+    <ClInclude Include="..\..\Sources\ServiceDiscovery.h" />
+    <ClInclude Include="..\..\Sources\Session.h" />
+    <ClInclude Include="..\..\Sources\SslStub.h" />
+    <ClInclude Include="..\..\Sources\Tools.h" />
+    <ClInclude Include="..\..\Sources\VConnectionHandlerFactory.h" />
+    <ClInclude Include="..\..\Sources\VEndPoint.h" />
+    <ClInclude Include="..\..\Sources\VEndPointStream.h" />
+    <ClInclude Include="..\..\Sources\VNetAddr.h" />
+    <ClInclude Include="..\..\Sources\VOpenSslLocker.h" />
+    <ClInclude Include="..\..\Sources\VServer.h" />
+    <ClInclude Include="..\..\Sources\VServerErrors.h" />
+    <ClInclude Include="..\..\VServerNet.h" />
+    <ClInclude Include="..\..\Sources\VServerNetPrecompiled.h" />
+    <ClInclude Include="..\..\Sources\VSockListener.h" />
+    <ClInclude Include="..\..\Sources\VSslDelegate.h" />
+    <ClInclude Include="..\..\Sources\VTCPEndPoint.h" />
+    <ClInclude Include="..\..\Sources\VUDPEndPoint.h" />
+    <ClInclude Include="..\..\Sources\VWebSocket.h" />
+    <ClInclude Include="..\..\Sources\VWorkerPool.h" />
+    <CustomBuild Include="..\..\Sources\XBsdNetAddr.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Sources\XBsdSocket.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\..\Sources\XWinNetAddr.h" />
+    <ClInclude Include="..\..\Sources\XWinSocket.h" />
+    <CustomBuild Include="..\..\Headers\VEcho.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\SharedWorkers\VSharedWorkers.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Beta|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Standalone Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\..\Sources\HTTPTools.h" />
+    <ClInclude Include="..\..\Sources\VHTTPCookie.h" />
+    <ClInclude Include="..\..\Sources\VHTTPHeader.h" />
+    <ClInclude Include="..\..\Sources\VHTTPMessage.h" />
+    <ClInclude Include="..\..\Sources\VMIMEMessage.h" />
+    <ClInclude Include="..\..\Sources\VMIMEMessagePart.h" />
+    <ClInclude Include="..\..\Sources\VMIMEReader.h" />
+    <ClInclude Include="..\..\Sources\VMIMEWriter.h" />
+    <ClInclude Include="..\..\Sources\VNameValueCollection.h" />
+    <ClInclude Include="..\..\Sources\VProxyManager.h" />
+    <ClInclude Include="..\..\Sources\VHTTPClient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\libzip\0.10\Projects\Win32\libzip\libzip.vcxproj">
+      <Project>{e659d953-66ec-4df5-9057-d1d22fa8f190}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\openssl\1.0.0d\Projects\Visual\OpenSLL-libeay32.vcxproj">
+      <Project>{6cdd04e4-1fd4-4208-b5d6-5c39a716bd56}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\openssl\1.0.0d\Projects\Visual\OpenSLL-ssleay32.vcxproj">
+      <Project>{ca45b6ed-e20a-4755-9b9e-181677d5ab40}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\zlib\1.2.5\projects\Win\zlib.vcxproj">
+      <Project>{f6f7f94f-f563-4203-80b4-bf7cf3242b27}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\KernelIPC\Projects\Visual\KernelIPC.vcxproj">
+      <Project>{3b6f655c-f3eb-4330-9fea-657af963969e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Kernel\Projects\Visual\Kernel.vcxproj">
+      <Project>{7b41a191-cd46-43cf-b33e-90211fc865ad}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\XML\Projects\Visual\XML.vcxproj">
+      <Project>{86c7e508-5e7c-4ad5-bdd4-893d9c95876d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

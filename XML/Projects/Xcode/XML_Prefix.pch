@@ -1,0 +1,5 @@
+//
+// Prefix header for all source files of the 'XML' target in the 'XML' project.
+//
+
+#include "VXMLPrecompiled.h"

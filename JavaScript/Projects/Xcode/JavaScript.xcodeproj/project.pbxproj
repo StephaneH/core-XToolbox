@@ -1,0 +1,1589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B2790D11993CEC400EC8A48 /* VJSEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B2790CF1993CEC400EC8A48 /* VJSEnvironment.cpp */; };
+		2B2790D21993CEC400EC8A48 /* VJSEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2790D01993CEC400EC8A48 /* VJSEnvironment.h */; };
+		2B372B23199CF8FD00979BB7 /* XPosixEnvironmentVariables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B372B21199CF8FD00979BB7 /* XPosixEnvironmentVariables.cpp */; };
+		2B372B24199CF8FD00979BB7 /* XPosixEnvironmentVariables.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B372B22199CF8FD00979BB7 /* XPosixEnvironmentVariables.h */; };
+		4182362418F41DAC003FEEF9 /* VSystemWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4182362218F41DAC003FEEF9 /* VSystemWorker.cpp */; };
+		4182362518F41DAC003FEEF9 /* VSystemWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4182362318F41DAC003FEEF9 /* VSystemWorker.h */; };
+		4211982518885D4800ECDECF /* VJSMIME.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4211982318885D4800ECDECF /* VJSMIME.cpp */; };
+		4211982618885D4800ECDECF /* VJSMIME.h in Headers */ = {isa = PBXBuildFile; fileRef = 4211982418885D4800ECDECF /* VJSMIME.h */; };
+		424209851861F73100BAE377 /* VJSConstructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 424209811861F73100BAE377 /* VJSConstructor.cpp */; };
+		424209881861F73100BAE377 /* VJSConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = 424209821861F73100BAE377 /* VJSConstructor.h */; };
+		6DC3EFA6188E6BB50022FA5C /* VJSParams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3EFA4188E6BB50022FA5C /* VJSParams.cpp */; };
+		6DC3EFA7188E6BB50022FA5C /* VJSParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DC3EFA5188E6BB50022FA5C /* VJSParams.h */; };
+		F4541538185B03F000C7FB99 /* VJavaScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8536E97C0F8A04C900B7B827 /* VJavaScript.h */; };
+		F4541539185B03F000C7FB99 /* JavaScript_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 8536E97E0F8A050E00B7B827 /* JavaScript_Prefix.pch */; };
+		F454153A185B03F000C7FB99 /* VJavaScriptPrecompiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 8536EBF40F8C981200B7B827 /* VJavaScriptPrecompiled.h */; };
+		F454153B185B03F000C7FB99 /* VJSClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8536EBF60F8C981200B7B827 /* VJSClass.h */; };
+		F454153C185B03F000C7FB99 /* VJSContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8536EBF80F8C981200B7B827 /* VJSContext.h */; };
+		F454153D185B03F000C7FB99 /* VJSGlobalClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8536EBFA0F8C981200B7B827 /* VJSGlobalClass.h */; };
+		F454153E185B03F000C7FB99 /* VJSRuntime_file.h in Headers */ = {isa = PBXBuildFile; fileRef = 8536EBFC0F8C981200B7B827 /* VJSRuntime_file.h */; };
+		F454153F185B03F000C7FB99 /* VJSRuntime_progressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8536EBFE0F8C981200B7B827 /* VJSRuntime_progressIndicator.h */; };
+		F4541540185B03F000C7FB99 /* VJSRuntime_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 8536EC000F8C981200B7B827 /* VJSRuntime_stream.h */; };
+		F4541541185B03F000C7FB99 /* VJSValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8536EC020F8C981200B7B827 /* VJSValue.h */; };
+		F4541542185B03F000C7FB99 /* JS4D.h in Headers */ = {isa = PBXBuildFile; fileRef = 4241EAC40FCB099B005BC827 /* JS4D.h */; };
+		F4541543185B03F000C7FB99 /* VJSJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 546463BA10B325B90061BE69 /* VJSJSON.h */; };
+		F4541544185B03F000C7FB99 /* CurlWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F9432CD41117162A00DC319D /* CurlWrapper.h */; };
+		F4541545185B03F000C7FB99 /* VXMLHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F9432CD61117162A00DC319D /* VXMLHttpRequest.h */; };
+		F4541546185B03F000C7FB99 /* VJSRuntime_Atomic.h in Headers */ = {isa = PBXBuildFile; fileRef = 548A337511493B6200EC2383 /* VJSRuntime_Atomic.h */; };
+		F4541547185B03F000C7FB99 /* VJSRuntime_Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 548A337711493B6200EC2383 /* VJSRuntime_Image.h */; };
+		F4541548185B03F000C7FB99 /* VJSRuntime_blob.h in Headers */ = {isa = PBXBuildFile; fileRef = 428E039F12BBCB9700A97E4B /* VJSRuntime_blob.h */; };
+		F4541549185B03F000C7FB99 /* VJSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 45157989131EA7FB00F71270 /* VJSEvent.h */; };
+		F454154A185B03F000C7FB99 /* VJSMessagePort.h in Headers */ = {isa = PBXBuildFile; fileRef = 4515798B131EA7FB00F71270 /* VJSMessagePort.h */; };
+		F454154B185B03F000C7FB99 /* VJSWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4515798F131EA7FB00F71270 /* VJSWorker.h */; };
+		F454154C185B03F000C7FB99 /* VJSWorkerProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 45157991131EA7FB00F71270 /* VJSWorkerProxy.h */; };
+		F454154D185B03F000C7FB99 /* VJSDOMEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 45DE12C2132A85A700D09AF4 /* VJSDOMEvent.h */; };
+		F454154E185B03F000C7FB99 /* VJSSystemWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 45088DFD133A36A1005FF7D4 /* VJSSystemWorker.h */; };
+		F454154F185B03F000C7FB99 /* VJSTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B0FEFE134B515A002B2B60 /* VJSTimer.h */; };
+		F4541550185B03F000C7FB99 /* VJSWebStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F95D19135C87B3006162DC /* VJSWebStorage.h */; };
+		F4541551185B03F000C7FB99 /* VJSStructuredClone.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F95D1B135C87B3006162DC /* VJSStructuredClone.h */; };
+		F4541552185B03F000C7FB99 /* VJSBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 45790FCD13D7053D00D3E83A /* VJSBuffer.h */; };
+		F4541553185B03F000C7FB99 /* VJSEventEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45790FCF13D7053D00D3E83A /* VJSEventEmitter.h */; };
+		F4541554185B03F000C7FB99 /* VJSNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 45790FD113D7053D00D3E83A /* VJSNet.h */; };
+		F4541555185B03F000C7FB99 /* VJSEndPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = F917A7E9145AD88500F37DF1 /* VJSEndPoint.h */; };
+		F4541556185B03F000C7FB99 /* VJSProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 417AA6061488D15500BD91CC /* VJSProcess.h */; };
+		F4541557185B03F000C7FB99 /* VJSNetServer.h in Headers */ = {isa = PBXBuildFile; fileRef = CD69CB5214A229FC002D73C7 /* VJSNetServer.h */; };
+		F4541558185B03F000C7FB99 /* VJSNetSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CD69CB5414A229FC002D73C7 /* VJSNetSocket.h */; };
+		F4541559185B03F000C7FB99 /* VJSErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = CD69CB5D14A22A0C002D73C7 /* VJSErrors.h */; };
+		F454155A185B03F000C7FB99 /* VJSTLS.h in Headers */ = {isa = PBXBuildFile; fileRef = CD69CB6714A22A7F002D73C7 /* VJSTLS.h */; };
+		F454155B185B03F000C7FB99 /* VJSW3CFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBF9AE914D9A23A0041EE95 /* VJSW3CFileSystem.h */; };
+		F454155C185B03F000C7FB99 /* VJSMysqlBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 540C395C151A915F00ED765F /* VJSMysqlBuffer.h */; };
+		F454155D185B03F000C7FB99 /* VJSW3CArrayBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9B1DCF15244E2D0017C500 /* VJSW3CArrayBuffer.h */; };
+		F454155E185B03F000C7FB99 /* VJSModule.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC3F98315AC7D2C0018766C /* VJSModule.h */; };
+		F454155F185B03F000C7FB99 /* VJSWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE4F1AB176F15C200EEB8F0 /* VJSWebSocket.h */; };
+		F4541560185B03F000C7FB99 /* VJSCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 4210547217DA399300813D18 /* VJSCrypto.h */; };
+		F4541562185B03F000C7FB99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		F4541564185B03F000C7FB99 /* VJSClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8536EBF50F8C981200B7B827 /* VJSClass.cpp */; };
+		F4541565185B03F000C7FB99 /* VJSContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8536EBF70F8C981200B7B827 /* VJSContext.cpp */; };
+		F4541566185B03F000C7FB99 /* VJSGlobalClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8536EBF90F8C981200B7B827 /* VJSGlobalClass.cpp */; };
+		F4541567185B03F000C7FB99 /* VJSRuntime_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8536EBFB0F8C981200B7B827 /* VJSRuntime_file.cpp */; };
+		F4541568185B03F000C7FB99 /* VJSRuntime_progressIndicator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8536EBFD0F8C981200B7B827 /* VJSRuntime_progressIndicator.cpp */; };
+		F4541569185B03F000C7FB99 /* VJSRuntime_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8536EBFF0F8C981200B7B827 /* VJSRuntime_stream.cpp */; };
+		F454156A185B03F000C7FB99 /* VJSValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8536EC010F8C981200B7B827 /* VJSValue.cpp */; };
+		F454156B185B03F000C7FB99 /* JS4D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42478DD70FCB1E3200B74C28 /* JS4D.cpp */; };
+		F454156C185B03F000C7FB99 /* VJSJSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546463BB10B325B90061BE69 /* VJSJSON.cpp */; };
+		F454156D185B03F000C7FB99 /* CurlWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9432CD31117162A00DC319D /* CurlWrapper.cpp */; };
+		F454156E185B03F000C7FB99 /* VXMLHttpRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9432CD51117162A00DC319D /* VXMLHttpRequest.cpp */; };
+		F454156F185B03F000C7FB99 /* VJSRuntime_Atomic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 548A337411493B6200EC2383 /* VJSRuntime_Atomic.cpp */; };
+		F4541570185B03F000C7FB99 /* VJSRuntime_Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 548A337611493B6200EC2383 /* VJSRuntime_Image.cpp */; };
+		F4541571185B03F000C7FB99 /* VJSRuntime_blob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428E03A012BBCB9700A97E4B /* VJSRuntime_blob.cpp */; };
+		F4541572185B03F000C7FB99 /* VJSEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45157988131EA7FB00F71270 /* VJSEvent.cpp */; };
+		F4541573185B03F000C7FB99 /* VJSMessagePort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4515798A131EA7FB00F71270 /* VJSMessagePort.cpp */; };
+		F4541574185B03F000C7FB99 /* VJSWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4515798E131EA7FB00F71270 /* VJSWorker.cpp */; };
+		F4541575185B03F000C7FB99 /* VJSWorkerProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45157990131EA7FB00F71270 /* VJSWorkerProxy.cpp */; };
+		F4541576185B03F000C7FB99 /* VJSDOMEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DE12C3132A85A700D09AF4 /* VJSDOMEvent.cpp */; };
+		F4541577185B03F000C7FB99 /* VJSSystemWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45088DFE133A36A1005FF7D4 /* VJSSystemWorker.cpp */; };
+		F4541578185B03F000C7FB99 /* VJSTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B0FEFF134B515A002B2B60 /* VJSTimer.cpp */; };
+		F4541579185B03F000C7FB99 /* VJSWebStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F95D1A135C87B3006162DC /* VJSWebStorage.cpp */; };
+		F454157A185B03F000C7FB99 /* VJSStructuredClone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F95D1C135C87B3006162DC /* VJSStructuredClone.cpp */; };
+		F454157B185B03F000C7FB99 /* VJSBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45790FCC13D7053D00D3E83A /* VJSBuffer.cpp */; };
+		F454157C185B03F000C7FB99 /* VJSEventEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45790FCE13D7053D00D3E83A /* VJSEventEmitter.cpp */; };
+		F454157D185B03F000C7FB99 /* VJSNet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45790FD013D7053D00D3E83A /* VJSNet.cpp */; };
+		F454157E185B03F000C7FB99 /* VJSEndPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F917A7E8145AD88500F37DF1 /* VJSEndPoint.cpp */; };
+		F454157F185B03F000C7FB99 /* VJSProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417AA6051488D15500BD91CC /* VJSProcess.cpp */; };
+		F4541580185B03F000C7FB99 /* VJSNetServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD69CB5114A229FC002D73C7 /* VJSNetServer.cpp */; };
+		F4541581185B03F000C7FB99 /* VJSNetSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD69CB5314A229FC002D73C7 /* VJSNetSocket.cpp */; };
+		F4541582185B03F000C7FB99 /* VJSTLS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD69CB6614A22A7F002D73C7 /* VJSTLS.cpp */; };
+		F4541583185B03F000C7FB99 /* VJSW3CFileSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDBF9AE814D9A23A0041EE95 /* VJSW3CFileSystem.cpp */; };
+		F4541584185B03F000C7FB99 /* VJSMysqlBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 540C395B151A915F00ED765F /* VJSMysqlBuffer.cpp */; };
+		F4541585185B03F000C7FB99 /* VJSW3CArrayBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9B1DCE15244E2D0017C500 /* VJSW3CArrayBuffer.cpp */; };
+		F4541586185B03F000C7FB99 /* VJSModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDC3F98215AC7D2C0018766C /* VJSModule.cpp */; };
+		F4541587185B03F000C7FB99 /* VJSWebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE4F1AA176F15C200EEB8F0 /* VJSWebSocket.cpp */; };
+		F4541588185B03F000C7FB99 /* VJSCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4210547117DA399300813D18 /* VJSCrypto.cpp */; };
+		F4CAFF35187DCFFA00967A1B /* ServerNetDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599D46D138D35530044A96E /* ServerNetDebug.framework */; };
+		F4CAFF36187DD00100967A1B /* GraphicsDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E6A0DC1100574400DDC245 /* GraphicsDebug.framework */; };
+		F4CAFF37187DD00500967A1B /* KernelIPCDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458954371268A47300D30A40 /* KernelIPCDebug.framework */; };
+		F4CAFF38187DD00800967A1B /* XMLDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1847CA5110DE2540038DA99 /* XMLDebug.framework */; };
+		F4CAFF39187DD00D00967A1B /* KernelDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A9D2FE08CD93E30019B724 /* KernelDebug.framework */; };
+		F4CAFFE2187DE00100967A1B /* zlibDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45415CE185B07D500C7FB99 /* zlibDebug.framework */; };
+		F4E2A375185B43B400645E2C /* liblibcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2A279185B113000645E2C /* liblibcurl.a */; };
+		F4E2A379185B44A900645E2C /* OpenSSLDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4541500185B03E700C7FB99 /* OpenSSLDebug.framework */; };
+		F4E2A37A185B44B400645E2C /* 4DJavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4541A7E185B0DD800C7FB99 /* 4DJavaScriptCore.framework */; };
+		F98E36D8189A98000091EBBA /* VcURLXMLHttpRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F98E36D6189A98000091EBBA /* VcURLXMLHttpRequest.cpp */; };
+		F98E36D9189A98000091EBBA /* VcURLXMLHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F98E36D7189A98000091EBBA /* VcURLXMLHttpRequest.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12C1459A09F624A7000F4880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9BBA8FD09BC8AC500F3DCFC;
+			remoteInfo = KernelLib;
+		};
+		39A9D2FD08CD93E30019B724 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = Kernel;
+		};
+		39A9D2FF08CD93E30019B724 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0235BC0C071EDC5200BEEE2E;
+			remoteInfo = M_APM;
+		};
+		458954361268A47300D30A40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4589542F1268A47300D30A40 /* KernelIPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = KernelIPC;
+		};
+		458954381268A47300D30A40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4589542F1268A47300D30A40 /* KernelIPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B54AA6920BEA453E005240A2;
+			remoteInfo = KernelIPCLib;
+		};
+		4599D46C138D35530044A96E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4599D465138D35530044A96E /* ServerNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = ServerNet;
+		};
+		4599D46E138D35530044A96E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4599D465138D35530044A96E /* ServerNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B508DD9D0BEA4BF70036C46F;
+			remoteInfo = ServerNetLib;
+		};
+		85E6A0DB1100574400DDC245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E6A0D21100574400DDC245 /* Graphics.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = Graphics;
+		};
+		F1847CA4110DE2540038DA99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1847CA0110DE2540038DA99 /* XML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = XML;
+		};
+		F45414FF185B03E700C7FB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F90688C51517A9300000308B /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F41D65E81858767100565CA7;
+			remoteInfo = OpenSSL;
+		};
+		F4541519185B03E700C7FB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4E1C3561859B83C005F1140;
+			remoteInfo = M_APM;
+		};
+		F45415CD185B07D500C7FB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F917A6CA1459AB7100F37DF1 /* zlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F45415CA185B07D500C7FB99;
+			remoteInfo = "zlib i386 copy";
+		};
+		F45417FA185B0CA400C7FB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F435DA5615343B64000CEE94;
+			remoteInfo = "4DJavaScriptCore i386";
+		};
+		F4541A6C185B0D3E00C7FB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4541A69185B0D3E00C7FB99;
+			remoteInfo = "JavaScriptCore i386 copy";
+		};
+		F4541A7D185B0DD800C7FB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4541A77185B0DD800C7FB99;
+			remoteInfo = "4DJavaScriptCore i386 copy";
+		};
+		F46437C2113E9EF500639653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F46431A2113E7C4800639653;
+			remoteInfo = "M_APM x64";
+		};
+		F46438FB113EA38900639653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E3336D11188DC900B49DC4 /* libcurl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F46438F9113EA38900639653;
+			remoteInfo = "libcurl copy";
+		};
+		F487CC9C18586E3E009FAE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9B6FFC183E4714000691CB;
+			remoteInfo = "KernelLib x64";
+		};
+		F487CCA118586E3E009FAE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4589542F1268A47300D30A40 /* KernelIPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9B6F1D183E46BA000691CB;
+			remoteInfo = "KernelIPCLib x64";
+		};
+		F487CCA618586E3E009FAE18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4599D465138D35530044A96E /* ServerNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9B6EC7183E430A000691CB;
+			remoteInfo = "ServerNetLib x86_64";
+		};
+		F4AF371415249A9C005DE836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 932F5BD90822A1C700736975;
+			remoteInfo = JavaScriptCore;
+		};
+		F4AF371615249A9C005DE836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F434BC9314FCBF7700FC487C;
+			remoteInfo = "JavaScriptCore x86_64";
+		};
+		F4AF371815249A9C005DE836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 141211200A48793C00480255;
+			remoteInfo = minidom;
+		};
+		F4AF371A15249A9C005DE836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14BD59BF0A3E8F9000BAF59C;
+			remoteInfo = testapi;
+		};
+		F4AF371C15249A9C005DE836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 932F5BE10822A1C700736975;
+			remoteInfo = jsc;
+		};
+		F4AF372215249A9C005DE836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F434BCA814FCBFAA00FC487C;
+			remoteInfo = "4DJavaScriptCore x86_64";
+		};
+		F4E2A278185B113000645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E3336D11188DC900B49DC4 /* libcurl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4E2A272185B112800645E2C;
+			remoteInfo = libcurl;
+		};
+		F4E2A361185B415000645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E1C2481859B823005F1140;
+			remoteInfo = Kernel;
+		};
+		F4E2A363185B415600645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E6A0D21100574400DDC245 /* Graphics.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F476C29C185A06CF00EA6193;
+			remoteInfo = Graphics;
+		};
+		F4E2A365185B415E00645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E3336D11188DC900B49DC4 /* libcurl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E2A216185B112800645E2C;
+			remoteInfo = libcurl;
+		};
+		F4E2A367185B416A00645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4589542F1268A47300D30A40 /* KernelIPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F42FBAB4185A02CD00EFC5CF;
+			remoteInfo = KernelIPC;
+		};
+		F4E2A369185B417100645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4599D465138D35530044A96E /* ServerNet.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4A85B3C185A0DAF00D1A6D4;
+			remoteInfo = ServerNet;
+		};
+		F4E2A36B185B417900645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F90688C51517A9300000308B /* OpenSSL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F41D62F51858767100565CA7;
+			remoteInfo = OpenSSL;
+		};
+		F4E2A36D185B418300645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4541A6E185B0DD800C7FB99;
+			remoteInfo = 4DJavaScriptCore;
+		};
+		F4E2A36F185B422500645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F917A6CA1459AB7100F37DF1 /* zlib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F45415A6185B07D500C7FB99;
+			remoteInfo = zlib;
+		};
+		F4E2A372185B42DD00645E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1847CA0110DE2540038DA99 /* XML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4ED7C91185A0ADC0002399A;
+			remoteInfo = XML;
+		};
+		F90688CA1517A9300000308B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F90688C51517A9300000308B /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4643BF9113EA87000639653;
+			remoteInfo = "OpenSSL i386";
+		};
+		F90688CC1517A9300000308B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F90688C51517A9300000308B /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4643EBB113EA8D600639653;
+			remoteInfo = "OpenSSL x86_64";
+		};
+		F917A6D21459AB7100F37DF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F917A6CA1459AB7100F37DF1 /* zlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F464382F113EA01800639653;
+			remoteInfo = "zlib i386";
+		};
+		F917A6D41459AB7100F37DF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F917A6CA1459AB7100F37DF1 /* zlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4643859113EA24A00639653;
+			remoteInfo = "zlib x64";
+		};
+		F91AC47218C48D0E0048E1F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F90688C51517A9300000308B /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DBB6E4618A3D49400FAA889;
+			remoteInfo = "OpenSSLLib i386";
+		};
+		F91AC47418C48D0E0048E1F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F90688C51517A9300000308B /* OpenSSL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DF9B5A018A3F1F2001C8698;
+			remoteInfo = "OpenSSLLib x86_64";
+		};
+		F9E3337211188DC900B49DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E3336D11188DC900B49DC4 /* libcurl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = libcurl;
+		};
+		F9E3337411188DC900B49DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E3336D11188DC900B49DC4 /* libcurl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9432D7C11172AD800DC319D;
+			remoteInfo = "libcurl dyn";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B2790CF1993CEC400EC8A48 /* VJSEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSEnvironment.cpp; sourceTree = "<group>"; };
+		2B2790D01993CEC400EC8A48 /* VJSEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSEnvironment.h; sourceTree = "<group>"; };
+		2B372B21199CF8FD00979BB7 /* XPosixEnvironmentVariables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPosixEnvironmentVariables.cpp; sourceTree = "<group>"; };
+		2B372B22199CF8FD00979BB7 /* XPosixEnvironmentVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPosixEnvironmentVariables.h; sourceTree = "<group>"; };
+		3957A58E0C29268200794CD3 /* xtoolbox_performance.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_performance.xcconfig; path = ../../../xtoolbox_performance.xcconfig; sourceTree = SOURCE_ROOT; };
+		39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../../../Kernel/Projects/Xcode/Kernel.xcodeproj; sourceTree = SOURCE_ROOT; };
+		417AA6051488D15500BD91CC /* VJSProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSProcess.cpp; sourceTree = "<group>"; };
+		417AA6061488D15500BD91CC /* VJSProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSProcess.h; sourceTree = "<group>"; };
+		4182362218F41DAC003FEEF9 /* VSystemWorker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VSystemWorker.cpp; sourceTree = "<group>"; };
+		4182362318F41DAC003FEEF9 /* VSystemWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSystemWorker.h; sourceTree = "<group>"; };
+		4210547117DA399300813D18 /* VJSCrypto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSCrypto.cpp; sourceTree = "<group>"; };
+		4210547217DA399300813D18 /* VJSCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSCrypto.h; sourceTree = "<group>"; };
+		4211982318885D4800ECDECF /* VJSMIME.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSMIME.cpp; sourceTree = "<group>"; };
+		4211982418885D4800ECDECF /* VJSMIME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSMIME.h; sourceTree = "<group>"; };
+		4241EAC40FCB099B005BC827 /* JS4D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JS4D.h; sourceTree = "<group>"; };
+		424209811861F73100BAE377 /* VJSConstructor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSConstructor.cpp; sourceTree = "<group>"; };
+		424209821861F73100BAE377 /* VJSConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSConstructor.h; sourceTree = "<group>"; };
+		42478DD70FCB1E3200B74C28 /* JS4D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JS4D.cpp; sourceTree = "<group>"; };
+		428E039F12BBCB9700A97E4B /* VJSRuntime_blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSRuntime_blob.h; sourceTree = "<group>"; };
+		428E03A012BBCB9700A97E4B /* VJSRuntime_blob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSRuntime_blob.cpp; sourceTree = "<group>"; };
+		45088DFD133A36A1005FF7D4 /* VJSSystemWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSSystemWorker.h; sourceTree = "<group>"; };
+		45088DFE133A36A1005FF7D4 /* VJSSystemWorker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSSystemWorker.cpp; sourceTree = "<group>"; };
+		45157988131EA7FB00F71270 /* VJSEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSEvent.cpp; sourceTree = "<group>"; };
+		45157989131EA7FB00F71270 /* VJSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSEvent.h; sourceTree = "<group>"; };
+		4515798A131EA7FB00F71270 /* VJSMessagePort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSMessagePort.cpp; sourceTree = "<group>"; };
+		4515798B131EA7FB00F71270 /* VJSMessagePort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSMessagePort.h; sourceTree = "<group>"; };
+		4515798E131EA7FB00F71270 /* VJSWorker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSWorker.cpp; sourceTree = "<group>"; };
+		4515798F131EA7FB00F71270 /* VJSWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSWorker.h; sourceTree = "<group>"; };
+		45157990131EA7FB00F71270 /* VJSWorkerProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSWorkerProxy.cpp; sourceTree = "<group>"; };
+		45157991131EA7FB00F71270 /* VJSWorkerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSWorkerProxy.h; sourceTree = "<group>"; };
+		45790FCC13D7053D00D3E83A /* VJSBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSBuffer.cpp; sourceTree = "<group>"; };
+		45790FCD13D7053D00D3E83A /* VJSBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSBuffer.h; sourceTree = "<group>"; };
+		45790FCE13D7053D00D3E83A /* VJSEventEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSEventEmitter.cpp; sourceTree = "<group>"; };
+		45790FCF13D7053D00D3E83A /* VJSEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSEventEmitter.h; sourceTree = "<group>"; };
+		45790FD013D7053D00D3E83A /* VJSNet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSNet.cpp; sourceTree = "<group>"; };
+		45790FD113D7053D00D3E83A /* VJSNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSNet.h; sourceTree = "<group>"; };
+		4589542F1268A47300D30A40 /* KernelIPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KernelIPC.xcodeproj; path = ../../../KernelIPC/Projects/Xcode/KernelIPC.xcodeproj; sourceTree = SOURCE_ROOT; };
+		4599D465138D35530044A96E /* ServerNet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ServerNet.xcodeproj; path = ../../../ServerNet/Projects/XCode/ServerNet.xcodeproj; sourceTree = SOURCE_ROOT; };
+		45B0FEFE134B515A002B2B60 /* VJSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSTimer.h; sourceTree = "<group>"; };
+		45B0FEFF134B515A002B2B60 /* VJSTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSTimer.cpp; sourceTree = "<group>"; };
+		45DE12C2132A85A700D09AF4 /* VJSDOMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSDOMEvent.h; sourceTree = "<group>"; };
+		45DE12C3132A85A700D09AF4 /* VJSDOMEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSDOMEvent.cpp; sourceTree = "<group>"; };
+		45F95D19135C87B3006162DC /* VJSWebStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSWebStorage.h; sourceTree = "<group>"; };
+		45F95D1A135C87B3006162DC /* VJSWebStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSWebStorage.cpp; sourceTree = "<group>"; };
+		45F95D1B135C87B3006162DC /* VJSStructuredClone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSStructuredClone.h; sourceTree = "<group>"; };
+		45F95D1C135C87B3006162DC /* VJSStructuredClone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSStructuredClone.cpp; sourceTree = "<group>"; };
+		540C395B151A915F00ED765F /* VJSMysqlBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSMysqlBuffer.cpp; sourceTree = "<group>"; };
+		540C395C151A915F00ED765F /* VJSMysqlBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSMysqlBuffer.h; sourceTree = "<group>"; };
+		546463BA10B325B90061BE69 /* VJSJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSJSON.h; sourceTree = "<group>"; };
+		546463BB10B325B90061BE69 /* VJSJSON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSJSON.cpp; sourceTree = "<group>"; };
+		548A337411493B6200EC2383 /* VJSRuntime_Atomic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSRuntime_Atomic.cpp; sourceTree = "<group>"; };
+		548A337511493B6200EC2383 /* VJSRuntime_Atomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSRuntime_Atomic.h; sourceTree = "<group>"; };
+		548A337611493B6200EC2383 /* VJSRuntime_Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSRuntime_Image.cpp; sourceTree = "<group>"; };
+		548A337711493B6200EC2383 /* VJSRuntime_Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSRuntime_Image.h; sourceTree = "<group>"; };
+		6DC3EFA4188E6BB50022FA5C /* VJSParams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSParams.cpp; sourceTree = "<group>"; };
+		6DC3EFA5188E6BB50022FA5C /* VJSParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSParams.h; sourceTree = "<group>"; };
+		8536E97C0F8A04C900B7B827 /* VJavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VJavaScript.h; path = ../../VJavaScript.h; sourceTree = SOURCE_ROOT; };
+		8536E97E0F8A050E00B7B827 /* JavaScript_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScript_Prefix.pch; sourceTree = "<group>"; };
+		8536EBF40F8C981200B7B827 /* VJavaScriptPrecompiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJavaScriptPrecompiled.h; sourceTree = "<group>"; };
+		8536EBF50F8C981200B7B827 /* VJSClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSClass.cpp; sourceTree = "<group>"; };
+		8536EBF60F8C981200B7B827 /* VJSClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSClass.h; sourceTree = "<group>"; };
+		8536EBF70F8C981200B7B827 /* VJSContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSContext.cpp; sourceTree = "<group>"; };
+		8536EBF80F8C981200B7B827 /* VJSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSContext.h; sourceTree = "<group>"; };
+		8536EBF90F8C981200B7B827 /* VJSGlobalClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSGlobalClass.cpp; sourceTree = "<group>"; };
+		8536EBFA0F8C981200B7B827 /* VJSGlobalClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSGlobalClass.h; sourceTree = "<group>"; };
+		8536EBFB0F8C981200B7B827 /* VJSRuntime_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSRuntime_file.cpp; sourceTree = "<group>"; };
+		8536EBFC0F8C981200B7B827 /* VJSRuntime_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSRuntime_file.h; sourceTree = "<group>"; };
+		8536EBFD0F8C981200B7B827 /* VJSRuntime_progressIndicator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSRuntime_progressIndicator.cpp; sourceTree = "<group>"; };
+		8536EBFE0F8C981200B7B827 /* VJSRuntime_progressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSRuntime_progressIndicator.h; sourceTree = "<group>"; };
+		8536EBFF0F8C981200B7B827 /* VJSRuntime_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSRuntime_stream.cpp; sourceTree = "<group>"; };
+		8536EC000F8C981200B7B827 /* VJSRuntime_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSRuntime_stream.h; sourceTree = "<group>"; };
+		8536EC010F8C981200B7B827 /* VJSValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSValue.cpp; sourceTree = "<group>"; };
+		8536EC020F8C981200B7B827 /* VJSValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSValue.h; sourceTree = "<group>"; };
+		85E6A0D21100574400DDC245 /* Graphics.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Graphics.xcodeproj; path = ../../../Graphics/Projects/Xcode/Graphics.xcodeproj; sourceTree = SOURCE_ROOT; };
+		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CD69CB5114A229FC002D73C7 /* VJSNetServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSNetServer.cpp; sourceTree = "<group>"; };
+		CD69CB5214A229FC002D73C7 /* VJSNetServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSNetServer.h; sourceTree = "<group>"; };
+		CD69CB5314A229FC002D73C7 /* VJSNetSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSNetSocket.cpp; sourceTree = "<group>"; };
+		CD69CB5414A229FC002D73C7 /* VJSNetSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSNetSocket.h; sourceTree = "<group>"; };
+		CD69CB5D14A22A0C002D73C7 /* VJSErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSErrors.h; sourceTree = "<group>"; };
+		CD69CB6614A22A7F002D73C7 /* VJSTLS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSTLS.cpp; sourceTree = "<group>"; };
+		CD69CB6714A22A7F002D73C7 /* VJSTLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSTLS.h; sourceTree = "<group>"; };
+		CD9B1DCE15244E2D0017C500 /* VJSW3CArrayBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSW3CArrayBuffer.cpp; sourceTree = "<group>"; };
+		CD9B1DCF15244E2D0017C500 /* VJSW3CArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSW3CArrayBuffer.h; sourceTree = "<group>"; };
+		CDBF9AE814D9A23A0041EE95 /* VJSW3CFileSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSW3CFileSystem.cpp; sourceTree = "<group>"; };
+		CDBF9AE914D9A23A0041EE95 /* VJSW3CFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSW3CFileSystem.h; sourceTree = "<group>"; };
+		CDC3F98215AC7D2C0018766C /* VJSModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSModule.cpp; sourceTree = "<group>"; };
+		CDC3F98315AC7D2C0018766C /* VJSModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSModule.h; sourceTree = "<group>"; };
+		CDE4F1AA176F15C200EEB8F0 /* VJSWebSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSWebSocket.cpp; sourceTree = "<group>"; };
+		CDE4F1AB176F15C200EEB8F0 /* VJSWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSWebSocket.h; sourceTree = "<group>"; };
+		D207E9880B7CA76300C1FA30 /* xtoolbox_base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_base.xcconfig; path = ../../../xtoolbox_base.xcconfig; sourceTree = SOURCE_ROOT; };
+		D207E9890B7CA76300C1FA30 /* xtoolbox_beta.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_beta.xcconfig; path = ../../../xtoolbox_beta.xcconfig; sourceTree = SOURCE_ROOT; };
+		D207E98A0B7CA76300C1FA30 /* xtoolbox_debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_debug.xcconfig; path = ../../../xtoolbox_debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		D207E98B0B7CA76300C1FA30 /* xtoolbox_coverage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_coverage.xcconfig; path = ../../../xtoolbox_coverage.xcconfig; sourceTree = SOURCE_ROOT; };
+		D207E98C0B7CA76300C1FA30 /* xtoolbox_release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = xtoolbox_release.xcconfig; path = ../../../xtoolbox_release.xcconfig; sourceTree = SOURCE_ROOT; };
+		F1847CA0110DE2540038DA99 /* XML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XML.xcodeproj; path = ../../../XML/Projects/Xcode/XML.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F454159A185B03F000C7FB99 /* 4DJavaScriptDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = 4DJavaScriptDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F454159B185B03F000C7FB99 /* Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info copy.plist"; sourceTree = "<group>"; };
+		F464391C113EA7E700639653 /* xtoolbox_x64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_x64.xcconfig; path = ../../../xtoolbox_x64.xcconfig; sourceTree = SOURCE_ROOT; };
+		F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JavaScriptCore.xcodeproj; path = ../../../../../webkit/534.53/JavaScriptCore/JavaScriptCore.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F90688C51517A9300000308B /* OpenSSL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OpenSSL.xcodeproj; path = ../../../../../openssl/1.0.0d/Projects/XCode/OpenSSL.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F917A6CA1459AB7100F37DF1 /* zlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = zlib.xcodeproj; path = ../../../../../zlib/1.2.5/projects/MacOS/zlib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F917A7E8145AD88500F37DF1 /* VJSEndPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VJSEndPoint.cpp; sourceTree = "<group>"; };
+		F917A7E9145AD88500F37DF1 /* VJSEndPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJSEndPoint.h; sourceTree = "<group>"; };
+		F9432CD31117162A00DC319D /* CurlWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CurlWrapper.cpp; sourceTree = "<group>"; };
+		F9432CD41117162A00DC319D /* CurlWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurlWrapper.h; sourceTree = "<group>"; };
+		F9432CD51117162A00DC319D /* VXMLHttpRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VXMLHttpRequest.cpp; sourceTree = "<group>"; };
+		F9432CD61117162A00DC319D /* VXMLHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXMLHttpRequest.h; sourceTree = "<group>"; };
+		F98E36D6189A98000091EBBA /* VcURLXMLHttpRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VcURLXMLHttpRequest.cpp; sourceTree = "<group>"; };
+		F98E36D7189A98000091EBBA /* VcURLXMLHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VcURLXMLHttpRequest.h; sourceTree = "<group>"; };
+		F9E3336D11188DC900B49DC4 /* libcurl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libcurl.xcodeproj; path = ../../../../../curl/7.19.7/xcode/libcurl/libcurl.xcodeproj; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4541589185B03F000C7FB99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CAFFE2187DE00100967A1B /* zlibDebug.framework in Frameworks */,
+				F4CAFF39187DD00D00967A1B /* KernelDebug.framework in Frameworks */,
+				F4CAFF38187DD00800967A1B /* XMLDebug.framework in Frameworks */,
+				F4CAFF37187DD00500967A1B /* KernelIPCDebug.framework in Frameworks */,
+				F4CAFF36187DD00100967A1B /* GraphicsDebug.framework in Frameworks */,
+				F4CAFF35187DCFFA00967A1B /* ServerNetDebug.framework in Frameworks */,
+				F4E2A375185B43B400645E2C /* liblibcurl.a in Frameworks */,
+				F4E2A379185B44A900645E2C /* OpenSSLDebug.framework in Frameworks */,
+				F4E2A37A185B44B400645E2C /* 4DJavaScriptCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F454159A185B03F000C7FB99 /* 4DJavaScriptDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				8536E97C0F8A04C900B7B827 /* VJavaScript.h */,
+				D207E9870B7CA76300C1FA30 /* config */,
+				39A9D2F508CD93D00019B724 /* Dependencies */,
+				39A9D2F208CD93B60019B724 /* Precompiled */,
+				08FB77ACFE841707C02AAC07 /* Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D07F2C70486CC7A007CD1D0 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+				F454159B185B03F000C7FB99 /* Info copy.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2B372B21199CF8FD00979BB7 /* XPosixEnvironmentVariables.cpp */,
+				2B372B22199CF8FD00979BB7 /* XPosixEnvironmentVariables.h */,
+				2B2790CF1993CEC400EC8A48 /* VJSEnvironment.cpp */,
+				2B2790D01993CEC400EC8A48 /* VJSEnvironment.h */,
+				4182362218F41DAC003FEEF9 /* VSystemWorker.cpp */,
+				4182362318F41DAC003FEEF9 /* VSystemWorker.h */,
+				6DC3EFA4188E6BB50022FA5C /* VJSParams.cpp */,
+				6DC3EFA5188E6BB50022FA5C /* VJSParams.h */,
+				424209811861F73100BAE377 /* VJSConstructor.cpp */,
+				424209821861F73100BAE377 /* VJSConstructor.h */,
+				4210547117DA399300813D18 /* VJSCrypto.cpp */,
+				4210547217DA399300813D18 /* VJSCrypto.h */,
+				CDC3F98215AC7D2C0018766C /* VJSModule.cpp */,
+				CDC3F98315AC7D2C0018766C /* VJSModule.h */,
+				CD9B1DCE15244E2D0017C500 /* VJSW3CArrayBuffer.cpp */,
+				CD9B1DCF15244E2D0017C500 /* VJSW3CArrayBuffer.h */,
+				540C395B151A915F00ED765F /* VJSMysqlBuffer.cpp */,
+				540C395C151A915F00ED765F /* VJSMysqlBuffer.h */,
+				CDBF9AE814D9A23A0041EE95 /* VJSW3CFileSystem.cpp */,
+				CDBF9AE914D9A23A0041EE95 /* VJSW3CFileSystem.h */,
+				CD69CB6614A22A7F002D73C7 /* VJSTLS.cpp */,
+				CD69CB6714A22A7F002D73C7 /* VJSTLS.h */,
+				CD69CB5D14A22A0C002D73C7 /* VJSErrors.h */,
+				4211982318885D4800ECDECF /* VJSMIME.cpp */,
+				4211982418885D4800ECDECF /* VJSMIME.h */,
+				CD69CB5114A229FC002D73C7 /* VJSNetServer.cpp */,
+				CD69CB5214A229FC002D73C7 /* VJSNetServer.h */,
+				CD69CB5314A229FC002D73C7 /* VJSNetSocket.cpp */,
+				CD69CB5414A229FC002D73C7 /* VJSNetSocket.h */,
+				417AA6051488D15500BD91CC /* VJSProcess.cpp */,
+				417AA6061488D15500BD91CC /* VJSProcess.h */,
+				F917A7E7145AD86F00F37DF1 /* EndPoint */,
+				45790FCC13D7053D00D3E83A /* VJSBuffer.cpp */,
+				45790FCD13D7053D00D3E83A /* VJSBuffer.h */,
+				45790FCE13D7053D00D3E83A /* VJSEventEmitter.cpp */,
+				45790FCF13D7053D00D3E83A /* VJSEventEmitter.h */,
+				45790FD013D7053D00D3E83A /* VJSNet.cpp */,
+				45790FD113D7053D00D3E83A /* VJSNet.h */,
+				45F95D19135C87B3006162DC /* VJSWebStorage.h */,
+				45F95D1A135C87B3006162DC /* VJSWebStorage.cpp */,
+				45F95D1B135C87B3006162DC /* VJSStructuredClone.h */,
+				45F95D1C135C87B3006162DC /* VJSStructuredClone.cpp */,
+				45B0FEFE134B515A002B2B60 /* VJSTimer.h */,
+				45B0FEFF134B515A002B2B60 /* VJSTimer.cpp */,
+				45088DFD133A36A1005FF7D4 /* VJSSystemWorker.h */,
+				45088DFE133A36A1005FF7D4 /* VJSSystemWorker.cpp */,
+				45DE12C2132A85A700D09AF4 /* VJSDOMEvent.h */,
+				45DE12C3132A85A700D09AF4 /* VJSDOMEvent.cpp */,
+				45157988131EA7FB00F71270 /* VJSEvent.cpp */,
+				45157989131EA7FB00F71270 /* VJSEvent.h */,
+				4515798A131EA7FB00F71270 /* VJSMessagePort.cpp */,
+				4515798B131EA7FB00F71270 /* VJSMessagePort.h */,
+				4515798E131EA7FB00F71270 /* VJSWorker.cpp */,
+				4515798F131EA7FB00F71270 /* VJSWorker.h */,
+				45157990131EA7FB00F71270 /* VJSWorkerProxy.cpp */,
+				45157991131EA7FB00F71270 /* VJSWorkerProxy.h */,
+				548A337411493B6200EC2383 /* VJSRuntime_Atomic.cpp */,
+				548A337511493B6200EC2383 /* VJSRuntime_Atomic.h */,
+				548A337611493B6200EC2383 /* VJSRuntime_Image.cpp */,
+				548A337711493B6200EC2383 /* VJSRuntime_Image.h */,
+				F9432CDB1117163900DC319D /* XMLHttpRequest */,
+				8536EBF40F8C981200B7B827 /* VJavaScriptPrecompiled.h */,
+				8536EBF50F8C981200B7B827 /* VJSClass.cpp */,
+				8536EBF60F8C981200B7B827 /* VJSClass.h */,
+				8536EBF70F8C981200B7B827 /* VJSContext.cpp */,
+				8536EBF80F8C981200B7B827 /* VJSContext.h */,
+				8536EBF90F8C981200B7B827 /* VJSGlobalClass.cpp */,
+				8536EBFA0F8C981200B7B827 /* VJSGlobalClass.h */,
+				546463BA10B325B90061BE69 /* VJSJSON.h */,
+				CDE4F1AA176F15C200EEB8F0 /* VJSWebSocket.cpp */,
+				CDE4F1AB176F15C200EEB8F0 /* VJSWebSocket.h */,
+				546463BB10B325B90061BE69 /* VJSJSON.cpp */,
+				8536EBFB0F8C981200B7B827 /* VJSRuntime_file.cpp */,
+				8536EBFC0F8C981200B7B827 /* VJSRuntime_file.h */,
+				8536EBFD0F8C981200B7B827 /* VJSRuntime_progressIndicator.cpp */,
+				8536EBFE0F8C981200B7B827 /* VJSRuntime_progressIndicator.h */,
+				8536EBFF0F8C981200B7B827 /* VJSRuntime_stream.cpp */,
+				8536EC000F8C981200B7B827 /* VJSRuntime_stream.h */,
+				428E039F12BBCB9700A97E4B /* VJSRuntime_blob.h */,
+				428E03A012BBCB9700A97E4B /* VJSRuntime_blob.cpp */,
+				8536EC010F8C981200B7B827 /* VJSValue.cpp */,
+				8536EC020F8C981200B7B827 /* VJSValue.h */,
+				4241EAC40FCB099B005BC827 /* JS4D.h */,
+				42478DD70FCB1E3200B74C28 /* JS4D.cpp */,
+			);
+			name = Sources;
+			path = ../../Sources;
+			sourceTree = "<group>";
+		};
+		39A9D2F208CD93B60019B724 /* Precompiled */ = {
+			isa = PBXGroup;
+			children = (
+				8536E97E0F8A050E00B7B827 /* JavaScript_Prefix.pch */,
+			);
+			name = Precompiled;
+			sourceTree = "<group>";
+		};
+		39A9D2F508CD93D00019B724 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */,
+				F90688C51517A9300000308B /* OpenSSL.xcodeproj */,
+				F917A6CA1459AB7100F37DF1 /* zlib.xcodeproj */,
+				4599D465138D35530044A96E /* ServerNet.xcodeproj */,
+				85E6A0D21100574400DDC245 /* Graphics.xcodeproj */,
+				4589542F1268A47300D30A40 /* KernelIPC.xcodeproj */,
+				F9E3336D11188DC900B49DC4 /* libcurl.xcodeproj */,
+				F1847CA0110DE2540038DA99 /* XML.xcodeproj */,
+				39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		39A9D2F808CD93E30019B724 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12C1459B09F624A7000F4880 /* libKernelDebug.a */,
+				39A9D30008CD93E30019B724 /* libM_APMDebug.a */,
+				F46437C3113E9EF500639653 /* libM_APMDebug.a */,
+				F487CC9D18586E3E009FAE18 /* libKernelDebug.a */,
+				F454151A185B03E700C7FB99 /* libM_APMDebug.a */,
+				39A9D2FE08CD93E30019B724 /* KernelDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		458954301268A47300D30A40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				458954391268A47300D30A40 /* libKernelIPCDebug.a */,
+				F487CCA218586E3E009FAE18 /* libKernelIPCDebug.a */,
+				458954371268A47300D30A40 /* KernelIPCDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4599D466138D35530044A96E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4599D46F138D35530044A96E /* libServerNetDebug.a */,
+				F487CCA718586E3E009FAE18 /* libServerNetDebug.a */,
+				4599D46D138D35530044A96E /* ServerNetDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85E6A0D31100574400DDC245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85E6A0DC1100574400DDC245 /* GraphicsDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D207E9870B7CA76300C1FA30 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				F464391C113EA7E700639653 /* xtoolbox_x64.xcconfig */,
+				D207E9880B7CA76300C1FA30 /* xtoolbox_base.xcconfig */,
+				D207E9890B7CA76300C1FA30 /* xtoolbox_beta.xcconfig */,
+				D207E98A0B7CA76300C1FA30 /* xtoolbox_debug.xcconfig */,
+				D207E98B0B7CA76300C1FA30 /* xtoolbox_coverage.xcconfig */,
+				D207E98C0B7CA76300C1FA30 /* xtoolbox_release.xcconfig */,
+				3957A58E0C29268200794CD3 /* xtoolbox_performance.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		F1847CA1110DE2540038DA99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1847CA5110DE2540038DA99 /* XMLDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4AF370415249A9C005DE836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4AF371515249A9C005DE836 /* JavaScriptCore.framework */,
+				F4AF371715249A9C005DE836 /* JavaScriptCore.framework */,
+				F4AF371915249A9C005DE836 /* minidom */,
+				F4AF371B15249A9C005DE836 /* testapi */,
+				F4AF371D15249A9C005DE836 /* jsc */,
+				F45417FB185B0CA400C7FB99 /* 4DJavaScriptCore.framework */,
+				F4AF372315249A9C005DE836 /* 4DJavaScriptCore.framework */,
+				F4541A6D185B0D3E00C7FB99 /* JavaScriptCore.framework */,
+				F4541A7E185B0DD800C7FB99 /* 4DJavaScriptCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F90688C61517A9300000308B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F90688CB1517A9300000308B /* OpenSSLDebug.framework */,
+				F90688CD1517A9300000308B /* OpenSSLDebug.framework */,
+				F4541500185B03E700C7FB99 /* OpenSSLDebug.framework */,
+				F91AC47318C48D0E0048E1F7 /* libOpenSSLLib i386.a */,
+				F91AC47518C48D0E0048E1F7 /* libOpenSSLLib x86_64.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F917A6CB1459AB7100F37DF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F917A6D31459AB7100F37DF1 /* zlibDebug.framework */,
+				F917A6D51459AB7100F37DF1 /* zlibDebug.framework */,
+				F45415CE185B07D500C7FB99 /* zlibDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F917A7E7145AD86F00F37DF1 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				F917A7E8145AD88500F37DF1 /* VJSEndPoint.cpp */,
+				F917A7E9145AD88500F37DF1 /* VJSEndPoint.h */,
+			);
+			name = EndPoint;
+			sourceTree = "<group>";
+		};
+		F9432CDB1117163900DC319D /* XMLHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F98E36D6189A98000091EBBA /* VcURLXMLHttpRequest.cpp */,
+				F98E36D7189A98000091EBBA /* VcURLXMLHttpRequest.h */,
+				F9432CD31117162A00DC319D /* CurlWrapper.cpp */,
+				F9432CD41117162A00DC319D /* CurlWrapper.h */,
+				F9432CD51117162A00DC319D /* VXMLHttpRequest.cpp */,
+				F9432CD61117162A00DC319D /* VXMLHttpRequest.h */,
+			);
+			name = XMLHttpRequest;
+			sourceTree = "<group>";
+		};
+		F9E3336E11188DC900B49DC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9E3337311188DC900B49DC4 /* liblibcurl.a */,
+				F9E3337511188DC900B49DC4 /* liblibcurl dyn.dylib */,
+				F46438FC113EA38900639653 /* liblibcurl.a */,
+				F4E2A279185B113000645E2C /* liblibcurl.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4541537185B03F000C7FB99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4211982618885D4800ECDECF /* VJSMIME.h in Headers */,
+				F4541538185B03F000C7FB99 /* VJavaScript.h in Headers */,
+				F4541539185B03F000C7FB99 /* JavaScript_Prefix.pch in Headers */,
+				F454153A185B03F000C7FB99 /* VJavaScriptPrecompiled.h in Headers */,
+				F454153B185B03F000C7FB99 /* VJSClass.h in Headers */,
+				F454153C185B03F000C7FB99 /* VJSContext.h in Headers */,
+				F454153D185B03F000C7FB99 /* VJSGlobalClass.h in Headers */,
+				F454153E185B03F000C7FB99 /* VJSRuntime_file.h in Headers */,
+				F454153F185B03F000C7FB99 /* VJSRuntime_progressIndicator.h in Headers */,
+				F4541540185B03F000C7FB99 /* VJSRuntime_stream.h in Headers */,
+				F4541541185B03F000C7FB99 /* VJSValue.h in Headers */,
+				2B372B24199CF8FD00979BB7 /* XPosixEnvironmentVariables.h in Headers */,
+				F4541542185B03F000C7FB99 /* JS4D.h in Headers */,
+				F4541543185B03F000C7FB99 /* VJSJSON.h in Headers */,
+				F4541544185B03F000C7FB99 /* CurlWrapper.h in Headers */,
+				F4541545185B03F000C7FB99 /* VXMLHttpRequest.h in Headers */,
+				F4541546185B03F000C7FB99 /* VJSRuntime_Atomic.h in Headers */,
+				6DC3EFA7188E6BB50022FA5C /* VJSParams.h in Headers */,
+				F4541547185B03F000C7FB99 /* VJSRuntime_Image.h in Headers */,
+				F4541548185B03F000C7FB99 /* VJSRuntime_blob.h in Headers */,
+				F4541549185B03F000C7FB99 /* VJSEvent.h in Headers */,
+				F454154A185B03F000C7FB99 /* VJSMessagePort.h in Headers */,
+				F454154B185B03F000C7FB99 /* VJSWorker.h in Headers */,
+				F454154C185B03F000C7FB99 /* VJSWorkerProxy.h in Headers */,
+				2B2790D21993CEC400EC8A48 /* VJSEnvironment.h in Headers */,
+				F454154D185B03F000C7FB99 /* VJSDOMEvent.h in Headers */,
+				F454154E185B03F000C7FB99 /* VJSSystemWorker.h in Headers */,
+				F454154F185B03F000C7FB99 /* VJSTimer.h in Headers */,
+				4182362518F41DAC003FEEF9 /* VSystemWorker.h in Headers */,
+				F4541550185B03F000C7FB99 /* VJSWebStorage.h in Headers */,
+				424209881861F73100BAE377 /* VJSConstructor.h in Headers */,
+				F4541551185B03F000C7FB99 /* VJSStructuredClone.h in Headers */,
+				F4541552185B03F000C7FB99 /* VJSBuffer.h in Headers */,
+				F4541553185B03F000C7FB99 /* VJSEventEmitter.h in Headers */,
+				F4541554185B03F000C7FB99 /* VJSNet.h in Headers */,
+				F4541555185B03F000C7FB99 /* VJSEndPoint.h in Headers */,
+				F4541556185B03F000C7FB99 /* VJSProcess.h in Headers */,
+				F98E36D9189A98000091EBBA /* VcURLXMLHttpRequest.h in Headers */,
+				F4541557185B03F000C7FB99 /* VJSNetServer.h in Headers */,
+				F4541558185B03F000C7FB99 /* VJSNetSocket.h in Headers */,
+				F4541559185B03F000C7FB99 /* VJSErrors.h in Headers */,
+				F454155A185B03F000C7FB99 /* VJSTLS.h in Headers */,
+				F454155B185B03F000C7FB99 /* VJSW3CFileSystem.h in Headers */,
+				F454155C185B03F000C7FB99 /* VJSMysqlBuffer.h in Headers */,
+				F454155D185B03F000C7FB99 /* VJSW3CArrayBuffer.h in Headers */,
+				F454155E185B03F000C7FB99 /* VJSModule.h in Headers */,
+				F454155F185B03F000C7FB99 /* VJSWebSocket.h in Headers */,
+				F4541560185B03F000C7FB99 /* VJSCrypto.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F4541524185B03F000C7FB99 /* 4DJavaScript */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4541594185B03F000C7FB99 /* Build configuration list for PBXNativeTarget "4DJavaScript" */;
+			buildPhases = (
+				F4541537185B03F000C7FB99 /* Headers */,
+				F4541561185B03F000C7FB99 /* Resources */,
+				F4541563185B03F000C7FB99 /* Sources */,
+				F4541589185B03F000C7FB99 /* Frameworks */,
+				F4541593185B03F000C7FB99 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4E2A362185B415000645E2C /* PBXTargetDependency */,
+				F4E2A364185B415600645E2C /* PBXTargetDependency */,
+				F4E2A366185B415E00645E2C /* PBXTargetDependency */,
+				F4E2A368185B416A00645E2C /* PBXTargetDependency */,
+				F4E2A36A185B417100645E2C /* PBXTargetDependency */,
+				F4E2A370185B422500645E2C /* PBXTargetDependency */,
+				F4E2A36C185B417900645E2C /* PBXTargetDependency */,
+				F4E2A36E185B418300645E2C /* PBXTargetDependency */,
+				F4E2A373185B42DD00645E2C /* PBXTargetDependency */,
+			);
+			name = 4DJavaScript;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = XML;
+			productReference = F454159A185B03F000C7FB99 /* 4DJavaScriptDebug.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 39A9D2D608CD93860019B724 /* Build configuration list for PBXProject "JavaScript" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* XML */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 85E6A0D31100574400DDC245 /* Products */;
+					ProjectRef = 85E6A0D21100574400DDC245 /* Graphics.xcodeproj */;
+				},
+				{
+					ProductGroup = F4AF370415249A9C005DE836 /* Products */;
+					ProjectRef = F4AF370315249A9C005DE836 /* JavaScriptCore.xcodeproj */;
+				},
+				{
+					ProductGroup = 39A9D2F808CD93E30019B724 /* Products */;
+					ProjectRef = 39A9D2F708CD93E30019B724 /* Kernel.xcodeproj */;
+				},
+				{
+					ProductGroup = 458954301268A47300D30A40 /* Products */;
+					ProjectRef = 4589542F1268A47300D30A40 /* KernelIPC.xcodeproj */;
+				},
+				{
+					ProductGroup = F9E3336E11188DC900B49DC4 /* Products */;
+					ProjectRef = F9E3336D11188DC900B49DC4 /* libcurl.xcodeproj */;
+				},
+				{
+					ProductGroup = F90688C61517A9300000308B /* Products */;
+					ProjectRef = F90688C51517A9300000308B /* OpenSSL.xcodeproj */;
+				},
+				{
+					ProductGroup = 4599D466138D35530044A96E /* Products */;
+					ProjectRef = 4599D465138D35530044A96E /* ServerNet.xcodeproj */;
+				},
+				{
+					ProductGroup = F1847CA1110DE2540038DA99 /* Products */;
+					ProjectRef = F1847CA0110DE2540038DA99 /* XML.xcodeproj */;
+				},
+				{
+					ProductGroup = F917A6CB1459AB7100F37DF1 /* Products */;
+					ProjectRef = F917A6CA1459AB7100F37DF1 /* zlib.xcodeproj */;
+				},
+			);
+			projectRoot = ../..;
+			targets = (
+				F4541524185B03F000C7FB99 /* 4DJavaScript */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		12C1459B09F624A7000F4880 /* libKernelDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelDebug.a;
+			remoteRef = 12C1459A09F624A7000F4880 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39A9D2FE08CD93E30019B724 /* KernelDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KernelDebug.framework;
+			remoteRef = 39A9D2FD08CD93E30019B724 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39A9D30008CD93E30019B724 /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = 39A9D2FF08CD93E30019B724 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		458954371268A47300D30A40 /* KernelIPCDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KernelIPCDebug.framework;
+			remoteRef = 458954361268A47300D30A40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		458954391268A47300D30A40 /* libKernelIPCDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelIPCDebug.a;
+			remoteRef = 458954381268A47300D30A40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4599D46D138D35530044A96E /* ServerNetDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ServerNetDebug.framework;
+			remoteRef = 4599D46C138D35530044A96E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4599D46F138D35530044A96E /* libServerNetDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libServerNetDebug.a;
+			remoteRef = 4599D46E138D35530044A96E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85E6A0DC1100574400DDC245 /* GraphicsDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GraphicsDebug.framework;
+			remoteRef = 85E6A0DB1100574400DDC245 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F1847CA5110DE2540038DA99 /* XMLDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XMLDebug.framework;
+			remoteRef = F1847CA4110DE2540038DA99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4541500185B03E700C7FB99 /* OpenSSLDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OpenSSLDebug.framework;
+			remoteRef = F45414FF185B03E700C7FB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F454151A185B03E700C7FB99 /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = F4541519185B03E700C7FB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F45415CE185B07D500C7FB99 /* zlibDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = zlibDebug.framework;
+			remoteRef = F45415CD185B07D500C7FB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F45417FB185B0CA400C7FB99 /* 4DJavaScriptCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = 4DJavaScriptCore.framework;
+			remoteRef = F45417FA185B0CA400C7FB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4541A6D185B0D3E00C7FB99 /* JavaScriptCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JavaScriptCore.framework;
+			remoteRef = F4541A6C185B0D3E00C7FB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4541A7E185B0DD800C7FB99 /* 4DJavaScriptCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = 4DJavaScriptCore.framework;
+			remoteRef = F4541A7D185B0DD800C7FB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F46437C3113E9EF500639653 /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = F46437C2113E9EF500639653 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F46438FC113EA38900639653 /* liblibcurl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibcurl.a;
+			remoteRef = F46438FB113EA38900639653 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F487CC9D18586E3E009FAE18 /* libKernelDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelDebug.a;
+			remoteRef = F487CC9C18586E3E009FAE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F487CCA218586E3E009FAE18 /* libKernelIPCDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelIPCDebug.a;
+			remoteRef = F487CCA118586E3E009FAE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F487CCA718586E3E009FAE18 /* libServerNetDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libServerNetDebug.a;
+			remoteRef = F487CCA618586E3E009FAE18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4AF371515249A9C005DE836 /* JavaScriptCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JavaScriptCore.framework;
+			remoteRef = F4AF371415249A9C005DE836 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4AF371715249A9C005DE836 /* JavaScriptCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JavaScriptCore.framework;
+			remoteRef = F4AF371615249A9C005DE836 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4AF371915249A9C005DE836 /* minidom */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = minidom;
+			remoteRef = F4AF371815249A9C005DE836 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4AF371B15249A9C005DE836 /* testapi */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = testapi;
+			remoteRef = F4AF371A15249A9C005DE836 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4AF371D15249A9C005DE836 /* jsc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = jsc;
+			remoteRef = F4AF371C15249A9C005DE836 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4AF372315249A9C005DE836 /* 4DJavaScriptCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = 4DJavaScriptCore.framework;
+			remoteRef = F4AF372215249A9C005DE836 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4E2A279185B113000645E2C /* liblibcurl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibcurl.a;
+			remoteRef = F4E2A278185B113000645E2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F90688CB1517A9300000308B /* OpenSSLDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OpenSSLDebug.framework;
+			remoteRef = F90688CA1517A9300000308B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F90688CD1517A9300000308B /* OpenSSLDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OpenSSLDebug.framework;
+			remoteRef = F90688CC1517A9300000308B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F917A6D31459AB7100F37DF1 /* zlibDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = zlibDebug.framework;
+			remoteRef = F917A6D21459AB7100F37DF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F917A6D51459AB7100F37DF1 /* zlibDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = zlibDebug.framework;
+			remoteRef = F917A6D41459AB7100F37DF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F91AC47318C48D0E0048E1F7 /* libOpenSSLLib i386.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libOpenSSLLib i386.a";
+			remoteRef = F91AC47218C48D0E0048E1F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F91AC47518C48D0E0048E1F7 /* libOpenSSLLib x86_64.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libOpenSSLLib x86_64.a";
+			remoteRef = F91AC47418C48D0E0048E1F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F9E3337311188DC900B49DC4 /* liblibcurl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibcurl.a;
+			remoteRef = F9E3337211188DC900B49DC4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F9E3337511188DC900B49DC4 /* liblibcurl dyn.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = "liblibcurl dyn.dylib";
+			remoteRef = F9E3337411188DC900B49DC4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4541561185B03F000C7FB99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4541562185B03F000C7FB99 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F4541593185B03F000C7FB99 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4541563185B03F000C7FB99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4541564185B03F000C7FB99 /* VJSClass.cpp in Sources */,
+				F4541565185B03F000C7FB99 /* VJSContext.cpp in Sources */,
+				F4541566185B03F000C7FB99 /* VJSGlobalClass.cpp in Sources */,
+				F4541567185B03F000C7FB99 /* VJSRuntime_file.cpp in Sources */,
+				F4541568185B03F000C7FB99 /* VJSRuntime_progressIndicator.cpp in Sources */,
+				F4541569185B03F000C7FB99 /* VJSRuntime_stream.cpp in Sources */,
+				F454156A185B03F000C7FB99 /* VJSValue.cpp in Sources */,
+				F454156B185B03F000C7FB99 /* JS4D.cpp in Sources */,
+				F454156C185B03F000C7FB99 /* VJSJSON.cpp in Sources */,
+				F454156D185B03F000C7FB99 /* CurlWrapper.cpp in Sources */,
+				F454156E185B03F000C7FB99 /* VXMLHttpRequest.cpp in Sources */,
+				F454156F185B03F000C7FB99 /* VJSRuntime_Atomic.cpp in Sources */,
+				F4541570185B03F000C7FB99 /* VJSRuntime_Image.cpp in Sources */,
+				F4541571185B03F000C7FB99 /* VJSRuntime_blob.cpp in Sources */,
+				F4541572185B03F000C7FB99 /* VJSEvent.cpp in Sources */,
+				F4541573185B03F000C7FB99 /* VJSMessagePort.cpp in Sources */,
+				F4541574185B03F000C7FB99 /* VJSWorker.cpp in Sources */,
+				F4541575185B03F000C7FB99 /* VJSWorkerProxy.cpp in Sources */,
+				2B2790D11993CEC400EC8A48 /* VJSEnvironment.cpp in Sources */,
+				F4541576185B03F000C7FB99 /* VJSDOMEvent.cpp in Sources */,
+				F4541577185B03F000C7FB99 /* VJSSystemWorker.cpp in Sources */,
+				F4541578185B03F000C7FB99 /* VJSTimer.cpp in Sources */,
+				4182362418F41DAC003FEEF9 /* VSystemWorker.cpp in Sources */,
+				6DC3EFA6188E6BB50022FA5C /* VJSParams.cpp in Sources */,
+				F4541579185B03F000C7FB99 /* VJSWebStorage.cpp in Sources */,
+				F454157A185B03F000C7FB99 /* VJSStructuredClone.cpp in Sources */,
+				F454157B185B03F000C7FB99 /* VJSBuffer.cpp in Sources */,
+				F454157C185B03F000C7FB99 /* VJSEventEmitter.cpp in Sources */,
+				F454157D185B03F000C7FB99 /* VJSNet.cpp in Sources */,
+				F454157E185B03F000C7FB99 /* VJSEndPoint.cpp in Sources */,
+				F454157F185B03F000C7FB99 /* VJSProcess.cpp in Sources */,
+				F98E36D8189A98000091EBBA /* VcURLXMLHttpRequest.cpp in Sources */,
+				2B372B23199CF8FD00979BB7 /* XPosixEnvironmentVariables.cpp in Sources */,
+				F4541580185B03F000C7FB99 /* VJSNetServer.cpp in Sources */,
+				F4541581185B03F000C7FB99 /* VJSNetSocket.cpp in Sources */,
+				424209851861F73100BAE377 /* VJSConstructor.cpp in Sources */,
+				F4541582185B03F000C7FB99 /* VJSTLS.cpp in Sources */,
+				F4541583185B03F000C7FB99 /* VJSW3CFileSystem.cpp in Sources */,
+				F4541584185B03F000C7FB99 /* VJSMysqlBuffer.cpp in Sources */,
+				F4541585185B03F000C7FB99 /* VJSW3CArrayBuffer.cpp in Sources */,
+				4211982518885D4800ECDECF /* VJSMIME.cpp in Sources */,
+				F4541586185B03F000C7FB99 /* VJSModule.cpp in Sources */,
+				F4541587185B03F000C7FB99 /* VJSWebSocket.cpp in Sources */,
+				F4541588185B03F000C7FB99 /* VJSCrypto.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4E2A362185B415000645E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kernel;
+			targetProxy = F4E2A361185B415000645E2C /* PBXContainerItemProxy */;
+		};
+		F4E2A364185B415600645E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Graphics;
+			targetProxy = F4E2A363185B415600645E2C /* PBXContainerItemProxy */;
+		};
+		F4E2A366185B415E00645E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libcurl;
+			targetProxy = F4E2A365185B415E00645E2C /* PBXContainerItemProxy */;
+		};
+		F4E2A368185B416A00645E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KernelIPC;
+			targetProxy = F4E2A367185B416A00645E2C /* PBXContainerItemProxy */;
+		};
+		F4E2A36A185B417100645E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ServerNet;
+			targetProxy = F4E2A369185B417100645E2C /* PBXContainerItemProxy */;
+		};
+		F4E2A36C185B417900645E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenSSL;
+			targetProxy = F4E2A36B185B417900645E2C /* PBXContainerItemProxy */;
+		};
+		F4E2A36E185B418300645E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 4DJavaScriptCore;
+			targetProxy = F4E2A36D185B418300645E2C /* PBXContainerItemProxy */;
+		};
+		F4E2A370185B422500645E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zlib;
+			targetProxy = F4E2A36F185B422500645E2C /* PBXContainerItemProxy */;
+		};
+		F4E2A373185B42DD00645E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XML;
+			targetProxy = F4E2A372185B42DD00645E2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		126DA1130A4AC67F00D639DA /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D207E98B0B7CA76300C1FA30 /* xtoolbox_coverage.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_JSC)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = JavaScript_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "VERSIONDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"${HEADER_SEARCH_PATHS_COMPONENTS}",
+					"$(HEADER_SEARCH_PATHS_JSC)",
+					"${SRCROOT}/../../..",
+					"${SRCROOT}/../../Sources",
+					"${SRCROOT}/../../Headers",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Coverage;
+		};
+		39A9D2D808CD93860019B724 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D207E9890B7CA76300C1FA30 /* xtoolbox_beta.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_JSC)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_PREFIX_HEADER = JavaScript_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VERSIONDEBUG=0",
+					"WITH_DEBUGMSG=1",
+					"WITH_ASSERT=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"${HEADER_SEARCH_PATHS_COMPONENTS}",
+					"$(HEADER_SEARCH_PATHS_JSC)",
+					"${SRCROOT}/../../..",
+					"${SRCROOT}/../../Sources",
+					"${SRCROOT}/../../Headers",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Beta;
+		};
+		39A9D31908CD95150019B724 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D207E98A0B7CA76300C1FA30 /* xtoolbox_debug.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_JSC)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = JavaScript_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "VERSIONDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"${HEADER_SEARCH_PATHS_COMPONENTS}",
+					"$(HEADER_SEARCH_PATHS_JSC)",
+					"${SRCROOT}/../../..",
+					"${SRCROOT}/../../Sources",
+					"${SRCROOT}/../../Headers",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Debug;
+		};
+		39A9D31A08CD95150019B724 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D207E98C0B7CA76300C1FA30 /* xtoolbox_release.xcconfig */;
+			buildSettings = {
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_JSC)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREFIX_HEADER = JavaScript_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "VERSIONDEBUG=0";
+				HEADER_SEARCH_PATHS = (
+					"${HEADER_SEARCH_PATHS_COMPONENTS}",
+					"$(HEADER_SEARCH_PATHS_JSC)",
+					"${SRCROOT}/../../..",
+					"${SRCROOT}/../../Sources",
+					"${SRCROOT}/../../Headers",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Release;
+		};
+		39C38FC70C27FB470073EDA8 /* Performance */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3957A58E0C29268200794CD3 /* xtoolbox_performance.xcconfig */;
+			buildSettings = {
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_JSC)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_PREFIX_HEADER = JavaScript_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "VERSIONDEBUG=0";
+				HEADER_SEARCH_PATHS = (
+					"${HEADER_SEARCH_PATHS_COMPONENTS}",
+					"$(HEADER_SEARCH_PATHS_JSC)",
+					"${SRCROOT}/../../..",
+					"${SRCROOT}/../../Sources",
+					"${SRCROOT}/../../Headers",
+				);
+				SEPARATE_STRIP = YES;
+			};
+			name = Performance;
+		};
+		F4541595185B03F000C7FB99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				PRODUCT_NAME = 4DJavaScriptDebug;
+			};
+			name = Debug;
+		};
+		F4541596185B03F000C7FB99 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				PRODUCT_NAME = 4DJavaScriptDebug;
+			};
+			name = Coverage;
+		};
+		F4541597185B03F000C7FB99 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = 4DJavaScriptBeta;
+			};
+			name = Beta;
+		};
+		F4541598185B03F000C7FB99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = 4DJavaScript;
+			};
+			name = Release;
+		};
+		F4541599185B03F000C7FB99 /* Performance */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = 4DJavaScriptPerf;
+			};
+			name = Performance;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39A9D2D608CD93860019B724 /* Build configuration list for PBXProject "JavaScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A9D31908CD95150019B724 /* Debug */,
+				126DA1130A4AC67F00D639DA /* Coverage */,
+				39A9D2D808CD93860019B724 /* Beta */,
+				39A9D31A08CD95150019B724 /* Release */,
+				39C38FC70C27FB470073EDA8 /* Performance */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F4541594185B03F000C7FB99 /* Build configuration list for PBXNativeTarget "4DJavaScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4541595185B03F000C7FB99 /* Debug */,
+				F4541596185B03F000C7FB99 /* Coverage */,
+				F4541597185B03F000C7FB99 /* Beta */,
+				F4541598185B03F000C7FB99 /* Release */,
+				F4541599185B03F000C7FB99 /* Performance */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4202ECE187E880D00AEEA1D /* KernelDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41251C71108CB14B00B4DB6A /* KernelDebug.framework */; };
+		F4202ECF187E881300AEEA1D /* KernelIPCDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41251C79108CB14B00B4DB6A /* KernelIPCDebug.framework */; };
+		F4202ED0187E881A00AEEA1D /* ServerNetDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41251C7F108CB14B00B4DB6A /* ServerNetDebug.framework */; };
+		F4202ED1187E882100AEEA1D /* 4DJavaScriptDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48D9976172E4ED2001173C0 /* 4DJavaScriptDebug.framework */; };
+		F42F7135185B4BB0008BB483 /* JSDebugger_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* JSDebugger_Prefix.pch */; };
+		F42F7136185B4BB0008BB483 /* JSWDebugger.h in Headers */ = {isa = PBXBuildFile; fileRef = 41251C50108CB0ED00B4DB6A /* JSWDebugger.h */; };
+		F42F7137185B4BB0008BB483 /* JSWServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 41251C51108CB0ED00B4DB6A /* JSWServer.h */; };
+		F42F7138185B4BB0008BB483 /* JSWDebuggerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 41251C5D108CB11200B4DB6A /* JSWDebuggerClient.h */; };
+		F42F7139185B4BB0008BB483 /* JSWDebuggerErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 41251C5E108CB11200B4DB6A /* JSWDebuggerErrors.h */; };
+		F42F713A185B4BB0008BB483 /* CJSWDebuggerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4179BFF314697D3C00477448 /* CJSWDebuggerFactory.h */; };
+		F42F713B185B4BB0008BB483 /* VLogHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B5603F15FDD6B0007B055F /* VLogHandler.h */; };
+		F42F713C185B4BB0008BB483 /* VRemoteDebugPilot.h in Headers */ = {isa = PBXBuildFile; fileRef = 9520083D15FDD721009B1874 /* VRemoteDebugPilot.h */; };
+		F42F713D185B4BB0008BB483 /* VChromeDebugHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 957E19A4160850A400C2DFBE /* VChromeDebugHandler.h */; };
+		F42F713E185B4BB0008BB483 /* VChromeDebugHandlerPrv.h in Headers */ = {isa = PBXBuildFile; fileRef = 957E19A5160850A400C2DFBE /* VChromeDebugHandlerPrv.h */; };
+		F42F713F185B4BB0008BB483 /* VChromeDbgHdlPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 95340F8316085DF800F46CD7 /* VChromeDbgHdlPage.h */; };
+		F42F7140185B4BB0008BB483 /* VNoRemoteDebugger.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A6120F17254F9D00B8B76C /* VNoRemoteDebugger.h */; };
+		F42F7142185B4BB0008BB483 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		F42F7144185B4BB0008BB483 /* JSWDebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41251C54108CB0F900B4DB6A /* JSWDebugger.cpp */; };
+		F42F7145185B4BB0008BB483 /* JSWDebuggerClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41251C55108CB0F900B4DB6A /* JSWDebuggerClient.cpp */; };
+		F42F7146185B4BB0008BB483 /* JSWServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41251C56108CB0F900B4DB6A /* JSWServer.cpp */; };
+		F42F7147185B4BB0008BB483 /* VLogHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95B5603B15FDD659007B055F /* VLogHandler.cpp */; };
+		F42F7148185B4BB0008BB483 /* VRemoteDebugPilot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9520084615FDD732009B1874 /* VRemoteDebugPilot.cpp */; };
+		F42F7149185B4BB0008BB483 /* VChromeDebugHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 957E19A11608507600C2DFBE /* VChromeDebugHandler.cpp */; };
+		F42F714A185B4BB0008BB483 /* VChromeDbgHdlPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95340F7C16085D7A00F46CD7 /* VChromeDbgHdlPage.cpp */; };
+		F42F714B185B4BB0008BB483 /* VNoRemoteDebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95A6121817254FB000B8B76C /* VNoRemoteDebugger.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41251C70108CB14B00B4DB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = Kernel;
+		};
+		41251C72108CB14B00B4DB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0235BC0C071EDC5200BEEE2E;
+			remoteInfo = M_APM;
+		};
+		41251C74108CB14B00B4DB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9BBA8FD09BC8AC500F3DCFC;
+			remoteInfo = KernelLib;
+		};
+		41251C78108CB14B00B4DB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C67108CB14B00B4DB6A /* KernelIPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = KernelIPC;
+		};
+		41251C7A108CB14B00B4DB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C67108CB14B00B4DB6A /* KernelIPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B54AA6920BEA453E005240A2;
+			remoteInfo = KernelIPCLib;
+		};
+		41251C7E108CB14B00B4DB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C6A108CB14B00B4DB6A /* ServerNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = ServerNet;
+		};
+		41251C80108CB14B00B4DB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C6A108CB14B00B4DB6A /* ServerNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B508DD9D0BEA4BF70036C46F;
+			remoteInfo = ServerNetLib;
+		};
+		F42F710E185B4BA3008BB483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9B6FFC183E4714000691CB;
+			remoteInfo = "KernelLib x64";
+		};
+		F42F7110185B4BA3008BB483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4E1C3561859B83C005F1140;
+			remoteInfo = M_APM;
+		};
+		F42F7117185B4BA3008BB483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C67108CB14B00B4DB6A /* KernelIPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9B6F1D183E46BA000691CB;
+			remoteInfo = "KernelIPCLib x64";
+		};
+		F42F711E185B4BA3008BB483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C6A108CB14B00B4DB6A /* ServerNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9B6EC7183E430A000691CB;
+			remoteInfo = "ServerNetLib x86_64";
+		};
+		F42F7158185B4C5F008BB483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E1C2481859B823005F1140;
+			remoteInfo = Kernel;
+		};
+		F42F715A185B4C63008BB483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C67108CB14B00B4DB6A /* KernelIPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F42FBAB4185A02CD00EFC5CF;
+			remoteInfo = KernelIPC;
+		};
+		F42F715C185B4C68008BB483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C6A108CB14B00B4DB6A /* ServerNet.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4A85B3C185A0DAF00D1A6D4;
+			remoteInfo = ServerNet;
+		};
+		F42F715E185B4C6F008BB483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F48D9954172E4ED2001173C0 /* JavaScript.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4541524185B03F000C7FB99;
+			remoteInfo = 4DJavaScript;
+		};
+		F4643705113E928200639653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F46431A2113E7C4800639653;
+			remoteInfo = "M_APM x64";
+		};
+		F48D9975172E4ED2001173C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F48D9954172E4ED2001173C0 /* JavaScript.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = 4DJavaScript;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32BAE0B70371A74B00C91783 /* JSDebugger_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDebugger_Prefix.pch; sourceTree = "<group>"; };
+		41251C47108CB0C900B4DB6A /* xtoolbox_base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_base.xcconfig; path = ../../../xtoolbox_base.xcconfig; sourceTree = SOURCE_ROOT; };
+		41251C48108CB0C900B4DB6A /* xtoolbox_beta.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_beta.xcconfig; path = ../../../xtoolbox_beta.xcconfig; sourceTree = SOURCE_ROOT; };
+		41251C49108CB0C900B4DB6A /* xtoolbox_coverage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_coverage.xcconfig; path = ../../../xtoolbox_coverage.xcconfig; sourceTree = SOURCE_ROOT; };
+		41251C4A108CB0C900B4DB6A /* xtoolbox_debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_debug.xcconfig; path = ../../../xtoolbox_debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		41251C4B108CB0C900B4DB6A /* xtoolbox_performance.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_performance.xcconfig; path = ../../../xtoolbox_performance.xcconfig; sourceTree = SOURCE_ROOT; };
+		41251C4C108CB0C900B4DB6A /* xtoolbox_release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_release.xcconfig; path = ../../../xtoolbox_release.xcconfig; sourceTree = SOURCE_ROOT; };
+		41251C50108CB0ED00B4DB6A /* JSWDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSWDebugger.h; path = ../../Headers/JSWDebugger.h; sourceTree = SOURCE_ROOT; };
+		41251C51108CB0ED00B4DB6A /* JSWServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSWServer.h; path = ../../Headers/JSWServer.h; sourceTree = SOURCE_ROOT; };
+		41251C54108CB0F900B4DB6A /* JSWDebugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSWDebugger.cpp; path = ../../Sources/JSWDebugger.cpp; sourceTree = SOURCE_ROOT; };
+		41251C55108CB0F900B4DB6A /* JSWDebuggerClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSWDebuggerClient.cpp; path = ../../Sources/JSWDebuggerClient.cpp; sourceTree = SOURCE_ROOT; };
+		41251C56108CB0F900B4DB6A /* JSWServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSWServer.cpp; path = ../../Sources/JSWServer.cpp; sourceTree = SOURCE_ROOT; };
+		41251C5D108CB11200B4DB6A /* JSWDebuggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSWDebuggerClient.h; path = ../../Interfaces/JSWDebuggerClient.h; sourceTree = SOURCE_ROOT; };
+		41251C5E108CB11200B4DB6A /* JSWDebuggerErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSWDebuggerErrors.h; path = ../../Interfaces/JSWDebuggerErrors.h; sourceTree = SOURCE_ROOT; };
+		41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../../../Kernel/Projects/Xcode/Kernel.xcodeproj; sourceTree = SOURCE_ROOT; };
+		41251C67108CB14B00B4DB6A /* KernelIPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KernelIPC.xcodeproj; path = ../../../KernelIPC/Projects/Xcode/KernelIPC.xcodeproj; sourceTree = SOURCE_ROOT; };
+		41251C6A108CB14B00B4DB6A /* ServerNet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ServerNet.xcodeproj; path = ../../../ServerNet/Projects/XCode/ServerNet.xcodeproj; sourceTree = SOURCE_ROOT; };
+		4179BFF314697D3C00477448 /* CJSWDebuggerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSWDebuggerFactory.h; path = ../../Interfaces/CJSWDebuggerFactory.h; sourceTree = SOURCE_ROOT; };
+		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9520083D15FDD721009B1874 /* VRemoteDebugPilot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VRemoteDebugPilot.h; path = ../../Headers/VRemoteDebugPilot.h; sourceTree = SOURCE_ROOT; };
+		9520084615FDD732009B1874 /* VRemoteDebugPilot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VRemoteDebugPilot.cpp; path = ../../Sources/VRemoteDebugPilot.cpp; sourceTree = SOURCE_ROOT; };
+		95340F7C16085D7A00F46CD7 /* VChromeDbgHdlPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VChromeDbgHdlPage.cpp; path = ../../Sources/VChromeDbgHdlPage.cpp; sourceTree = SOURCE_ROOT; };
+		95340F8316085DF800F46CD7 /* VChromeDbgHdlPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VChromeDbgHdlPage.h; path = ../../Headers/VChromeDbgHdlPage.h; sourceTree = SOURCE_ROOT; };
+		957E19A11608507600C2DFBE /* VChromeDebugHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VChromeDebugHandler.cpp; path = ../../Sources/VChromeDebugHandler.cpp; sourceTree = SOURCE_ROOT; };
+		957E19A4160850A400C2DFBE /* VChromeDebugHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VChromeDebugHandler.h; path = ../../Headers/VChromeDebugHandler.h; sourceTree = SOURCE_ROOT; };
+		957E19A5160850A400C2DFBE /* VChromeDebugHandlerPrv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VChromeDebugHandlerPrv.h; path = ../../Headers/VChromeDebugHandlerPrv.h; sourceTree = SOURCE_ROOT; };
+		95A6120F17254F9D00B8B76C /* VNoRemoteDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VNoRemoteDebugger.h; path = ../../Headers/VNoRemoteDebugger.h; sourceTree = "<group>"; };
+		95A6121817254FB000B8B76C /* VNoRemoteDebugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VNoRemoteDebugger.cpp; path = ../../Sources/VNoRemoteDebugger.cpp; sourceTree = "<group>"; };
+		95B5603B15FDD659007B055F /* VLogHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VLogHandler.cpp; path = ../../Sources/VLogHandler.cpp; sourceTree = SOURCE_ROOT; };
+		95B5603F15FDD6B0007B055F /* VLogHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VLogHandler.h; path = ../../Headers/VLogHandler.h; sourceTree = SOURCE_ROOT; };
+		F42F7156185B4BB0008BB483 /* JSDebuggerDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSDebuggerDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4643718113E935500639653 /* xtoolbox_x64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = xtoolbox_x64.xcconfig; path = ../../../xtoolbox_x64.xcconfig; sourceTree = SOURCE_ROOT; };
+		F48D9954172E4ED2001173C0 /* JavaScript.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JavaScript.xcodeproj; path = ../../../JavaScript/Projects/Xcode/JavaScript.xcodeproj; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F42F714C185B4BB0008BB483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4202ECE187E880D00AEEA1D /* KernelDebug.framework in Frameworks */,
+				F4202ECF187E881300AEEA1D /* KernelIPCDebug.framework in Frameworks */,
+				F4202ED0187E881A00AEEA1D /* ServerNetDebug.framework in Frameworks */,
+				F4202ED1187E882100AEEA1D /* 4DJavaScriptDebug.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F42F7156185B4BB0008BB483 /* JSDebuggerDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* JSDebugger */ = {
+			isa = PBXGroup;
+			children = (
+				41251C63108CB13F00B4DB6A /* Dependencies */,
+				41251C5B108CB10300B4DB6A /* Interfaces */,
+				41251C4F108CB0DD00B4DB6A /* Headers */,
+				41251C46108CB0A400B4DB6A /* config */,
+				08FB77ACFE841707C02AAC07 /* Source */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+			);
+			name = JSDebugger;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D07F2C70486CC7A007CD1D0 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				95340F7C16085D7A00F46CD7 /* VChromeDbgHdlPage.cpp */,
+				957E19A11608507600C2DFBE /* VChromeDebugHandler.cpp */,
+				9520084615FDD732009B1874 /* VRemoteDebugPilot.cpp */,
+				95B5603B15FDD659007B055F /* VLogHandler.cpp */,
+				41251C54108CB0F900B4DB6A /* JSWDebugger.cpp */,
+				41251C55108CB0F900B4DB6A /* JSWDebuggerClient.cpp */,
+				41251C56108CB0F900B4DB6A /* JSWServer.cpp */,
+				32BAE0B70371A74B00C91783 /* JSDebugger_Prefix.pch */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		41251C46108CB0A400B4DB6A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				F4643718113E935500639653 /* xtoolbox_x64.xcconfig */,
+				41251C47108CB0C900B4DB6A /* xtoolbox_base.xcconfig */,
+				41251C48108CB0C900B4DB6A /* xtoolbox_beta.xcconfig */,
+				41251C49108CB0C900B4DB6A /* xtoolbox_coverage.xcconfig */,
+				41251C4A108CB0C900B4DB6A /* xtoolbox_debug.xcconfig */,
+				41251C4B108CB0C900B4DB6A /* xtoolbox_performance.xcconfig */,
+				41251C4C108CB0C900B4DB6A /* xtoolbox_release.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		41251C4F108CB0DD00B4DB6A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				95A6120F17254F9D00B8B76C /* VNoRemoteDebugger.h */,
+				95340F8316085DF800F46CD7 /* VChromeDbgHdlPage.h */,
+				957E19A4160850A400C2DFBE /* VChromeDebugHandler.h */,
+				957E19A5160850A400C2DFBE /* VChromeDebugHandlerPrv.h */,
+				9520083D15FDD721009B1874 /* VRemoteDebugPilot.h */,
+				95B5603F15FDD6B0007B055F /* VLogHandler.h */,
+				41251C50108CB0ED00B4DB6A /* JSWDebugger.h */,
+				41251C51108CB0ED00B4DB6A /* JSWServer.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		41251C5B108CB10300B4DB6A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				95A6121817254FB000B8B76C /* VNoRemoteDebugger.cpp */,
+				4179BFF314697D3C00477448 /* CJSWDebuggerFactory.h */,
+				41251C5D108CB11200B4DB6A /* JSWDebuggerClient.h */,
+				41251C5E108CB11200B4DB6A /* JSWDebuggerErrors.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		41251C63108CB13F00B4DB6A /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F48D9954172E4ED2001173C0 /* JavaScript.xcodeproj */,
+				41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */,
+				41251C67108CB14B00B4DB6A /* KernelIPC.xcodeproj */,
+				41251C6A108CB14B00B4DB6A /* ServerNet.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		41251C65108CB14B00B4DB6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41251C75108CB14B00B4DB6A /* libKernelDebug.a */,
+				41251C73108CB14B00B4DB6A /* libM_APMDebug.a */,
+				F4643706113E928200639653 /* libM_APMDebug.a */,
+				F42F710F185B4BA3008BB483 /* libKernelDebug.a */,
+				F42F7111185B4BA3008BB483 /* libM_APMDebug.a */,
+				41251C71108CB14B00B4DB6A /* KernelDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41251C68108CB14B00B4DB6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41251C7B108CB14B00B4DB6A /* libKernelIPCDebug.a */,
+				F42F7118185B4BA3008BB483 /* libKernelIPCDebug.a */,
+				41251C79108CB14B00B4DB6A /* KernelIPCDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41251C6B108CB14B00B4DB6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41251C81108CB14B00B4DB6A /* libServerNetDebug.a */,
+				F42F711F185B4BA3008BB483 /* libServerNetDebug.a */,
+				41251C7F108CB14B00B4DB6A /* ServerNetDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F48D9955172E4ED2001173C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F48D9976172E4ED2001173C0 /* 4DJavaScriptDebug.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F42F7134185B4BB0008BB483 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42F7135185B4BB0008BB483 /* JSDebugger_Prefix.pch in Headers */,
+				F42F7136185B4BB0008BB483 /* JSWDebugger.h in Headers */,
+				F42F7137185B4BB0008BB483 /* JSWServer.h in Headers */,
+				F42F7138185B4BB0008BB483 /* JSWDebuggerClient.h in Headers */,
+				F42F7139185B4BB0008BB483 /* JSWDebuggerErrors.h in Headers */,
+				F42F713A185B4BB0008BB483 /* CJSWDebuggerFactory.h in Headers */,
+				F42F713B185B4BB0008BB483 /* VLogHandler.h in Headers */,
+				F42F713C185B4BB0008BB483 /* VRemoteDebugPilot.h in Headers */,
+				F42F713D185B4BB0008BB483 /* VChromeDebugHandler.h in Headers */,
+				F42F713E185B4BB0008BB483 /* VChromeDebugHandlerPrv.h in Headers */,
+				F42F713F185B4BB0008BB483 /* VChromeDbgHdlPage.h in Headers */,
+				F42F7140185B4BB0008BB483 /* VNoRemoteDebugger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F42F712B185B4BB0008BB483 /* JSDebugger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42F7152185B4BB0008BB483 /* Build configuration list for PBXNativeTarget "JSDebugger" */;
+			buildPhases = (
+				F42F7134185B4BB0008BB483 /* Headers */,
+				F42F7141185B4BB0008BB483 /* Resources */,
+				F42F7143185B4BB0008BB483 /* Sources */,
+				F42F714C185B4BB0008BB483 /* Frameworks */,
+				F42F7151185B4BB0008BB483 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42F7159185B4C5F008BB483 /* PBXTargetDependency */,
+				F42F715B185B4C63008BB483 /* PBXTargetDependency */,
+				F42F715D185B4C68008BB483 /* PBXTargetDependency */,
+				F42F715F185B4C6F008BB483 /* PBXTargetDependency */,
+			);
+			name = JSDebugger;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = JSDebugger;
+			productReference = F42F7156185B4BB0008BB483 /* JSDebuggerDebug.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "JSDebugger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* JSDebugger */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F48D9955172E4ED2001173C0 /* Products */;
+					ProjectRef = F48D9954172E4ED2001173C0 /* JavaScript.xcodeproj */;
+				},
+				{
+					ProductGroup = 41251C65108CB14B00B4DB6A /* Products */;
+					ProjectRef = 41251C64108CB14B00B4DB6A /* Kernel.xcodeproj */;
+				},
+				{
+					ProductGroup = 41251C68108CB14B00B4DB6A /* Products */;
+					ProjectRef = 41251C67108CB14B00B4DB6A /* KernelIPC.xcodeproj */;
+				},
+				{
+					ProductGroup = 41251C6B108CB14B00B4DB6A /* Products */;
+					ProjectRef = 41251C6A108CB14B00B4DB6A /* ServerNet.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F42F712B185B4BB0008BB483 /* JSDebugger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		41251C71108CB14B00B4DB6A /* KernelDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KernelDebug.framework;
+			remoteRef = 41251C70108CB14B00B4DB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41251C73108CB14B00B4DB6A /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = 41251C72108CB14B00B4DB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41251C75108CB14B00B4DB6A /* libKernelDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelDebug.a;
+			remoteRef = 41251C74108CB14B00B4DB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41251C79108CB14B00B4DB6A /* KernelIPCDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KernelIPCDebug.framework;
+			remoteRef = 41251C78108CB14B00B4DB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41251C7B108CB14B00B4DB6A /* libKernelIPCDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelIPCDebug.a;
+			remoteRef = 41251C7A108CB14B00B4DB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41251C7F108CB14B00B4DB6A /* ServerNetDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ServerNetDebug.framework;
+			remoteRef = 41251C7E108CB14B00B4DB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41251C81108CB14B00B4DB6A /* libServerNetDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libServerNetDebug.a;
+			remoteRef = 41251C80108CB14B00B4DB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F42F710F185B4BA3008BB483 /* libKernelDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelDebug.a;
+			remoteRef = F42F710E185B4BA3008BB483 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F42F7111185B4BA3008BB483 /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = F42F7110185B4BA3008BB483 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F42F7118185B4BA3008BB483 /* libKernelIPCDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKernelIPCDebug.a;
+			remoteRef = F42F7117185B4BA3008BB483 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F42F711F185B4BA3008BB483 /* libServerNetDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libServerNetDebug.a;
+			remoteRef = F42F711E185B4BA3008BB483 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4643706113E928200639653 /* libM_APMDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libM_APMDebug.a;
+			remoteRef = F4643705113E928200639653 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F48D9976172E4ED2001173C0 /* 4DJavaScriptDebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = 4DJavaScriptDebug.framework;
+			remoteRef = F48D9975172E4ED2001173C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F42F7141185B4BB0008BB483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42F7142185B4BB0008BB483 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F42F7151185B4BB0008BB483 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F42F7143185B4BB0008BB483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42F7144185B4BB0008BB483 /* JSWDebugger.cpp in Sources */,
+				F42F7145185B4BB0008BB483 /* JSWDebuggerClient.cpp in Sources */,
+				F42F7146185B4BB0008BB483 /* JSWServer.cpp in Sources */,
+				F42F7147185B4BB0008BB483 /* VLogHandler.cpp in Sources */,
+				F42F7148185B4BB0008BB483 /* VRemoteDebugPilot.cpp in Sources */,
+				F42F7149185B4BB0008BB483 /* VChromeDebugHandler.cpp in Sources */,
+				F42F714A185B4BB0008BB483 /* VChromeDbgHdlPage.cpp in Sources */,
+				F42F714B185B4BB0008BB483 /* VNoRemoteDebugger.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F42F7159185B4C5F008BB483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kernel;
+			targetProxy = F42F7158185B4C5F008BB483 /* PBXContainerItemProxy */;
+		};
+		F42F715B185B4C63008BB483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KernelIPC;
+			targetProxy = F42F715A185B4C63008BB483 /* PBXContainerItemProxy */;
+		};
+		F42F715D185B4C68008BB483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ServerNet;
+			targetProxy = F42F715C185B4C68008BB483 /* PBXContainerItemProxy */;
+		};
+		F42F715F185B4C6F008BB483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 4DJavaScript;
+			targetProxy = F42F715E185B4C6F008BB483 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FADC24708B4156D00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41251C4A108CB0C900B4DB6A /* xtoolbox_debug.xcconfig */;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREFIX_HEADER = JSDebugger_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${HEADER_SEARCH_PATHS_COMPONENTS}",
+					"${HEADER_SEARCH_PATHS_JSC}",
+					"${HEADER_SEARCH_PATHS}",
+				);
+			};
+			name = Debug;
+		};
+		4FADC24808B4156D00ABE55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41251C4C108CB0C900B4DB6A /* xtoolbox_release.xcconfig */;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREFIX_HEADER = JSDebugger_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${HEADER_SEARCH_PATHS_COMPONENTS}",
+					"${HEADER_SEARCH_PATHS_JSC}",
+					"${HEADER_SEARCH_PATHS}",
+				);
+			};
+			name = Release;
+		};
+		8575952C108F12F70035C550 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41251C48108CB0C900B4DB6A /* xtoolbox_beta.xcconfig */;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREFIX_HEADER = JSDebugger_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${HEADER_SEARCH_PATHS_COMPONENTS}",
+					"${HEADER_SEARCH_PATHS_JSC}",
+					"${HEADER_SEARCH_PATHS}",
+				);
+			};
+			name = Beta;
+		};
+		F42F7153185B4BB0008BB483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = JSDebuggerDebug;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		F42F7154185B4BB0008BB483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = JSDebugger;
+			};
+			name = Release;
+		};
+		F42F7155185B4BB0008BB483 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = JSDebuggerBeta;
+			};
+			name = Beta;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "JSDebugger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC24708B4156D00ABE55E /* Debug */,
+				4FADC24808B4156D00ABE55E /* Release */,
+				8575952C108F12F70035C550 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42F7152185B4BB0008BB483 /* Build configuration list for PBXNativeTarget "JSDebugger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42F7153185B4BB0008BB483 /* Debug */,
+				F42F7154185B4BB0008BB483 /* Release */,
+				F42F7155185B4BB0008BB483 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
